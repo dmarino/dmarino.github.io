@@ -25,7 +25,7 @@ html,body{
 }
 .about-image{
 	width: 100%;
-    padding: 10% 22% 10% 22%;
+    padding: 5% 22% 5% 22%;
 }
 
 .about-image > .imagen{
@@ -34,7 +34,7 @@ html,body{
 }
 
 .about p{
-	font-family: "Nunito Sans", sans-serif;
+	font-family: "Poiret One", sans-serif;
 }
 
 .typewrite{ 

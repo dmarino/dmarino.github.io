@@ -1,7 +1,7 @@
  //JavaScript para efecto de maquina de escribir
 
- var elementoAEscribir = function(padre, elemento, periodo) {
-        this.elemento = elemento;
+    var elementoAEscribir = function(padre, elemento, periodo) {
+       this.elemento = elemento;
         this.padre = padre;
         this.loop =0;
         this.periodo = parseInt(periodo, 10) || 2000;
