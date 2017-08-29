@@ -1,6 +1,6 @@
  //JavaScript para efecto de maquina de escribir
 
- var TxtType = function(padre, elemento, periodo) {
+ var elementoAEscribir = function(padre, elemento, periodo) {
         this.elemento = elemento;
         this.padre = padre;
         this.loop =0;
@@ -11,7 +11,7 @@
         this.escribir();
     };
 
-    TxtType.prototype.escribir = function() {
+    elementoAEscribir.prototype.escribir = function() {
         if( this.loop / this.elemento.length < 1){
             var i = this.loop % this.elemento.length;
             var fullTxt = this.elemento[i];
@@ -59,12 +59,12 @@
             var rotacion = elementos[i].getAttribute('data-type');
             var periodoo = elementos[i].getAttribute('data-periodo');
             if (rotacion) {
-              new TxtType(elementos[i], JSON.parse(rotacion), periodoo);
+              new elementoAEscribir(elementos[i], JSON.parse(rotacion), periodoo);
             }
         }
         // INJECT CSS
         var css = document.createElement("style");
         css.type = "text/css";
-        css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";
+        css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #333}";
         document.body.appendChild(css);
     };
