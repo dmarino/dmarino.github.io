@@ -25,16 +25,19 @@ html,body{
 }
 .about-image{
 	width: 100%;
-    padding: 5%;
+	margin-top: 2%;
+	margin-bottom: 2%;
 }
 
 .about-image > .imagen{
 	border-radius: 50%;
-	margin: auto;
+    display: block;
+    margin: 0 auto;
 }
 
 .about p{
 	font-family: "Poiret One", sans-serif;
+	color: #333;
 }
 
 .typewrite{ 
