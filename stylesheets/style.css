@@ -61,6 +61,20 @@ html,body{
 	color: #333; 
 }
 
+.about-resume a{
+	font-weight: bold;
+	color: #000;
+	text-decoration: none;
+}
+
+.about-resume a:hover{
+	color: #333;
+	font-weight: bolder;
+	font-size: 1em;
+	text-decoration: none;
+}
+
+
 .media{
 	height: 10%;
     display: block;
