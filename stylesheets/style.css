@@ -172,6 +172,7 @@ hr:after {
 	width: 100%;
 	border-radius: 25px;
     padding: 2%;
+	/* Falto agregarle un valor al scroll behavior. */
     scroll-behavior: 
 }
 

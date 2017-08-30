@@ -12,6 +12,9 @@
         this.escribir();
     };
     //prototipo de la funcion que genera el efecto de maquina de escribir, agrega o quita letras de las palabras. 1 ciclo y se detiene.
+    // Esta chevere el efecto. Depronto queda mas facil de entender lo que hace la funcion si se le dan nombres un poco
+    // mas dicientes a las variables loop, elemento, periodo. Separar en metodos los diferentes bloques del metodo
+    // tambien podria ser util para que otra persona entienda mas rapido lo que se esta haciendo aqui.
     elementoAEscribir.prototype.escribir = function() {
         if( this.loop / this.elemento.length < 1){
             var i = this.loop % this.elemento.length;
@@ -28,8 +31,8 @@
             var that = this;
             var delta = 200 - Math.random() * 100;
 
-            if (this.borrando) { 
-                delta /= 2; 
+            if (this.borrando) {
+                delta /= 2;
             }
             if (!this.borrando && this.txt === fullTxt) {
                 if(this.loop!==(this.elemento.length-2)){
