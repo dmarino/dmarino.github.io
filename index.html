@@ -60,12 +60,13 @@
                             <a class="nav-link active item" data-toggle="tab" href="#projects">Projects</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link item" data-toggle="tab" href="#lab">Lab</a>
+                            <a id="processing-button"class="nav-link item" data-toggle="tab" href="#lab">Interaction Lab</a>
                         </li>
                     </ul>
 
                     <div class="tab-content">
-                        <div class="tab-pane" id="about">
+                        <div class="tab-pane c" id="about">
+                            <hr>
                             <div class="row">
                             	<div class="col-md-4">
                             		<div class="container c2 aboutMe-image">
@@ -80,14 +81,11 @@
                             			</p>
                             		</div>
                             	</div>
-
-                            	<hr>
-
                             </div>
+                            <hr>
                         </div>
                         <div class="tab-pane" id="skills">
                             <div class="container c2">
-
                                 <div class="skillbar clearfix " data-percent="70%">
 	                                <div class="skillbar-title" style="background: #d35400;"><span>HTML5</span></div>
 	                                <div class="skillbar-bar" style="background: #e67e22;"></div>
@@ -132,12 +130,15 @@
                             </div>
                         </div>
                         <div class="tab-pane active" id="projects">
-                            <div class="container">
+                            <div class="container c2">
                             	3
                             </div>
                         </div>
                         <div class="tab-pane" id="lab">
-                            <div class="container">
+                            <div class="container c2">
+                                <div id="processing">
+                                	<canvas data-processing-sources="scripts/E05/E05.pde"></canvas>
+                                </div>
                             </div>
                         </div>
                     </div>

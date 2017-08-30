@@ -1,7 +1,7 @@
 Cardumen peces;
 void setup()
 {
-  size(200,200,P3D); 
+  size(600,600,P3D); 
   //peces misma gama de color
   //peces = new Cardumen(50,1,255);
   
