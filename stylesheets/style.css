@@ -8,12 +8,13 @@ html,body{
     height: 100%;
 }
 
-.container{
-    padding: 5% 5% 5% 5%;
+.c{
+    padding: 10px 5% 10px 5%;
     height: 100%;
 }
 
 .about{
+	
 	background-color: #FFF;
 	border-radius: 25px;
 	color: #000;
@@ -115,6 +116,15 @@ html,body{
 
 .main{
 	background-color: #FFF; 
+	border-style: groove;
 	color: #000;   
 	height: 100%;
+	width: 100%;
+	border-radius: 25px;
+    padding: 2%;
+    scroll-behavior: 
+}
+
+.nav-item.nav-link{
+	display: inline;
 }
