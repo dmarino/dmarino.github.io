@@ -1,5 +1,6 @@
- //JavaScript para efecto de maquina de escribir
+ //JavaScript que maneja el efecto maquina de escribir
 
+    //Funcion que genera el efecto de maquina de escribir
     var elementoAEscribir = function(padre, elemento, periodo) {
        this.elemento = elemento;
         this.padre = padre;
@@ -10,7 +11,7 @@
 
         this.escribir();
     };
-
+    //prototipo de la funcion que genera el efecto de maquina de escribir, agrega o quita letras de las palabras. 1 ciclo y se detiene.
     elementoAEscribir.prototype.escribir = function() {
         if( this.loop / this.elemento.length < 1){
             var i = this.loop % this.elemento.length;
@@ -53,7 +54,9 @@
         }
     };
 
+    //Al cargar la pagina llama a todos los elementos que van a usar el efecto y llama a la funcion que genera el efecto.
     window.onload = function() {
+
         var elementos = document.getElementsByClassName('typewrite');
         for (var i=0; i<elementos.length; i++) {
             var rotacion = elementos[i].getAttribute('data-type');
@@ -62,7 +65,8 @@
               new elementoAEscribir(elementos[i], JSON.parse(rotacion), periodoo);
             }
         }
-        // INJECT CSS
+
+        // Crea el | al final de la frase escrita.
         var css = document.createElement("style");
         css.type = "text/css";
         css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #333}";
