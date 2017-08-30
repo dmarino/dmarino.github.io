@@ -125,6 +125,25 @@ html,body{
     scroll-behavior: 
 }
 
-.nav-item.nav-link{
-	display: inline;
+.nav-link.item{
+	color: #000;
+	font-family: "Amatic SC", sans-serif;
+	letter-spacing: 0.3em;
+	font-size: 1.1em;
+}
+
+.nav-link.item:hover{
+	font-size: 1.2em;
+	font-weight: bold;
+}
+
+.aboutMe-image > .image{
+    width: 100%;
+    height: width;
+    display: block;
+    margin: 0 auto;	
+}
+
+.aboutMe-resume p{
+	font-family: "Handlee", sans-serif;
 }
