@@ -54,7 +54,7 @@
                             <a class="nav-link item" data-toggle="tab" href="#about">About</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link item" data-toggle="tab" href="#skills">Skills</a>
+                            <a id="skills-button" class="nav-link item" data-toggle="tab" href="#skills">Skills</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link active item" data-toggle="tab" href="#projects">Projects</a>
@@ -68,24 +68,67 @@
                         <div class="tab-pane" id="about">
                             <div class="row">
                             	<div class="col-md-4">
-                            		<div class="container c aboutMe-image">
+                            		<div class="container c2 aboutMe-image">
                             			<img class="image" src="images/aboutMe.jpg" alt="a photo of me and my baby cousin">
                             		</div>
                             	</div>
                             	<div class="col-md-8">
-                            		<div class="container c aboutMe-resume">
+                            		<div class="container c2 aboutMe-resume">
                             			<p>
-                            				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam euismod nisl tellus, eget pharetra felis dignissim at. Mauris sit amet rutrum felis. Cras luctus vulputate ex a dictum. Donec a ultrices turpis. Nam gravida erat sem, eu scelerisque dolor euismod sed. Morbi interdum metus fermentum felis euismod imperdiet. Nam dignissim ipsum eget elit blandit, vel tempor dolor suscipit.
-                                            <br><br>
-                                            Interdum et malesuada fames ac ante ipsum primis in faucibus. Aenean eget purus eget ante accumsan faucibus. Nam vitae pulvinar justo, a auctor purus. Nullam sed eros a nunc faucibus sodales eu vel ipsum. Quisque et nunc malesuada, iaculis magna vitae, maximus odio. Cras dignissim in dolor quis egestas. Integer commodo nunc a nibh auctor placerat.
+                            				My name is Daniela Mariño I live in Bogotá, Colombia and I study design and Systems and computing engineering at Los Andes University. I have a preference for interactive stuff like processing and wiring but I mostly work with front-end development for web applications. In 2017 i worked with Los Andes University like a front-end developer in a project named MRQ. 
+                            				<br><br>I'm an animator wanna be, an illustrator enthusiast and a photoshop tutorials kinda person. I also have a weird obsession with video games and someday I'd like to make one.
                             			</p>
                             		</div>
                             	</div>
+
+                            	<hr>
+
                             </div>
                         </div>
                         <div class="tab-pane" id="skills">
-                            <div class="container">
-                            	2
+                            <div class="container c2">
+
+                                <div class="skillbar clearfix " data-percent="70%">
+	                                <div class="skillbar-title" style="background: #d35400;"><span>HTML5</span></div>
+	                                <div class="skillbar-bar" style="background: #e67e22;"></div>
+	                                <div class="skill-bar-percent">70%</div>
+                                </div>
+
+                                <div class="skillbar clearfix " data-percent="55%">
+	                                <div class="skillbar-title" style="background: #2980b9;"><span>CSS3</span></div>
+	                                <div class="skillbar-bar" style="background: #3498db;"></div>
+	                                <div class="skill-bar-percent">55%</div>
+                                </div>
+
+                                <div class="skillbar clearfix " data-percent="90%">
+	                                <div class="skillbar-title" style="background: #46465e;"><span>Java</span></div>
+	                                <div class="skillbar-bar" style="background: #5a68a5;"></div>
+	                                <div class="skill-bar-percent">90%</div>
+                                </div>                                
+
+                                <div class="skillbar clearfix " data-percent="40%">
+	                                <div class="skillbar-title" style="background: #2c3e50;"><span>JavaScript</span></div>
+	                                <div class="skillbar-bar" style="background: #2c3e50;"></div>
+	                                <div class="skill-bar-percent">40%</div>
+                                </div>
+
+                                <div class="skillbar clearfix " data-percent="65%">
+                                	<div class="skillbar-title" style="background: #333333;"><span>Angular</span></div>
+                                	<div class="skillbar-bar" style="background: #525252;"></div>
+	                                <div class="skill-bar-percent">65%</div>
+                                </div> 
+
+                                <div class="skillbar clearfix " data-percent="60%">
+	                                <div class="skillbar-title" style="background: #27ae60;"><span>Ilustrator</span></div>
+	                                <div class="skillbar-bar" style="background: #2ecc71;"></div>
+	                                <div class="skill-bar-percent">60%</div>
+                                </div> 
+
+                                <div class="skillbar clearfix " data-percent="30%">
+	                                <div class="skillbar-title" style="background: #124e8c;"><span>Photoshop</span></div>
+	                                <div class="skillbar-bar" style="background: #4288d0;"></div>
+	                                <div class="skill-bar-percent">30%</div>
+                                </div>                                                                                           
                             </div>
                         </div>
                         <div class="tab-pane active" id="projects">
@@ -95,7 +138,6 @@
                         </div>
                         <div class="tab-pane" id="lab">
                             <div class="container">
-                            	<canvas data-processing-sources="scripts/E6/E6.pde"></canvas>
                             </div>
                         </div>
                     </div>
