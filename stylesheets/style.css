@@ -25,8 +25,9 @@ html,body{
 }
 
 .c3 {
-    padding: 2px 16px;
+  padding: 0 16px;
 }
+
 
 p{
 	font-family: "Handlee", sans-serif;
@@ -291,16 +292,15 @@ hr:after {
   margin-top: 10px;
 }
 
-.c3 {
-  padding: 0 16px;
-}
-
 .c3::after, .row::after {
   content: "";
   clear: both;
   display: table;
 }
 
+.c3 h3{
+	font-family: "Amatic SC", sans-serif;
+}
 
 @media only screen and (max-width: 1026px) {
     #processing {
