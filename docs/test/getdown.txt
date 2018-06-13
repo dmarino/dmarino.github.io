@@ -1,0 +1,14 @@
+# The URL from which the client is downloaded
+appbase = http://app.hascode.com/getdown-example/versioned
+
+# UI Configuration
+ui.name = hasCode.com Getdown Example Application
+ui.background = loader-background.png 
+
+# Application jar files
+code = application.jar
+
+# The main entry point for the application
+class = interfaz.InterfazBla
+
+version=1
