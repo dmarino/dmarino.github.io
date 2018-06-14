@@ -1,14 +1,13 @@
 # The URL from which the client is downloaded
-appbase = http://app.hascode.com/getdown-example/versioned
+appbase = https://raw.githubusercontent.com/dmarino/dmarino.github.io/master/docs/test
 
 # UI Configuration
-ui.name = hasCode.com Getdown Example Application
-ui.background = loader-background.png 
+ui.name = Test Application
 
 # Application jar files
 code = application.jar
 
 # The main entry point for the application
-class = interfaz.InterfazBla
+class = com.dmarino.app.Main
 
-version=1
+version=3
