@@ -1,3 +1,3 @@
-getdown.txt = 5f752d13339e67627fb9afd9450a12dc
-application.jar = f1b62366bb616ff8c327cdf0989106ad
-digest.txt = 84b624f4264e160de22d598fb5b7bc18
+getdown.txt = cb57b4d1fda65d5a4ab056003e866551
+lib/SimpleTest.jar = cd20d3aa759c3db5ee6b2984f10724ab
+digest.txt = 1593b74375ba1acee97311ff0ad46eb0

@@ -1,13 +1,14 @@
 # The URL from which the client is downloaded
-appbase = https://raw.githubusercontent.com/dmarino/dmarino.github.io/master/docs/test
+appbase = https://raw.githubusercontent.com/dmarino/dmarino.github.io/master/docs/test/
+allow_offline = false
 
 # UI Configuration
-ui.name = Test Application
+ui.name = Application
 
 # Application jar files
-code = application.jar
+code = lib/SimpleTest.jar
+
+# Resources
 
 # The main entry point for the application
 class = com.dmarino.app.Main
-
-version=3
