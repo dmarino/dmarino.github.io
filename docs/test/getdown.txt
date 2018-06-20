@@ -3,12 +3,17 @@ appbase = https://raw.githubusercontent.com/dmarino/dmarino.github.io/master/doc
 allow_offline = false
 
 # UI Configuration
+ui.background_image = splash.png
+ui.progress_image = progress.png
 ui.name = Application
+ui.progress = 80, 244, 196, 11
 
 # Application jar files
-code = lib/SimpleTest.jar
+code = lib/SimpleTest-0.0.2-SNAPSHOT.jar
 
 # Resources
+resource = splash.png
+resource = progress.png
 
 # The main entry point for the application
 class = com.dmarino.app.Main
