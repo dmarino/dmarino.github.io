@@ -1,5 +1,5 @@
-getdown.txt = 40f01435a216dd8c096b7b4bf0b9f661
-lib/SimpleTest-0.0.2-SNAPSHOT.jar = 51de659b00b3fd8f38ab575cba592c47
+getdown.txt = 27e0a12bd2d7c9f391e9ce7e23fdd79d
+lib/SimpleTest-0.0.3-SNAPSHOT.jar = 36e778ef94af857ea828b8dbbf009887
 splash.png = 1f915077302c6134b78dc1eb77504295
 progress.png = 94f86212d2b593c0b98294725dda6128
-digest.txt = 1d5b719d71d00a78dbbf8205791632af
+digest.txt = 72f52230bf06e1746a1a50ff2a4a4c74

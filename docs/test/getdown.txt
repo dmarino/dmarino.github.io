@@ -9,7 +9,7 @@ ui.name = Application
 ui.progress = 80, 244, 196, 11
 
 # Application jar files
-code = lib/SimpleTest-0.0.2-SNAPSHOT.jar
+code = lib/SimpleTest-0.0.3-SNAPSHOT.jar
 
 # Resources
 resource = splash.png
