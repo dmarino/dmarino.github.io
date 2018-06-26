@@ -4,15 +4,21 @@ allow_offline = false
 
 # UI Configuration
 ui.background_image = splash.png
+ui.icon = myapp.png
 ui.progress_image = progress.png
 ui.name = Application
 ui.progress = 80, 244, 196, 11
+ui.progress_text = FFFFFF
+ui.status = 20, 170, 316, 64
+ui.status_text = FFFFFF
+ui.text_shadow = 111111
 
 # Application jar files
-code = lib/SimpleTest-0.0.3-SNAPSHOT.jar
+code = lib/SimpleTest.jar
 
 # Resources
 resource = splash.png
+resource = myapp.png
 resource = progress.png
 
 # The main entry point for the application
