@@ -23,5 +23,3 @@ resource = progress.png
 
 # The main entry point for the application
 class = com.dmarino.app.Main
-
-version = 2

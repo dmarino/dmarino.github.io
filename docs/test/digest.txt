@@ -1,6 +1,6 @@
 getdown.txt = f94272861525c3c57db158472d9fb9f3
-lib/SimpleTest.jar = e4c0092fde522104f5521e906e41e7db
+lib/SimpleTest.jar = 72d89fa2a3f61c6bbd7213bbb948eb86
 splash.png = 1f915077302c6134b78dc1eb77504295
 myapp.png = 3b4765c8cf8a0223022b7223e6edb1d9
 progress.png = 94f86212d2b593c0b98294725dda6128
-digest.txt = 34857e88c10473fc580bab0b13c749fa
+digest.txt = f7190200bf6f2b95a470d58d4565e676
