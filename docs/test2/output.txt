@@ -1,5 +1,5 @@
 # List of generated media files. The columns are tab-separated:
 # id | media file type | display name | media file path
-62	macos	macOS Single Bundle	D:\Documentos\practica\instalador\instaladores\SimpleTest_macos_1_1.dmg
-158	unix	Unix Installer	D:\Documentos\practica\instalador\instaladores\SimpleTest_unix_1_1.sh
-60	windows	Windows	D:\Documentos\practica\instalador\instaladores\SimpleTest_windows_1_1.exe
+62	macos	macOS Single Bundle	D:\Documentos\practica\instalador\instaladores\SimpleTest_macos_1_2.dmg
+158	unix	Unix Installer	D:\Documentos\practica\instalador\instaladores\SimpleTest_unix_1_2.sh
+60	windows	Windows	D:\Documentos\practica\instalador\instaladores\SimpleTest_windows_1_2.exe
