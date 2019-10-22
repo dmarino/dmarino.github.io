@@ -1,25 +1,256 @@
 <!DOCTYPE html>
-<html lang="en-us">
-  <head>
+<html>
+<head>
+
+	<title>Daniela Marino | Personal Page</title>
+
+    <!--meta info-->
     <meta charset="utf-8">
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>Unity WebGL Player | CardTour</title>
-    <link rel="shortcut icon" href="TemplateData/favicon.ico">
-    <link rel="stylesheet" href="TemplateData/style.css">
-    <script src="TemplateData/UnityProgress.js"></script>  
-    <script src="Build/UnityLoader.js"></script>
-    <script>
-      var gameInstance = UnityLoader.instantiate("gameContainer", "Build/aaa.json", {onProgress: UnityProgress});
-    </script>
-  </head>
-  <body>
-    <div class="webgl-content">
-      <div id="gameContainer" style="width: 960px; height: 600px"></div>
-      <div class="footer">
-        <div class="webgl-logo"></div>
-        <div class="fullscreen" onclick="gameInstance.SetFullscreen(1)"></div>
-        <div class="title">CardTour</div>
-      </div>
+	<meta name="description" content="pagina personal">
+	<meta name="author" content="Daniela Mariño">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!--fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Handlee" rel="stylesheet">
+
+    <!--Stylesheets-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="stylesheets/style.css">
+
+</head>
+<body>
+    <div class="row">
+        <div class="col-md-4">
+            <div class="container c">
+                <!--Panel isquierdo, foto, resumen y social media-->
+                <div class="about">
+                    <!--Imagen-->                
+                    <div class="about-image">
+                    	 <img class="imagen" src="images/profilePic.jpg" alt="Profile picture, most likely duckface">
+                    </div> 
+                    <!--Resumen-->                                            
+                    <div class="about-resume">
+                        <!--Titulo Efecto maquina de escribir--> 
+                        <h2>
+                            <a href="" class="typewrite" data-period="2000" data-type='[ "Hi, Im Daniela.", "I am a Front-End developer.","I like interactive design.","I am a Designer.","Hi, Im Daniela.",""]'>
+                                <span class="wrap"></span>
+                            </a>
+                        </h2>
+                        <br>
+
+                        <!--Parrafo Introductorio--> 
+                        <p>I'm a student at Los Andes University, I'm currently pursuing a degree in systems and computing engineering with a double on design. I like interactive desing and i'm a visual computing fan. This page is the first project for my programming with web technologies <a href="http://johnguerra.co/classes/webDevelopment_fall_2017/" target="_blank">class</a>. Also, I hate coffee.</p>      
+                    </div>
+                    <!--Social Media Links, facebook privado(?-->                     
+                    <div class="media">
+                    	<a href="https://www.facebook.com/daniela.marino.547" target="_blank" class="fa fa-facebook-official"></a>
+                        <a href="https://twitter.com/develop_corn" target="_blank" class="fa fa-twitter"></a>    
+                        <a href="https://github.com/dmarino" target="_blank" class="fa fa-github"></a> 
+                    </div>          
+                </div>
+            </div>
+        </div> 
+        <div class="col-md-8">
+            <div class="container c">
+                <!--Contenedor principar-->            
+        	    <div class="main">
+                    <!--Menu-->          	    
+        	        <ul class="nav nav-tabs">
+                        <li class="nav-item">
+                            <a class="nav-link item" data-toggle="tab" href="#about">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a id="skills-button" class="nav-link item" data-toggle="tab" href="#skills">Skills</a>
+                        </li>
+                        <li class="nav-item">
+                            <a id="projects-button" class="nav-link active item" data-toggle="tab" href="#projects">Projects</a>
+                        </li>
+                        <li class="nav-item">
+                            <a id="processing-button"class="nav-link item" data-toggle="tab" href="#lab">Interaction Lab</a>
+                        </li>
+                    </ul>
+                    <!--Contenido de pestañas-->     
+                    <div class="tab-content">
+                        <!--About detallado-->                       
+                        <div class="tab-pane c" id="about">
+                            <hr>
+                            <div class="row">
+                            	<div class="col-md-4">
+                                    <!--Imagen-->                                                   	
+                            		<div class="container c2 aboutMe-image">
+                            			<img class="image" src="images/aboutMe.jpg" alt="a photo of me and my baby cousin">
+                            		</div>
+                            	</div>
+                            	<div class="col-md-8">
+                                    <!--Resumen-->                                          	
+                            		<div class="container c2 aboutMe-resume">
+                            			<p>
+                            				My name is Daniela Mariño I live in Bogotá, Colombia and I study design and Systems and computing engineering at Los Andes University. I have a preference for interactive stuff like processing and wiring but I mostly work with front-end development for web applications. In 2017 i worked with Los Andes University like a front-end developer in a project named MRQ. 
+                            				<br><br>I'm an animator wanna be, an illustrator enthusiast and a photoshop tutorials kinda person. I also have a weird obsession with video games and someday I'd like to make one.
+                            			</p>
+                            		</div>
+                            	</div>
+                            </div>
+                        </div>
+                        <!--Skills-->                          
+                        <div class="tab-pane" id="skills">
+                            <div class="container c2">
+                                <!--Skill uno en uno TODO automatico desde JavaScript-->                               
+                                <div class="skillbar clearfix " data-percent="70%">
+	                                <div class="skillbar-title" style="background: #d35400;"><span>HTML5</span></div>
+	                                <div class="skillbar-bar" style="background: #e67e22;"></div>
+	                                <div class="skill-bar-percent">70%</div>
+                                </div>
+
+                                <div class="skillbar clearfix " data-percent="55%">
+	                                <div class="skillbar-title" style="background: #2980b9;"><span>CSS3</span></div>
+	                                <div class="skillbar-bar" style="background: #3498db;"></div>
+	                                <div class="skill-bar-percent">55%</div>
+                                </div>
+
+                                <div class="skillbar clearfix " data-percent="90%">
+	                                <div class="skillbar-title" style="background: #46465e;"><span>Java</span></div>
+	                                <div class="skillbar-bar" style="background: #5a68a5;"></div>
+	                                <div class="skill-bar-percent">90%</div>
+                                </div>                                
+
+                                <div class="skillbar clearfix " data-percent="40%">
+	                                <div class="skillbar-title" style="background: #2c3e50;"><span>JavaScript</span></div>
+	                                <div class="skillbar-bar" style="background: #2c3e50;"></div>
+	                                <div class="skill-bar-percent">40%</div>
+                                </div>
+
+                                <div class="skillbar clearfix " data-percent="65%">
+                                	<div class="skillbar-title" style="background: #333333;"><span>Angular</span></div>
+                                	<div class="skillbar-bar" style="background: #525252;"></div>
+	                                <div class="skill-bar-percent">65%</div>
+                                </div> 
+
+                                <div class="skillbar clearfix " data-percent="60%">
+	                                <div class="skillbar-title" style="background: #27ae60;"><span>Ilustrator</span></div>
+	                                <div class="skillbar-bar" style="background: #2ecc71;"></div>
+	                                <div class="skill-bar-percent">60%</div>
+                                </div> 
+
+                                <div class="skillbar clearfix " data-percent="30%">
+	                                <div class="skillbar-title" style="background: #124e8c;"><span>Photoshop</span></div>
+	                                <div class="skillbar-bar" style="background: #4288d0;"></div>
+	                                <div class="skill-bar-percent">30%</div>
+                                </div>                                                                                           
+                            </div>
+                        </div>
+                        <!--Proyectos, panel por default-->                           
+                        <div class="tab-pane active" id="projects">
+                            <div class="container c2">
+                            	<div id="proyectos">
+                                    <div class="row">
+                                        <!--Dividido en 3 columnas default responsive tam de pantalla-->                                        
+                                        <div class="column">
+                                            <!--Ventana por proyecto TODO automatico desde JavaScript-->          
+                                            <div class="card">
+                                                <img src="images/proyectos/animacion.gif" alt="project photo" style="width:100%">
+                                                <div class="container c3">
+                                                    <h3>Efectos Especiales</h3>
+                                                    <p>Animacion ~ 2014</p>
+                                                </div>
+                                            </div>
+                                            <div class="card">
+                                                <img src="images/proyectos/desarrollo.PNG" alt="project photo" style="width:100%">
+                                                <div class="container c3">
+                                                    <h3>Hospital Santander</h3>
+                                                    <p>Desarrollo ~ 2016</p>
+                                                </div>
+                                            </div>       
+                                            <div class="card">
+                                                <img src="images/proyectos/marco.jpg" alt="project photo" style="width:100%">
+                                                <div class="container c3">
+                                                    <h3>Doodles</h3>
+                                                    <p>Dibujo ~ 2017</p>
+                                                </div>
+                                            </div>                                                                                    
+                                        </div>
+                                        <!--Col 2-->                                         
+                                        <div class="column">
+                                            <div class="card">
+                                                <img src="images/proyectos/peces.gif" alt="project photo" style="width:100%">
+                                                <div class="container c3">
+                                                    <h3>Peces</h3>
+                                                    <p>Medios Interactivos ~ 2016</p>
+                                                </div>
+                                            </div>
+                                            <div class="card">
+                                                <img src="images/proyectos/dancer.jpg" alt="project photo" style="width:100%">
+                                                <div class="container c3">
+                                                    <h3>Bailarina</h3>
+                                                    <p>Dibujo Figura Humana ~ 2016</p>
+                                                </div>
+                                            </div>
+                                            <div class="card">
+                                                <img src="images/proyectos/periodismoVisual.jpg" alt="project photo" style="width:100%">
+                                                <div class="container c3">
+                                                    <h3>Fotoreportaje</h3>
+                                                    <p>Periodismo Visual ~ 2016</p>
+                                                </div>
+                                            </div>                                            
+                                        </div>
+                                        <!--Col 3-->                                             
+                                        <div class="column">
+                                            <div class="card">
+                                                <img src="images/proyectos/nuevosMedios.jpg" alt="project photo" style="width:100%">
+                                                <div class="container c3">
+                                                    <h3>A la Deriva</h3>
+                                                    <p>Nuevos Medios ~ 2016</p>
+                                                </div>
+                                            </div>
+                                            <div class="card">
+                                                <img src="images/proyectos/arquisoft.PNG" alt="project photo" style="width:100%">
+                                                <div class="container c3">
+                                                    <h3>Hospital Santa Fe</h3>
+                                                    <p>Arquitectura de Software ~ 2017</p>
+                                                </div>
+                                            </div>
+                                            <div class="card">
+                                                <img src="images/proyectos/mrq.PNG" alt="project photo" style="width:100%">
+                                                <div class="container c3">
+                                                    <h3>Mapa Riesgo Quimico</h3>
+                                                    <p>Uniandes ~ 2017</p>
+                                                </div>
+                                            </div>                                                                                        
+                                        </div>
+                                    </div>                           	    
+                            	</div>
+                            </div>
+                        </div>
+                        <!--Processing Project, se oculta tam de pantalla pequeño-->                             
+                        <div class="tab-pane" id="lab">
+                            <div class="container c2">
+                                <div id="processing">
+                                    <!--Canvas que llama al ejercicio-->                                     
+                                	<canvas data-processing-sources="scripts/E05/E05.pde"></canvas>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        	    </div>
+            </div>
+        </div>
     </div>
-  </body>
+
+    <!--JavaScripts-->
+    <script src="https://use.fontawesome.com/dd3b454c0e.js" type="text/JavaScript"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+
+    <!--JS Processing.js Autorizacion OK-->    
+    <script src="scripts/processing.js" type="text/JavaScript"></script>
+    <!--efecto typeWriter-->       
+    <script src="scripts/typeWriter.js" type="text/javascript"></script>
+    <!--Animacion skillBars, TODO skillBars desde JS-->           
+    <script src="scripts/skillBars.js" type="text/javascript"></script>  
+    <!--TODO proyectos desde JS-->      
+    <script src="scripts/projects.js" type="text/javascript"></script>  
+
+</body>
 </html>

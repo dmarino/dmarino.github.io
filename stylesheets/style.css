@@ -1,0 +1,321 @@
+/*estilos por defecto*/
+html,body{
+	height: 100%;
+	width: 100%;
+	background-image: url("../images/banner.jpeg");
+	overflow-x: hidden;
+	box-sizing: border-box;
+}
+
+/*Cosas que se necesitaran en toda la pagina*/
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.row{
+    height: 100%;
+}
+
+.c{
+    padding: 10px 5% 10px 5%;
+    height: 100%;
+}
+
+.c2{
+    padding: 30px 5% 10px 5%;
+    height: 100%;
+}
+
+.c3 {
+  padding: 0 16px;
+}
+
+
+p{
+	font-family: "Handlee", sans-serif;
+
+}
+
+hr {
+  border: 0;
+  clear:both;
+  display:block;
+  width: 96%;               
+  height: 1px;
+  border-top: 1px solid #8c8b8b;
+  text-align: center;
+}
+
+hr:after {
+	content: '§';
+	display: inline-block;
+	position: relative;
+	top: -14px;
+	padding: 0 10px;
+	background: #f0f0f0;
+	color: #8c8b8b;
+	font-size: 18px;
+	-webkit-transform: rotate(60deg);
+	-moz-transform: rotate(60deg);
+	transform: rotate(60deg);
+}
+
+
+/*cosas que se necesitaran en lado izquierdo*/
+.about{
+	
+	background-color: #FFF;
+	border-radius: 25px;
+	color: #000;
+	height: 100%;
+	text-align: center;
+	border:groove;
+	font-family: "Amatic SC", sans-serif;
+	padding: 2%;
+}
+.about-image{
+	width: 100%;
+	height: 35%;
+	margin-top: 4%;
+	margin-bottom: 2%;
+}
+
+.about-image > .imagen{
+	border-radius: 50%;
+	height: 100%;
+    width: height;
+    display: block;
+    margin: 0 auto;
+}
+
+.about-resume{
+	width: 100%;
+	height: 40%;
+	margin-top: 5%;
+	margin-bottom: 2%;
+}
+
+/*para no dañar efecto maquina de escribir*/
+.typewrite{ 
+	color:#000; 
+	text-decoration: none;
+}
+
+.typewrite:hover{
+	color:#000; 
+	text-decoration: none;
+}
+
+.about-resume p{
+	font-size: 0.9em;
+	color: #333; 
+}
+
+.about-resume a{
+	font-weight: bold;
+	color: #000;
+	text-decoration: none;
+}
+
+.about-resume a:hover{
+	color: #333;
+	font-weight: bolder;
+	font-size: 1em;
+	text-decoration: none;
+}
+
+
+.media{
+	height: 10%;
+    display: block;
+    margin: 0 auto;
+    bottom: 0;
+}
+
+.fa {
+  padding: 3%;
+  min-width: 35px;
+  text-align: center;
+  text-decoration: none;
+  margin: 4% 4%;
+  border-radius: 50%;
+}
+
+.fa:hover {
+    opacity: 0.7;
+    color:#FFF; 
+	text-decoration: none;
+
+}
+
+.fa-facebook-official {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-github {
+  background: #333;
+  color: white;
+}
+
+/*cosas que se van a necesitar en el lado derecho*/
+.main{
+	background-color: #FFF; 
+	border-style: groove;
+	color: #000;   
+	height: 100%;
+	width: 100%;
+	border-radius: 25px;
+    padding: 2%;
+    scroll-behavior: 
+}
+
+.nav-link.item{
+	color: #000;
+	font-family: "Amatic SC", sans-serif;
+	letter-spacing: 0.3em;
+	font-size: 1.1em;
+}
+
+.nav-link.item:hover{
+	font-size: 1.2em;
+	font-weight: bold;
+}
+
+.aboutMe-image > .image{
+    width: 100%;
+    height: width;
+    display: block;
+    margin: 0 auto;	
+}
+
+/*Cosas para SkillBars*/
+.skillbar {
+	position:relative;
+	display:block;
+	margin-bottom:15px;
+	width:100%;
+	background:#eee;
+	height:35px;
+	border-radius:3px;
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+	-webkit-transition:0.4s linear;
+	-moz-transition:0.4s linear;
+	-ms-transition:0.4s linear;
+	-o-transition:0.4s linear;
+	transition:0.4s linear;
+	-webkit-transition-property:width, background-color;
+	-moz-transition-property:width, background-color;
+	-ms-transition-property:width, background-color;
+	-o-transition-property:width, background-color;
+	transition-property:width, background-color;
+}
+
+.skillbar-title {
+	position:absolute;
+	top:0;
+	left:0;
+    width:110px;
+	font-weight:bold;
+	font-size:13px;
+	color:#ffffff;
+	background:#6adcfa;
+	-webkit-border-top-left-radius:3px;
+	-webkit-border-bottom-left-radius:4px;
+	-moz-border-radius-topleft:3px;
+	-moz-border-radius-bottomleft:3px;
+	border-top-left-radius:3px;
+	border-bottom-left-radius:3px;
+}
+
+.skillbar-title span {
+	display:block;
+	background:rgba(0, 0, 0, 0.1);
+	padding:0 20px;
+	height:35px;
+	line-height:35px;
+	-webkit-border-top-left-radius:3px;
+	-webkit-border-bottom-left-radius:3px;
+	-moz-border-radius-topleft:3px;
+	-moz-border-radius-bottomleft:3px;
+	border-top-left-radius:3px;
+	border-bottom-left-radius:3px;
+}
+
+.skillbar-bar {
+	height:35px;
+	width:0px;
+	background:#6adcfa;
+	border-radius:3px;
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+}
+
+.skill-bar-percent {
+	position:absolute;
+	right:10px;
+	top:0;
+	font-size:11px;
+	height:35px;
+	line-height:35px;
+	color:#ffffff;
+	color:rgba(0, 0, 0, 0.4);
+}
+
+/*Cosas para tabs*/
+.tab-content, .tab-pane{
+ height: 95%;
+}
+
+
+/*Cosas para proyecto*/
+#projects .c2{
+	overflow-y: scroll;
+	height: 100%;
+}
+
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+@media (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin-top: 10px;
+}
+
+.c3::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.c3 h3{
+	font-family: "Amatic SC", sans-serif;
+}
+
+
+/*Quita el ejemplo de processing*/
+@media only screen and (max-width: 1026px) {
+    #processing {
+        display: none;
+    }
+    #processing-button {
+        display: none;
+    }
+}
