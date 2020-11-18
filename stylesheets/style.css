@@ -20,9 +20,8 @@ h1, h2, h3 {
 }
 
 #home{
-	
 	text-align: center;
-	background-image:url("../images/background.png");
+	background-image:url("../images/b1.png");
     background-size: cover;
     background-repeat: no-repeat;
 	background-position: center;
@@ -54,4 +53,14 @@ h1, h2, h3 {
     background-repeat: no-repeat;
 	background-position: center;
 	
+}
+
+#about-me{
+
+	text-align: center;
+	background-image:url("../images/b2.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+	background-position: center;
+
 }
