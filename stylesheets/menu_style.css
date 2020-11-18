@@ -26,7 +26,8 @@
 }
   
 .menu-listing li { 
-	display: inline-block; 
+	display: inline-block;
+	margin: 0; 
 }
   
 .menu-listing li a {
