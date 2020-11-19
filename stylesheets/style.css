@@ -4,7 +4,7 @@ html,body{
 	width: 100%;
 	margin: 0;
 	padding: 0;
-	background: white;
+	background: #f2f2f2;
 	color: black;
 	overflow-x: hidden;
 
@@ -35,6 +35,8 @@ h1, h2, h3 {
 	width: 45vh;
 	height: 45vh;
 
+	text-align: center;
+
 	position: relative;
 	top:30%;
 	left:50%;
@@ -47,8 +49,9 @@ h1, h2, h3 {
 
 #icon-image{
 
-	width: 45vh;
-	height: 45vh;
+	display: inline-block;
+	width: 35vh;
+	height: 35vh;
 
 	border-radius: 50%;
 	background-image:url("../images/profilePic.png");
@@ -81,4 +84,19 @@ h1, h2, h3 {
 
 .title{
 	font-size: 3rem;
+}
+
+#projects{
+	text-align: center;
+}
+
+.project-type{
+
+	display: inline-block;
+	height: 70%;
+	width: 20%;
+	min-width: 200px;
+	margin-left: 1%;
+	border-radius: 25px;
+	background: #ddd;
 }
