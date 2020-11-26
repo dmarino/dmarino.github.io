@@ -1,0 +1,56 @@
+{
+    "projects": [
+        {
+            "name":"Data Breaker",
+            "coverimg":"./images/proyectos/dataBreaker.JPG"
+        },
+        {
+            "name":"Rising Sun",
+            "coverimg":"./images/proyectos/risingSun.JPG"
+        },
+        {
+            "name":"Wizard Hero",
+            "coverimg":"./images/proyectos/wizardHero.JPG"
+        },
+        {
+            "name":"Card Tours",
+            "coverimg":"./images/proyectos/cardTours.JPG"
+        },
+        {
+            "name":"Go Fish",
+            "coverimg":"./images/proyectos/peces.gif"
+        },
+        {
+            "name":"Astro Space",
+            "coverimg":"./images/proyectos/astroSpace.png"
+        },
+        {
+            "name":"Food Wars",
+            "coverimg":"./images/proyectos/foodWars.JPG"
+        },
+        {
+            "name":"The Labyrinth",
+            "coverimg":"./images/proyectos/theLabyrinth.JPG"
+        },
+        {
+            "name":"Mordor Planet Simulator",
+            "coverimg":"./images/proyectos/mordorPlanetSimulator.JPG"
+        },
+        {
+            "name":"Drawing Challenge",
+            "coverimg":"./images/proyectos/drawingChallenge.JPG"
+        },
+        {
+            "name":"6 Degree Followers",
+            "coverimg":"./images/proyectos/6DegreeFollowers.JPG"
+        },
+        {
+            "name":"Clinic History",
+            "coverimg":"./images/proyectos/resume.png"
+        },
+        {
+            "name":"Hospital Appointment",
+            "coverimg":"./images/proyectos/desarrollo.PNG"
+        }
+    ]
+}

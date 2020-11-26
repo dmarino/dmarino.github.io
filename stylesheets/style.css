@@ -54,7 +54,7 @@ h1, h2, h3 {
 	height: 35vh;
 
 	border-radius: 50%;
-	background-image:url("../images/profilePic.png");
+	background-image:url("../images/profilePic.jpeg");
     background-size: cover;
     background-repeat: no-repeat;
 	background-position: center;
@@ -86,17 +86,3 @@ h1, h2, h3 {
 	font-size: 3rem;
 }
 
-#projects{
-	text-align: center;
-}
-
-.project-type{
-
-	display: inline-block;
-	height: 70%;
-	width: 20%;
-	min-width: 200px;
-	margin-left: 1%;
-	border-radius: 25px;
-	background: #ddd;
-}

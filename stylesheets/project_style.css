@@ -1,0 +1,53 @@
+#projects{
+	text-align: center;
+}
+
+.project{
+
+	display: inline-block;
+	height: 15vw;
+	width: 15vw;
+	min-width: 200px;
+    border-radius: 25px;
+    margin: 1%;
+
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 0%;
+}
+
+.project-hover{
+
+    width: 100%;
+    height: 100%;
+    border-radius: 25px;
+
+    padding-top: 30%;
+
+    background: rgba(255,255,255,0);
+}
+
+.project-name{
+    
+    color: rgba(0,0,0,0);
+    font-family: 'Amatic SC', cursive;
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.project:hover{
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.project:hover > .project-hover{
+    background: rgba(255,255,255,0.3);
+}
+
+.project:hover > .project-hover > .project-name{
+    color: rgba(0,0,0,1);
+    background: rgba(255,255,255,0.6);
+}
