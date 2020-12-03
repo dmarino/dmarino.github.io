@@ -2,55 +2,69 @@
     "projects": [
         {
             "name":"Data Breaker",
-            "coverimg":"./images/proyectos/dataBreaker.JPG"
+            "coverimg":"./images/proyectos/dataBreaker.JPG",
+            "tags":["C#", "Unity"]
         },
         {
             "name":"Rising Sun",
-            "coverimg":"./images/proyectos/risingSun.JPG"
+            "coverimg":"./images/proyectos/risingSun.JPG",
+            "tags":["C#", "Unity"]
         },
         {
             "name":"Wizard Hero",
-            "coverimg":"./images/proyectos/wizardHero.JPG"
+            "coverimg":"./images/proyectos/wizardHero.JPG",
+            "tags":["C#", "Unity", "Kinect"]
         },
         {
             "name":"Card Tours",
-            "coverimg":"./images/proyectos/cardTours.JPG"
+            "coverimg":"./images/proyectos/cardTours.JPG",
+            "tags":["C#", "Unity", "Multiplayer"]
         },
         {
             "name":"Go Fish",
-            "coverimg":"./images/proyectos/peces.gif"
+            "coverimg":"./images/proyectos/peces.gif",
+            "tags":["Processing", "Interactive Design"]
         },
         {
             "name":"Astro Space",
-            "coverimg":"./images/proyectos/astroSpace.png"
-        },
-        {
-            "name":"Food Wars",
-            "coverimg":"./images/proyectos/foodWars.JPG"
-        },
-        {
-            "name":"The Labyrinth",
-            "coverimg":"./images/proyectos/theLabyrinth.JPG"
+            "coverimg":"./images/proyectos/astroSpace.png",
+            "tags":["Oculus", "VR", "C#", "Unity", "Educational"]
         },
         {
             "name":"Mordor Planet Simulator",
-            "coverimg":"./images/proyectos/mordorPlanetSimulator.JPG"
+            "coverimg":"./images/proyectos/mordorPlanetSimulator.JPG",
+            "tags":["JavaScript", "Express","React","mongoDB"]
+
+        },
+        {
+            "name":"The Labyrinth",
+            "coverimg":"./images/proyectos/theLabyrinth.JPG",
+            "tags":["JavaScript", "Meteor","React","mongoDB"]
+        },
+        {
+            "name":"Food Wars",
+            "coverimg":"./images/proyectos/foodWars.JPG",
+            "tags":["JavaScript", "Web"]
         },
         {
             "name":"Drawing Challenge",
-            "coverimg":"./images/proyectos/drawingChallenge.JPG"
+            "coverimg":"./images/proyectos/drawingChallenge.JPG",
+            "tags":["JavaScript","React","Meteor","Canvas"]
         },
         {
             "name":"6 Degree Followers",
-            "coverimg":"./images/proyectos/6DegreeFollowers.JPG"
+            "coverimg":"./images/proyectos/6DegreeFollowers.JPG",
+            "tags":["JavaScript","Express","MongoDB","Github API"]
         },
         {
             "name":"Clinic History",
-            "coverimg":"./images/proyectos/resume.png"
+            "coverimg":"./images/proyectos/resume.png",
+            "tags":["JavaScript"]
         },
         {
             "name":"Hospital Appointment",
-            "coverimg":"./images/proyectos/desarrollo.PNG"
+            "coverimg":"./images/proyectos/desarrollo.PNG",
+            "tags":["JavaScript", "Angular","MYSQL"]
         }
     ]
 }

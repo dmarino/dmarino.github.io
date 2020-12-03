@@ -7,6 +7,7 @@ class App{
     constructor(){
 
         this.projects = []
+        this.featuredSize = 7;
 
         let self = this;
         
@@ -17,26 +18,35 @@ class App{
         });
 
         //Navigation
-        $(".menu").click(function() {
+        $("#btn-projects").click(function() {
 
-            $(".menu").toggleClass("active");
-            $(".navbar-menu").toggleClass("active");
+            $("#home-page").hide();
+            $("#projects-page").show();
 
         });
+
+        $("#modal-close").click(function() {
+
+            $("#modal-wrapper").hide();
+
+        });
+
+
+
+        $(document).on("click", ".project", e => this.SelectProject(e));
+
+        
     }
 
 
     populateProjects()
     {
-        for(var i=0; i<this.projects.size;i++){
-            var project = this.projects[i];
-            console.log(project);
-        }
+        var i=0;
         this.projects.forEach(project =>{
 
             var div = document.createElement("div");
             div.setAttribute("class","project");
-            div.setAttribute("id", project.name);
+            div.setAttribute("id", "project-"+i);
 
             div.style.cssText = 'background-image:url("' + project.coverimg+ '");'
 
@@ -50,9 +60,24 @@ class App{
             hover.append(title);
             div.append(hover);
 
-            $("#featured-projects").append(div);       
+            if(i<this.featuredSize)
+            {
+                $("#featured-projects").append(div.outerHTML);  
+            }
+
+            $("#all-projects").append(div); 
+
+            i++;
         })
 
+    }
+
+    SelectProject(event)
+    {
+        var index = event.target.id.split("-")[1];
+
+        $("#modal-wrapper").show();
+        console.log(this.projects[index]);
     }
 }
 

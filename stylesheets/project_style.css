@@ -1,13 +1,12 @@
-#projects{
+#home-projects{
 	text-align: center;
 }
 
 .project{
 
 	display: inline-block;
-	height: 15vw;
-	width: 15vw;
-	min-width: 200px;
+    min-width: 200px;
+    min-height: 200px;
     border-radius: 25px;
     margin: 1%;
 
@@ -20,6 +19,18 @@
     padding: 0%;
 }
 
+#featured-projects > .project{
+    height: 18vw;
+	width: 18vw;
+}
+
+
+#all-projects > .project{
+
+    height: 15vw;
+	width: 15vw;
+}
+
 .project-hover{
 
     width: 100%;
@@ -29,6 +40,8 @@
     padding-top: 30%;
 
     background: rgba(255,255,255,0);
+
+    pointer-events: none;
 }
 
 .project-name{
@@ -37,6 +50,8 @@
     font-family: 'Amatic SC', cursive;
     font-weight: bold;
     font-size: 2rem;
+
+    pointer-events: none;
 }
 
 .project:hover{
