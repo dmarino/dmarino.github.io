@@ -1,6 +1,3 @@
-#home-projects{
-	text-align: center;
-}
 
 .project{
 
@@ -34,7 +31,7 @@
 .project-hover{
 
     width: 100%;
-    height: 100%;
+    height: 70%;
     border-radius: 25px;
 
     padding-top: 30%;
@@ -54,6 +51,23 @@
     pointer-events: none;
 }
 
+.project-tags-container{
+
+    margin: 3%;
+}
+
+.project-tag{
+
+    color: rgba(0,0,0,0);
+    font-family: 'Amatic SC', cursive;
+    font-weight: bold;
+
+    margin: 1%;
+    padding: 1%;
+
+    pointer-events: none;
+}
+
 .project:hover{
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
@@ -63,6 +77,11 @@
 }
 
 .project:hover > .project-hover > .project-name{
+    color: rgba(0,0,0,1);
+    background: rgba(255,255,255,0.6);
+}
+
+.project:hover > .project-hover > div >.project-tag{
     color: rgba(0,0,0,1);
     background: rgba(255,255,255,0.6);
 }

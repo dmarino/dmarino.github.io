@@ -58,18 +58,26 @@ h1, h2, h3 {
 #about-me{
 
 	width: 80%;
-	height: 90vh;
-
-	padding-left: 10%;
-	padding-right: 10%;
 
 	display: grid;
     grid-template-areas: 'about skills';
 }
 
+@media (max-width:991px){
+
+	#about-me{
+		width: 100%;
+		padding: 0%;
+		display: grid;
+		grid-template-areas: 'about' ' skills';
+	}
+}
+
 #about-info{
 	text-align: center;
-	width: 50vh;
+	max-width: 800px;
+	margin-left: 10vw;
+	margin-right: 10vw;
 	grid-area: about;
 }
 
@@ -83,6 +91,9 @@ h1, h2, h3 {
 	font-size: 3rem;
 }
 
+#home-projects{
+	margin-top: 20vh;
+}
 
 #projects-page{
 
@@ -100,4 +111,9 @@ button{
 	font-size: 2rem;
 
 	margin: 5%;
+}
+
+#cv{
+	color: white;
+	text-decoration: none;
 }

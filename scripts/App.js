@@ -31,8 +31,6 @@ class App{
 
         });
 
-
-
         $(document).on("click", ".project", e => this.SelectProject(e));
 
         
@@ -56,8 +54,20 @@ class App{
             var title = document.createElement("span");
             title.setAttribute("class", "project-name");
             title.innerHTML = project.name;
-
             hover.append(title);
+
+            var tags = document.createElement("div");
+            tags.setAttribute("class", "project-tags-container");
+
+            project.tags.forEach(tag=>{
+
+                var temp = document.createElement("span");
+                temp.setAttribute("class", "project-tag");
+                temp.innerHTML = tag;
+                tags.append(temp);
+            })
+
+            hover.append(tags);
             div.append(hover);
 
             if(i<this.featuredSize)
@@ -75,6 +85,9 @@ class App{
     SelectProject(event)
     {
         var index = event.target.id.split("-")[1];
+        var project = this.projects[index];
+        $("#modal-project-name").innerHTML = project.name;
+
 
         $("#modal-wrapper").show();
         console.log(this.projects[index]);
