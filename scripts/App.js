@@ -86,11 +86,18 @@ class App{
     {
         var index = event.target.id.split("-")[1];
         var project = this.projects[index];
-        $("#modal-project-name").innerHTML = project.name;
+
+        $("#modal-project-name").text(project.name);
+        $("#modal-project-image").attr("src", project.coverimg);
+        $("#modal-project-description").text(project.info);
+
+        $("#modal-code").attr("href", project.code);
+        $("#modal-video").attr("href", project.video);
+        $("#modal-demo").attr("href", project.demo);
 
 
         $("#modal-wrapper").show();
-        console.log(this.projects[index]);
+        console.log(project.name);
     }
 }
 

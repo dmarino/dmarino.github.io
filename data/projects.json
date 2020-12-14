@@ -3,68 +3,109 @@
         {
             "name":"Data Breaker",
             "coverimg":"./images/proyectos/dataBreaker.JPG",
-            "tags":["C#", "Unity"]
+            "tags":["C#", "Unity"],
+            "info":"asdasdddddddddddddd",
+            "responsabilities":["","",""],
+            "demo":"http://community.vfs.com/arcade/game/data-breaker/",
+            "video":"https://youtu.be/qKlkwxBVLGM"
         },
         {
             "name":"Rising Sun",
             "coverimg":"./images/proyectos/risingSun.JPG",
-            "tags":["C#", "Unity"]
+            "tags":["C#", "Unity"],
+            "info":"asdasdddddddddddddd",
+            "responsabilities":["","",""],
+            "video":"https://youtu.be/VgjQj-F5p30"
         },
         {
             "name":"Wizard Hero",
             "coverimg":"./images/proyectos/wizardHero.JPG",
-            "tags":["C#", "Unity", "Kinect"]
+            "tags":["C#", "Unity", "Kinect"],
+            "info":"asdasdddddddddddddd",
+            "responsabilities":["","",""],
+            "video":"https://youtu.be/VgjQj-F5p30",
+            "code":"https://github.com/dmarino/WizardHero.git"
         },
         {
             "name":"Card Tours",
             "coverimg":"./images/proyectos/cardTours.JPG",
-            "tags":["C#", "Unity", "Multiplayer"]
+            "tags":["C#", "Unity", "photon"],
+            "info":"asdasdddddddddddddd",
+            "responsabilities":["","",""],
+            "demo":"https://accabezas716.github.io/card-tour/",
+            "video":"https://youtu.be/stbZUoe5ddM"
         },
         {
             "name":"Go Fish",
             "coverimg":"./images/proyectos/peces.gif",
-            "tags":["Processing", "Interactive Design"]
+            "tags":["Processing", "Interactive Design"],
+            "info":"asdasdddddddddddddd",
+            "responsabilities":["","",""]
         },
         {
             "name":"Astro Space",
             "coverimg":"./images/proyectos/astroSpace.png",
-            "tags":["Oculus", "VR", "C#", "Unity", "Educational"]
+            "tags":["Oculus", "VR", "C#", "Unity", "Educational"],
+            "info":"asdasdddddddddddddd",
+            "responsabilities":["","",""],
+            "video":"https://youtu.be/VgjQj-F5p30",
+            "code":"https://github.com/dmarino/WizardHero.git"
         },
         {
             "name":"Mordor Planet Sim.",
             "coverimg":"./images/proyectos/mordorPlanetSimulator.JPG",
-            "tags":["JavaScript", "Express","React","mongoDB"]
+            "tags":["JavaScript", "Express","React","mongoDB"],
+            "info":"asdasdddddddddddddd",
+            "responsabilities":["","",""],
+            "demo":"http://intense-springs-10900.herokuapp.com/",
+            "code":"https://github.com/hjcalderon10/mordorPlanetSimulation"
 
         },
         {
             "name":"The Labyrinth",
             "coverimg":"./images/proyectos/theLabyrinth.JPG",
-            "tags":["JavaScript", "Meteor","React","mongoDB"]
+            "tags":["JavaScript", "Meteor","React","mongoDB"],
+            "info":"asdasdddddddddddddd",
+            "responsabilities":["","",""],
+            "demo":"https://the-labyrinth.herokuapp.com/",
+            "code":"https://github.com/dmarino/theLabyrinth"
         },
         {
             "name":"Food Wars",
             "coverimg":"./images/proyectos/foodWars.JPG",
-            "tags":["JavaScript", "Web"]
+            "tags":["JavaScript", "Web"],
+            "info":"asdasdddddddddddddd",
+            "responsabilities":["","",""]
         },
         {
             "name":"Drawing Challenge",
             "coverimg":"./images/proyectos/drawingChallenge.JPG",
-            "tags":["JavaScript","React","Meteor","Canvas"]
+            "tags":["JavaScript","React","Meteor","Canvas"],
+            "info":"asdasdddddddddddddd",
+            "responsabilities":["","",""]
         },
         {
             "name":"6 Degree Followers",
             "coverimg":"./images/proyectos/6DegreeFollowers.JPG",
-            "tags":["JavaScript","Express","MongoDB","Github API"]
+            "tags":["JavaScript","Express","MongoDB","Github API"],
+            "info":"asdasdddddddddddddd",
+            "responsabilities":["","",""],
+            "demo":"https://peaceful-dusk-38277.herokuapp.com/",
+            "code":"https://github.com/dmarino/parcial1"
         },
         {
             "name":"Clinic History",
             "coverimg":"./images/proyectos/resume.png",
-            "tags":["JavaScript"]
+            "tags":["JavaScript"],
+            "info":"asdasdddddddddddddd",
+            "responsabilities":["","",""]
         },
         {
             "name":"Hospital Appointment",
             "coverimg":"./images/proyectos/desarrollo.PNG",
-            "tags":["JavaScript", "Angular","MYSQL"]
+            "tags":["JavaScript", "Angular","MYSQL"],
+            "info":"asdasdddddddddddddd",
+            "responsabilities":["","",""]
         }
     ]
 }

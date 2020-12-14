@@ -54,3 +54,8 @@
     background: #DACFF9;
     color: #6C5FC3;
 }
+
+#modal-project-image{
+    width: 80%;
+    height: auto;
+}

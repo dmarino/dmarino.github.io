@@ -33,6 +33,16 @@ h1, h2, h3 {
 	height: 100vh;
 
 	text-align: center;
+
+	background-image:url("../images/b3.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+	background-position: center;
+}
+
+#info-title{
+	position: relative;
+	z-index: 10;
 }
 
 #name{
@@ -73,6 +83,16 @@ h1, h2, h3 {
 	}
 }
 
+#about-separator{
+	background: #6C5FC3;
+	position: relative;
+	left: -2vh;
+	top: -2vh;
+	border-radius: 25px;
+	width: 50%;
+	height: 10vh;
+}
+
 #about-info{
 	text-align: center;
 	max-width: 800px;
@@ -83,7 +103,13 @@ h1, h2, h3 {
 
 #skills{
 	margin-top: 10vh;
+	
 	grid-area: skills;
+
+	background-image:url("../images/logo.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+	background-position: top;
 }
 
 
