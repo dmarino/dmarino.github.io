@@ -4,10 +4,10 @@
             "name":"Data Breaker",
             "coverimg":"./images/proyectos/dataBreaker.JPG",
             "tags":["C#", "Unity"],
-            "info":"asdasdddddddddddddd",
-            "responsabilities":["","",""],
+            "info":"3rd Person brawler game developed in unity where you play as jett a girl stuck in a videogame that has to fight her way out of it",
+            "responsabilities":["UI programming including localization and subtitles","Created the debug system for quick playtesting","Shadder and post processing effects programming"],
             "demo":"http://community.vfs.com/arcade/game/data-breaker/",
-            "video":"https://youtu.be/qKlkwxBVLGM"
+            "video":"https://www.youtube.com/embed/qKlkwxBVLGM"
         },
         {
             "name":"Rising Sun",
@@ -15,7 +15,7 @@
             "tags":["C#", "Unity"],
             "info":"asdasdddddddddddddd",
             "responsabilities":["","",""],
-            "video":"https://youtu.be/VgjQj-F5p30"
+            "video":"https://www.youtube.com/embed/VgjQj-F5p30"
         },
         {
             "name":"Wizard Hero",

@@ -5,9 +5,10 @@
 class App{
 
     constructor(){
-
+    
         this.projects = []
         this.featuredSize = 7;
+        this.isInProject=false;
 
         let self = this;
         
@@ -25,15 +26,23 @@ class App{
 
         });
 
+        $("ul.grt-menu li a").click(function() {
+
+            if(this.isInProject)
+            {
+                $("#home-page").show();
+                $("#single-project").hide();
+            }
+
+        });
+
         $("#modal-close").click(function() {
 
             $("#modal-wrapper").hide();
 
         });
 
-        $(document).on("click", ".project", e => this.SelectProject(e));
-
-        
+        $(document).on("click", ".project", e => this.SelectProject(e));     
     }
 
 
@@ -45,6 +54,7 @@ class App{
             var div = document.createElement("div");
             div.setAttribute("class","project");
             div.setAttribute("id", "project-"+i);
+            div.setAttribute("data-aos", "fade-up");
 
             div.style.cssText = 'background-image:url("' + project.coverimg+ '");'
 
@@ -84,19 +94,50 @@ class App{
 
     SelectProject(event)
     {
+        this.isInProject=true;
+
         var index = event.target.id.split("-")[1];
         var project = this.projects[index];
 
         $("#modal-project-name").text(project.name);
-        $("#modal-project-image").attr("src", project.coverimg);
+
+        project.tags.forEach(tag=>{
+
+            var temp = document.createElement("span");
+            temp.setAttribute("class", "project-tag");
+            temp.innerHTML = tag;
+            $("#modal-project-tags").append(temp);
+        })
+
         $("#modal-project-description").text(project.info);
+
+        if(typeof project !="undefined")
+        {
+            console.log(project.video)
+            $("#single-project-video").attr("src", project.video)
+        }
+        else{
+            $("#single-project-video").hide();
+        }
+
+        project.responsabilities.forEach(resp=>{
+
+            var temp = document.createElement("li");
+            temp.innerHTML = resp;
+            $("#single-project-resp-list").append(temp);
+        })
+
+
+        $("#modal-project-image").attr("src", project.coverimg);
+        
 
         $("#modal-code").attr("href", project.code);
         $("#modal-video").attr("href", project.video);
         $("#modal-demo").attr("href", project.demo);
 
-
-        $("#modal-wrapper").show();
+        $("#home-page").hide();
+        $("#projects-page").hide();
+        $("#single-project").show();
         console.log(project.name);
     }
 }

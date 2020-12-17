@@ -1,35 +1,25 @@
-#modal-wrapper{
+#single-project{
     display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    background: rgba(0, 0, 0, 0.3);
-    z-index: 99999;
+    text-align: center;
 
-    height: 100%;
-    width: 100%;
-
+    padding-top: 60px;
 }
 
-#modal{
-    position: absolute;
+#single-project-video{
 
-    width: 40%;
-    height: 80%;
+    width: 60vw;
+    height: 30vw;
+}
 
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    
-    padding: 2%;
-    padding-left: 5%;
-    padding-right: 5%;
+#modal-project-tags > .project-tag{
 
-    background: #f2f2f2;
-    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2);
+    color: #000;
+    background: #C2F3FF;
+
+    margin: 1%;
+    padding: 1%;
+
     border-radius: 25px;
-
-    text-align: center;
 }
 
 #modal-tittle{
@@ -40,7 +30,7 @@
 .modal-button{
 
     margin-top: 5%;
-    background: #6C5FC3;
+    background: #0088aa;
     color: #fff;
 
     padding:2%;
@@ -58,4 +48,10 @@
 #modal-project-image{
     width: 80%;
     height: auto;
+}
+
+
+#single-project-buttons{
+
+    margin-top: 4%;
 }

@@ -38,7 +38,7 @@ $(window).on('resize', function(e) {
 
 // Add shadow on scroll after 60px
 $(window).scroll(function(e){
-   if ($(this).scrollTop() > 60){
+   if ($(this).scrollTop() >60){
        $('header').addClass('scrolled');
    } else {
        $('header').removeClass('scrolled');

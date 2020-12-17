@@ -21,16 +21,18 @@
     <link rel="stylesheet" type="text/css" href="stylesheets/skills_style.css">
     <link rel="stylesheet" type="text/css" href="stylesheets/modal_style.css">
 
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
 
 </head>
 <body>
 
+    <!--Menu-->
     <header>
         <div class="menu-container">
             <div class="grt-menu-row">
                 <div class="grt-menu-logo">
-                    <a href="#"  class="grt-logo"><img src="images/logotipo.png"></a>
+                    <a href=""  class="grt-logo"><img src="images/logotipo.png"></a>
                     <a href="https://github.com/dmarino" target="_blank" class="fa fa-github-square"></a> 
                     <a href="https://www.linkedin.com/in/dmarino10/" target="_blank" class="fa fa-linkedin-square"></a> 
                 </div>
@@ -49,6 +51,7 @@
         </div>
     </header>
 
+    <!--Home Page-->
     <div id="home-page">
 
         <section id="home-info">
@@ -63,14 +66,14 @@
             </img>
         </div>
         <section id="about-me">
-            <div id="about-info">
+            <div id="about-info" >
                 <h1 class="title">About Me</h1>
                 <p>I am a Software Engineer from Bogota, Colombia interested in Front-End Development, Game Programming, and Interactive Design. I like creating fun experiences for all kinds of proposes and pushing the limits of what technology and art are capable of.
                 </br></br>Since I started my bachelor’s degree in Los Andes University back in 2014 and during my one-year program in Vancouver Film School, I’ve developed multiple games in all kinds of languages and platforms; I’ve worked with different enterprises developing web applications for their internal use; and I’ve helped hundreds of students as a TA and a research assistant in programming related classes. My goal is to work towards making videogames and technology more accessible and more friendly for all kinds of users through the use of Human Center Design and learn new things along the way.</p>
 
                 <button ><a id="cv" href="https://drive.google.com/file/d/189Ep9gUaqeie5yiyH1HYqrge-tcjCVTN/view?usp=sharing" target="_blank">GO TO CV</a></button>
             </div>
-            <div id="skills"></img></div>
+            <div data-aos="zoom-in-up" id="skills"></img></div>
         </section>
     
         <section id="home-projects">
@@ -85,12 +88,9 @@
     
         </section>
 
-        <section id="contact">
-            <h1>Contact Me</h1>
-        </section>
-
     </div>
 
+    <!--all projects page-->
     <div id="projects-page">
 
         <h1 class="title">Project List</h1>
@@ -101,41 +101,41 @@
     </div>
 
 
-    <!--Modal-->
-    <div id="modal-wrapper">
-        <div id="modal">
-            <span id="modal-close">X</span>
+    <!--Single Project page-->
+    <div id="single-project">
 
-            <h1 id="modal-project-name">kshdasj</h1><br>
+        <h1 id="modal-project-name"></h1><br>
+        <div id="modal-project-tags"></div>
+        <p id="modal-project-description"></p>
 
-            <img id="modal-project-image"></img>
+        <iframe id="single-project-video"></iframe>
 
-            <p id="modal-project-description"> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+        <div>
+            <ul id="single-project-resp-list"></ul>
+        </div>
+        
 
-            <div id=modal-project-tags></div>
-
-            <div id="message-modal">
-                <a id="modal-code" target="_blank"><span class="button tittle modal-button"> Code </span></a>
-                <a id="modal-demo" target="_blank"><span class="button tittle modal-button"> Demo </span></a>
-                <a id="modal-video" target="_blank"><span class="button tittle modal-button"> Video </span></a>
-            </img>
+        <div id="single-project-buttons">
+            <a id="modal-code" target="_blank"><span class="button tittle modal-button"> Code </span></a>
+            <a id="modal-demo" target="_blank"><span class="button tittle modal-button"> Demo </span></a>
         </div>
     </div>
-    
 
+    
+    <footer>
+        All Rights Reserved. © 2020
+    </footer>
     <!--JavaScripts-->
     <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
     <script src="https://use.fontawesome.com/dd3b454c0e.js" type="text/JavaScript"></script>
     <script src="./scripts/grt-responsive-menu.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/p5@1.1.9/lib/p5.js"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
-        AOS.init();
+      AOS.init();
     </script>
     
     <!--Personal Scripts-->
     <script src="./scripts/App.js"></script>
-    <script src="scripts/skillBars.js" type="text/javascript"></script>  
  
 
 </body>
