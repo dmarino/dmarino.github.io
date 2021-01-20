@@ -196,6 +196,10 @@ ul.grt-menu li.grt-dropdown.active-dropdown a {
 	ul.grt-menu li a:hover {
 		border-bottom: 4px solid #0088aa;
 	}
+
+	ul.grt-menu li.active a {
+		border-bottom: 4px solid #0088aa;
+	}
 }
 
 /* Tablet only style */

@@ -8,6 +8,7 @@ class App{
     
         this.projects = []
         this.featuredSize = 7;
+
         this.isInProject=false;
 
         let self = this;
@@ -20,20 +21,13 @@ class App{
 
         //Navigation
         $("#btn-projects").click(function() {
-
             $("#home-page").hide();
             $("#projects-page").show();
-
         });
 
-        $("ul.grt-menu li a").click(function() {
+        $("ul.grt-menu li a").bind("click", function() {
 
-            if(this.isInProject)
-            {
-                $("#home-page").show();
-                $("#single-project").hide();
-            }
-
+            self.scrollTo($(this).attr('href'));
         });
 
         $("#modal-close").click(function() {
@@ -139,6 +133,12 @@ class App{
         $("#projects-page").hide();
         $("#single-project").show();
         console.log(project.name);
+    }
+
+    scrollTo(selector) {
+        console.log(selector)
+        var destination = $(selector);
+        $('html, body').animate({scrollTop: destination.offset().top}, 'slow');
     }
 }
 

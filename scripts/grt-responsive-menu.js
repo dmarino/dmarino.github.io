@@ -36,6 +36,19 @@ $(window).on('resize', function(e) {
   }, 250);
 })
 
+
+var topMenu = $(".grt-menu"),
+
+    topMenuHeight = topMenu.outerHeight()+15,
+    // All list items
+    menuItems = topMenu.find("a"),
+    // Anchors corresponding to menu items
+    scrollItems = menuItems.map(function(){
+      var item = $($(this).attr("href"));
+      if (item.length) { return item; }
+});
+
+
 // Add shadow on scroll after 60px
 $(window).scroll(function(e){
    if ($(this).scrollTop() >60){
@@ -43,6 +56,22 @@ $(window).scroll(function(e){
    } else {
        $('header').removeClass('scrolled');
    }
+
+
+   var fromTop = $(this).scrollTop()+topMenuHeight;
+
+   // Get id of current scroll item
+   var cur = scrollItems.map(function(){
+     if ($(this).offset().top < fromTop)
+       return this;
+   });
+   // Get the id of the current element
+   cur = cur[cur.length-1];
+   var id = cur && cur.length ? cur[0].id : "";
+   // Set/remove active class
+   menuItems
+     .parent().removeClass("active")
+     .end().filter("[href='#"+id+"']").parent().addClass("active");
 });
 
 // Prevent a href clicks on dropdown category
