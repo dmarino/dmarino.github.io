@@ -13,29 +13,35 @@ html,body{
 	font-family: 'Open Sans', sans-serif;
 }
 
-#home-page{
-	padding-top: 60px;
-}
-
 h1, h2, h3 {
 	font-family: 'Amatic SC', cursive;
 }
 
-#home{
-	text-align: center;
-
-}
-
 #home-info{
 	width: 100%;
-	height: 100vh;
+	height: 102vh;
 
-	text-align: center;
+	text-align: left;
 
 	background-image:url("../images/b1.png");
     background-size: cover;
     background-repeat: no-repeat;
 	background-position: center;
+}
+
+#home-title{
+	position: relative;
+	top: 70%;
+	left: 50%;
+	transform: translate(-50%, 0%);
+	padding-left: 20px;
+
+}
+
+#home-title > span{
+
+	background: rgba(255, 255, 255, 0.6);
+	font-family: 'Amatic SC', cursive;
 }
 
 #info-title{
@@ -44,13 +50,34 @@ h1, h2, h3 {
 }
 
 #name{
-	font-size: 2.5rem;
+	font-size: calc(12px + 3vw);
+}
+
+#subtext{
+	font-size: calc(12px + 1.5vw);
+}
+
+#about-me{
+	height: 100%;
+	width: 80%;
+	display: grid;
+	grid-template-areas: 'about imagen';
+	
+	padding-top: 5%;
+
+	margin-bottom: 10%;
+}
+
+#about-img{
+	margin-top: 10vh;
+	grid-area: imagen;
+
+	background: #0088aa;
+	border-radius: 20px;
 }
 
 #icon-image{
 	
-	margin-top: 20vh;
-
 	display: inline-block;
 	width: 35vh;
 	height: 35vh;
@@ -63,22 +90,29 @@ h1, h2, h3 {
     background-repeat: no-repeat;
 	background-position: center;
 	
-}
 
-#about-me{
-	height: 100%;
-	width: 80%;
-	display: grid;
-    grid-template-areas: 'about skills';
+	position: relative;
+	top: 60%;
+	left: 70%;
 }
 
 @media (max-width:991px){
 
 	#about-me{
 		width: 100%;
-		padding: 0%;
 		display: grid;
-		grid-template-areas: 'about' ' skills';
+		grid-template-areas:'imagen' 'about';
+	}
+
+	#about-img{
+		background-color: transparent !important;
+	}
+	
+	#icon-image{
+		top: 50% !important;
+		left: 32% !important;
+		transform: translate(-50%, -50%);
+	
 	}
 }
 
@@ -100,30 +134,19 @@ h1, h2, h3 {
 	grid-area: about;
 }
 
-#skills{
-	margin-top: 10vh;
-	
-	grid-area: skills;
-
-	background-image:url("../images/logo.png");
-    background-size: contain;
-    background-repeat: no-repeat;
-	background-position: top;
-}
-
 
 .title{
 	font-size: 3rem;
 }
 
 #home-projects{
-	margin-top: 20vh;
+	padding-top: 10vh;
 }
 
 #projects-page{
 
 	display: none;
-	margin-top: 20vh;
+	padding-top: 10vh;
 	width: 100%;
     
 }
@@ -148,7 +171,15 @@ button{
 	background: #0088aa;
 	color: white;
 
-	height: 40%;
+	height: 50%;
+
+	margin-bottom: 2%;
+
+	padding: 1% 0% 2% 0%;
+}
+
+#contact h1{
+	font-size: calc(12px + 1.5vw);
 }
 
 footer{
@@ -156,5 +187,5 @@ footer{
 	color: white;
 
 	width: 100%;
-	height: 10%;
+	height: 5%;
 }
