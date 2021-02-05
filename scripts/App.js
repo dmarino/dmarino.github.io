@@ -9,7 +9,7 @@ class App{
         this.projects = []
         this.featuredSize = 7;
 
-        this.isInProject=false;
+        this.isInProjects=false;
 
         let self = this;
         
@@ -20,14 +20,23 @@ class App{
         });
 
         //Navigation
-        $("#btn-projects").click(function() {
+        $(".btn-projects").click(function() {
             $("#home-page").hide();
             $("#projects-page").show();
+            self.isInProjects=true;
         });
 
-        $("ul.grt-menu li a").bind("click", function() {
+        $("ul.grt-menu > li > a").bind("click", function() {
+
+            if(self.isInProjects)
+            {
+                $("#projects-page").hide();
+                $("#home-page").show();
+                self.isInProjects=false;
+            }
 
             self.scrollTo($(this).attr('href'));
+            
         });
 
         $("#modal-close").click(function() {
@@ -88,8 +97,6 @@ class App{
 
     SelectProject(event)
     {
-        this.isInProject=true;
-
         var index = event.target.id.split("-")[1];
         var project = this.projects[index];
 
@@ -136,7 +143,6 @@ class App{
     }
 
     scrollTo(selector) {
-        console.log(selector)
         var destination = $(selector);
         $('html, body').animate({scrollTop: destination.offset().top}, 'slow');
     }

@@ -38,7 +38,6 @@ $(window).on('resize', function(e) {
 
 
 var topMenu = $(".grt-menu"),
-
     topMenuHeight = topMenu.outerHeight()+15,
     // All list items
     menuItems = topMenu.find("a"),
@@ -49,14 +48,15 @@ var topMenu = $(".grt-menu"),
 });
 
 
-// Add shadow on scroll after 60px
+
 $(window).scroll(function(e){
+
+  // Add shadow on scroll after 60px
    if ($(this).scrollTop() >60){
        $('header').addClass('scrolled');
    } else {
        $('header').removeClass('scrolled');
    }
-
 
    var fromTop = $(this).scrollTop()+topMenuHeight;
 
