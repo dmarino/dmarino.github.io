@@ -11,11 +11,15 @@
 (function( $ ){
 	$.fn.grtmobile = function () {
 		if ($(window).width() < 768) {
+
 			$('.grt-mobile-button').on('click', function(){
+
 				$(this).toggleClass("grt-mobile-button-open");
 				$("ul.grt-menu").toggleClass("open-grt-menu ");
-				$("html, body").toggleClass("body-overflow");
-			});
+        $("html, body").toggleClass("body-overflow");
+        
+      });
+      
 			$('li.grt-dropdown').on('click', function(e){
 				$(this).toggleClass("active-dropdown");
 			});
@@ -36,6 +40,8 @@ $(window).on('resize', function(e) {
   }, 250);
 })
 
+
+//for the smooth scroll
 
 var topMenu = $(".grt-menu"),
     topMenuHeight = topMenu.outerHeight()+15,

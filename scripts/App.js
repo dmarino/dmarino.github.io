@@ -7,9 +7,9 @@ class App{
     constructor(){
     
         this.projects = []
-        this.featuredSize = 7;
 
-        this.isInProjects=false;
+        this.moreSize = 8;
+        this.currentProjectsShown=8;
 
         let self = this;
         
@@ -20,34 +20,21 @@ class App{
         });
 
         //Navigation
-        $(".btn-projects").click(function() {
-            $("#home-page").hide();
-            $("#projects-page").show();
-            self.isInProjects=true;
+
+        $(".btn-more-projects").click(function() {
+            self.ShowMore();
         });
 
         $("ul.grt-menu > li > a").bind("click", function() {
-
-            if(self.isInProjects)
-            {
-                $("#projects-page").hide();
-                $("#home-page").show();
-                self.isInProjects=false;
-            }
-
-            self.scrollTo($(this).attr('href'));
-            
+            self.scrollTo($(this).attr('href'));            
         });
 
         $("#modal-close").click(function() {
-
             $("#modal-wrapper").hide();
-
         });
 
         $(document).on("click", ".project", e => this.SelectProject(e));     
     }
-
 
     populateProjects()
     {
@@ -57,9 +44,8 @@ class App{
             var div = document.createElement("div");
             div.setAttribute("class","project");
             div.setAttribute("id", "project-"+i);
-            div.setAttribute("data-aos", "fade-up");
-
             div.style.cssText = 'background-image:url("' + project.coverimg+ '");'
+
 
             var hover = document.createElement("div");
             hover.setAttribute("class","project-hover");
@@ -83,16 +69,41 @@ class App{
             hover.append(tags);
             div.append(hover);
 
-            if(i<this.featuredSize)
+            if(i>=this.currentProjectsShown)
             {
-                $("#featured-projects").append(div.outerHTML);  
+                div.classList.add("hidden");
             }
 
-            $("#all-projects").append(div); 
+            $("#featured-projects").append(div.outerHTML);  
 
             i++;
         })
 
+    }
+
+    ShowMore()
+    {
+        for (let i = this.currentProjectsShown; i < (this.currentProjectsShown + this.moreSize) && (i < this.projects.length); i++) {
+
+            let projectName = "#project-" + i;
+            let project = $(projectName);
+            if(typeof project !="undefined")
+            {
+                project.removeClass("hidden");
+            }
+
+        }
+
+        if(this.currentProjectsShown+ this.moreSize < this.projects.length)
+        {
+            this.currentProjectsShown += this.moreSize;
+        }
+
+        else{
+            this.currentProjectsShown = this.projects.length;
+            $(".btn-more-projects").hide();
+        }
+        
     }
 
     SelectProject(event)
@@ -136,9 +147,7 @@ class App{
         $("#modal-video").attr("href", project.video);
         $("#modal-demo").attr("href", project.demo);
 
-        $("#home-page").hide();
-        $("#projects-page").hide();
-        $("#single-project").show();
+        $("#single-project-modal").show();
         console.log(project.name);
     }
 

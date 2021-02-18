@@ -1,9 +1,27 @@
-#single-project{
+#single-project-modal{
     display: none;
-    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 99999;
+    
+    height: 100%;
+    width: 100%;
 
-    padding-top: 60px;
+
 }
+
+#modal-content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    height: 80%;
+}
+
+
 
 #single-project-video{
 

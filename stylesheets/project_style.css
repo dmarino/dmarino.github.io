@@ -14,7 +14,19 @@
     background-repeat: no-repeat;
     background-position: center;
     padding: 0%;
+
+    animation: expand .8s ease-in-out;
 }
+
+.hidden{
+    display:none;
+}
+
+@keyframes expand {
+    from {
+      opacity: 0;
+    }
+  }
 
 #featured-projects > .project{
     height: 18vw;
