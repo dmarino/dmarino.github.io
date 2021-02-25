@@ -7,6 +7,7 @@ class App{
     constructor(){
     
         this.projects = []
+        this.currentIndex=0;
 
         this.moreSize = 8;
         this.currentProjectsShown=8;
@@ -25,15 +26,23 @@ class App{
             self.ShowMore();
         });
 
+        $("#modal-close").click(function() {
+            $("#single-project-modal").hide();
+        });
+
+        $("#project-left").click(function() {
+            self.ChangeProject(-1);
+        });
+
+        $("#project-right").click(function() {
+            self.ChangeProject(1);
+        });
+
         $("ul.grt-menu > li > a").bind("click", function() {
             self.scrollTo($(this).attr('href'));            
         });
 
-        $("#modal-close").click(function() {
-            $("#modal-wrapper").hide();
-        });
-
-        $(document).on("click", ".project", e => this.SelectProject(e));     
+        $(document).on("click", ".project", e => this.SelectProject( e.target.id.split("-")[1]));     
     }
 
     populateProjects()
@@ -106,10 +115,10 @@ class App{
         
     }
 
-    SelectProject(event)
+    SelectProject(index)
     {
-        var index = event.target.id.split("-")[1];
         var project = this.projects[index];
+        this.currentIndex = Number(index);
 
         $("#modal-project-name").text(project.name);
 
@@ -148,7 +157,25 @@ class App{
         $("#modal-demo").attr("href", project.demo);
 
         $("#single-project-modal").show();
+        $("#modal-project-name").focus();
+
         console.log(project.name);
+    }
+
+    ChangeProject(side)
+    {
+        var newIndex = this.currentIndex + side;
+
+        if(newIndex < 0)
+        {
+            newIndex = (this.projects.length -1);
+        }
+        else if(newIndex >= this.projects.length)
+        {
+            newIndex =0;
+        }
+        
+        this.SelectProject(newIndex);
     }
 
     scrollTo(selector) {
