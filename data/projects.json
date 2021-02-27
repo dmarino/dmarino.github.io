@@ -2,16 +2,30 @@
     "projects": [
         {
             "name":"Data Breaker",
-            "coverimg":"./images/proyectos/dataBreaker.JPG",
+            "images":[
+                {
+                    "link":"./images/proyectos/dataBreaker.JPG",
+                    "alt":"image of the project"
+                }
+            ],
             "tags":["C#", "Unity"],
-            "info":"3rd Person brawler game developed in unity where you play as jett a girl stuck in a videogame that has to fight her way out of it",
-            "responsabilities":["UI programming including localization and subtitles","Created the debug system for quick playtesting","Shadder and post processing effects programming"],
+            "info":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus tempor pellentesque eros eget malesuada. Pellentesque non nulla tortor. Sed sit amet leo vitae erat vestibulum venenatis. Nulla nunc tellus, suscipit at interdum vitae, tincidunt eget diam. Vivamus ullamcorper mi id dui rutrum fringilla. Nulla nisl odio, elementum eu dui eget, convallis rhoncus sapien. Vestibulum pellentesque velit vitae urna mollis tempus. Morbi sit amet risus viverra, congue tortor et, feugiat ipsum. Nam faucibus lectus mi, id blandit ex consequat ac. In malesuada mollis mollis. Cras porttitor, metus et congue luctus, ex ipsum fermentum est, non scelerisque nunc sem ac erat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Fusce blandit felis bibendum nibh euismod tempus. Vestibulum a lectus ultrices, vestibulum tortor vel, sagittis est. In malesuada sem a lorem lacinia, pretium pulvinar velit lacinia.",
+            "responsabilities":[
+                "UI programming including localization and subtitles",
+                "Created the debug system for quick playtesting",
+                "Shadder and post processing effects programming"
+            ],
             "demo":"http://community.vfs.com/arcade/game/data-breaker/",
             "video":"https://www.youtube.com/embed/qKlkwxBVLGM"
         },
         {
             "name":"Rising Sun",
-            "coverimg":"./images/proyectos/risingSun.JPG",
+            "images":[
+                {
+                    "link":"./images/proyectos/risingSun.JPG",
+                    "alt":"image of the project"
+                }
+            ],
             "tags":["C#", "Unity"],
             "info":"asdasdddddddddddddd",
             "responsabilities":["","",""],
@@ -19,7 +33,12 @@
         },
         {
             "name":"Wizard Hero",
-            "coverimg":"./images/proyectos/wizardHero.JPG",
+            "images":[
+                {
+                    "link":"./images/proyectos/wizardHero.JPG",
+                    "alt":"image of the project"
+                }
+            ],
             "tags":["C#", "Unity", "Kinect"],
             "info":"asdasdddddddddddddd",
             "responsabilities":["","",""],
@@ -28,7 +47,12 @@
         },
         {
             "name":"Card Tours",
-            "coverimg":"./images/proyectos/cardTours.JPG",
+            "images":[
+                {
+                    "link":"./images/proyectos/cardTours.JPG",
+                    "alt":"image of the project"
+                }
+            ],
             "tags":["C#", "Unity", "photon"],
             "info":"asdasdddddddddddddd",
             "responsabilities":["","",""],
@@ -37,14 +61,24 @@
         },
         {
             "name":"Go Fish",
-            "coverimg":"./images/proyectos/peces.gif",
+            "images":[
+                {
+                    "link":"./images/proyectos/peces.gif",
+                    "alt":"image of the project"
+                }
+            ],
             "tags":["Processing", "Interactive Design"],
             "info":"asdasdddddddddddddd",
             "responsabilities":["","",""]
         },
         {
             "name":"Astro Space",
-            "coverimg":"./images/proyectos/astroSpace.png",
+            "images":[
+                {
+                    "link":"./images/proyectos/astroSpace.png",
+                    "alt":"image of the project"
+                }
+            ],
             "tags":["Oculus", "VR", "C#", "Unity", "Educational"],
             "info":"asdasdddddddddddddd",
             "responsabilities":["","",""],
@@ -53,7 +87,12 @@
         },
         {
             "name":"Mordor Planet Sim.",
-            "coverimg":"./images/proyectos/mordorPlanetSimulator.JPG",
+            "images":[
+                {
+                    "link":"./images/proyectos/mordorPlanetSimulator.JPG",
+                    "alt":"image of the project"
+                }
+            ],
             "tags":["JavaScript", "Express","React","mongoDB"],
             "info":"asdasdddddddddddddd",
             "responsabilities":["","",""],
@@ -63,7 +102,12 @@
         },
         {
             "name":"The Labyrinth",
-            "coverimg":"./images/proyectos/theLabyrinth.JPG",
+            "images":[
+                {
+                    "link":"./images/proyectos/theLabyrinth.JPG",
+                    "alt":"image of the project"
+                }
+            ],
             "tags":["JavaScript", "Meteor","React","mongoDB"],
             "info":"asdasdddddddddddddd",
             "responsabilities":["","",""],
@@ -72,21 +116,36 @@
         },
         {
             "name":"Food Wars",
-            "coverimg":"./images/proyectos/foodWars.JPG",
+            "images":[
+                {
+                    "link":"./images/proyectos/foodWars.JPG",
+                    "alt":"image of the project"
+                }
+            ],
             "tags":["JavaScript", "Web"],
             "info":"asdasdddddddddddddd",
             "responsabilities":["","",""]
         },
         {
             "name":"Drawing Challenge",
-            "coverimg":"./images/proyectos/drawingChallenge.JPG",
+            "images":[
+                {
+                    "link":"./images/proyectos/drawingChallenge.JPG",
+                    "alt":"image of the project"
+                }
+            ],
             "tags":["JavaScript","React","Meteor","Canvas"],
             "info":"asdasdddddddddddddd",
             "responsabilities":["","",""]
         },
         {
             "name":"6 Degree Followers",
-            "coverimg":"./images/proyectos/6DegreeFollowers.JPG",
+            "images":[
+                {
+                    "link":"./images/proyectos/6DegreeFollowers.JPG",
+                    "alt":"image of the project"
+                }
+            ],
             "tags":["JavaScript","Express","MongoDB","Github API"],
             "info":"asdasdddddddddddddd",
             "responsabilities":["","",""],
@@ -95,14 +154,24 @@
         },
         {
             "name":"Clinic History",
-            "coverimg":"./images/proyectos/resume.png",
+            "images":[
+                {
+                    "link":"/images/proyectos/resume.png",
+                    "alt":"image of the project"
+                }
+            ],
             "tags":["JavaScript"],
             "info":"asdasdddddddddddddd",
             "responsabilities":["","",""]
         },
         {
             "name":"Hospital Appointment",
-            "coverimg":"./images/proyectos/desarrollo.PNG",
+            "images":[
+                {
+                    "link":"./images/proyectos/desarrollo.PNG",
+                    "alt":"image of the project"
+                }
+            ],
             "tags":["JavaScript", "Angular","MYSQL"],
             "info":"asdasdddddddddddddd",
             "responsabilities":["","",""]

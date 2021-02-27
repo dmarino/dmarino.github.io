@@ -206,3 +206,9 @@ footer span{
 
 	margin-right: 1%;
 }
+
+
+.interactive:hover{
+
+	cursor: pointer;
+}

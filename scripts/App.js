@@ -53,7 +53,8 @@ class App{
             var div = document.createElement("div");
             div.setAttribute("class","project");
             div.setAttribute("id", "project-"+i);
-            div.style.cssText = 'background-image:url("' + project.coverimg+ '");'
+            div.style.cssText = 'background-image:url("' + project.images[0].link+ '");'
+            div.setAttribute("aria-label", project.name);
 
 
             var hover = document.createElement("div");
@@ -122,6 +123,9 @@ class App{
 
         $("#modal-project-name").text(project.name);
 
+
+        //adds tags
+        $("#modal-project-tags").empty();
         project.tags.forEach(tag=>{
 
             var temp = document.createElement("span");
@@ -130,17 +134,21 @@ class App{
             $("#modal-project-tags").append(temp);
         })
 
-        $("#modal-project-description").text(project.info);
+        
 
-        if(typeof project !="undefined")
+        if(typeof project.video !="undefined")
         {
-            console.log(project.video)
+            $("#single-project-video").show();
             $("#single-project-video").attr("src", project.video)
         }
         else{
             $("#single-project-video").hide();
+            $("modal-main-image").show();
         }
 
+        $("#modal-project-description").text(project.info);
+
+        $("#single-project-resp-list").empty()
         project.responsabilities.forEach(resp=>{
 
             var temp = document.createElement("li");

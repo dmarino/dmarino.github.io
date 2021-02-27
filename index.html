@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 
 	<title>Daniela Marino | Personal Page</title>
@@ -31,7 +31,7 @@
         <div class="menu-container">
             <div class="grt-menu-row">
                 <div class="grt-menu-logo">
-                    <a href=""  class="grt-logo"><img src="images/logoT.png"></a>
+                    <a href=""  class="grt-logo" aria-hidden="true"><img src="images/logoT.png"></a>
                     <a href="https://github.com/dmarino" target="_blank" class="fa fa-github-square"></a> 
                     <a href="https://www.linkedin.com/in/dmarino10/" target="_blank" class="fa fa-linkedin-square"></a> 
                 </div>
@@ -67,7 +67,7 @@
             <div id="about-info" >
                 <h1 class="title">About Me</h1>
                 <p>I am a Software Engineer from Bogota, Colombia interested in Front-End Development, Game Programming, and Interactive Design. I like creating fun experiences for all kinds of proposes and pushing the limits of what technology and art are capable of.
-                </br></br>Since I started my bachelor’s degree in Los Andes University back in 2014 and during my one-year program in Vancouver Film School, I’ve developed multiple games in all kinds of languages and platforms; I’ve worked with different enterprises developing web applications for their internal use; and I’ve helped hundreds of students as a TA and a research assistant in programming related classes. My goal is to work towards making videogames and technology more accessible and more friendly for all kinds of users through the use of Human Center Design</p>
+                </br></br>Since I started my bachelor’s degree in Los Andes University back in 2014 and during my one-year program in Vancouver Film School, I’ve developed multiple games in all kinds of languages and platforms; I’ve worked with different enterprises developing web applications for their internal use; and I’ve helped hundreds of students as a TA for Object Oriented Programming  and Software Development In Teams classes. My goal is to work towards making videogames and technology more accessible and more friendly for all kinds of users through the use of Human Center Design</p>
 
                 <button ><a id="cv" href="https://drive.google.com/file/d/189Ep9gUaqeie5yiyH1HYqrge-tcjCVTN/view?usp=sharing" target="_blank">GO TO CV</a></button>
             </div>
@@ -99,28 +99,38 @@
     <div id="single-project-modal">
         <div id="content-modal">
             
-            <i id="modal-close" class="fa fa-times"></i>
+            <i id="modal-close" class="fa fa-times interactive"></i>
 
             <div id="modal-top">
-                <i class="fa fa-caret-left" id="project-left"></i>
+                <i class="fa fa-caret-left interactive" id="project-left"></i>
                 <span id="modal-project-name"></span>
-                <i class="fa fa-caret-right" id="project-right"></i>
+                <i class="fa fa-caret-right interactive" id="project-right"></i>
             </div>
-            
-            <div id="modal-project-tags"></div>
 
-            <p id="modal-project-description"></p>
-            <iframe id="single-project-video"></iframe>
+            <div id="modal-center">
+
+                <iframe id="single-project-video"></iframe>
+                <div id="modal-main-image"></div>
+
+                <div id="single-project-text">
+
+                    <p id="modal-project-description"></p>
     
-            <div>
-                <ul id="single-project-resp-list"></ul>
+                    <h1>Responsabilities:</h1> 
+                    <ul id="single-project-resp-list"></ul>
+    
+                    <h2>Tags:</h2>
+                    <div id="modal-project-tags"></div>
+                    
+                </div>
+
+                <div id="single-project-buttons">
+                    <a id="modal-code" target="_blank"><span class="button tittle modal-button"> Code </span></a>
+                    <a id="modal-demo" target="_blank"><span class="button tittle modal-button"> Demo </span></a>
+                </div>
+
             </div>
             
-    
-            <div id="single-project-buttons">
-                <a id="modal-code" target="_blank"><span class="button tittle modal-button"> Code </span></a>
-                <a id="modal-demo" target="_blank"><span class="button tittle modal-button"> Demo </span></a>
-            </div>
         </div>
     </div>
 
