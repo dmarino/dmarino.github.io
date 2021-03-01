@@ -1,4 +1,4 @@
-/**Copyright (c) 2020, Daniela Marino*/
+/*Copyright (c) 2020, Daniela Marino*/
 
 'use strict';
 
@@ -104,15 +104,12 @@ class App{
 
         }
 
-        if(this.currentProjectsShown+ this.moreSize < this.projects.length)
+        if(this.currentProjectsShown + this.moreSize >= this.projects.length)
         {
-            this.currentProjectsShown += this.moreSize;
-        }
-
-        else{
-            this.currentProjectsShown = this.projects.length;
             $(".btn-more-projects").hide();
         }
+
+        this.currentProjectsShown += this.moreSize;
         
     }
 
