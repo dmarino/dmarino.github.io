@@ -2,6 +2,9 @@
 
 'use strict';
 
+import Project from './Project.js'
+import {PROJECTS_NUMBER_START, PROJECTS_NUMBER_ADD} from './Constants.js'
+
 class App{
 
     constructor(){
@@ -9,21 +12,28 @@ class App{
         this.projects = []
         this.currentIndex=0;
 
-        this.moreSize = 8;
-        this.currentProjectsShown=8;
+        this.currentProjectsShown=PROJECTS_NUMBER_START;
 
         let self = this;
         
         //loads projects from json
-        $.getJSON('../data/projects.json', function(data) {         
-            self.projects = data.projects;
-            self.populateProjects();
+        $.getJSON('../data/projects.json', function(data) {        
+            
+            var i=0;
+            data.projects.forEach(element => {
+                
+                var project = new Project(element,i);
+                self.projects.push(project)
+
+                i++;
+            });
+            
         });
 
         //Navigation
 
         $(".btn-more-projects").click(function() {
-            self.ShowMore();
+            self.ShowMoreProjects();
         });
 
         $("#modal-close").click(function() {
@@ -38,62 +48,25 @@ class App{
             self.ChangeProject(1);
         });
 
+        $(".prev").click(function() {
+            self.projects[self.currentIndex].MoveSlides(-1);
+        });
+
+        $(".next").click(function() {
+            self.projects[self.currentIndex].MoveSlides(1);
+        });
+
         $("ul.grt-menu > li > a").bind("click", function() {
             self.scrollTo($(this).attr('href'));            
         });
 
         $(document).on("click", ".project", e => this.SelectProject( e.target.id.split("-")[1]));     
+        $(document).on("click", ".demo", e => this.projects[this.currentIndex].ShowSlides( e.target.id.split("-")[1]));    
     }
 
-    populateProjects()
+    ShowMoreProjects()
     {
-        var i=0;
-        this.projects.forEach(project =>{
-
-            var div = document.createElement("div");
-            div.setAttribute("class","project");
-            div.setAttribute("id", "project-"+i);
-            div.style.cssText = 'background-image:url("' + project.images[0].link+ '");'
-            div.setAttribute("aria-label", project.name);
-
-
-            var hover = document.createElement("div");
-            hover.setAttribute("class","project-hover");
-
-            var title = document.createElement("span");
-            title.setAttribute("class", "project-name");
-            title.innerHTML = project.name;
-            hover.append(title);
-
-            var tags = document.createElement("div");
-            tags.setAttribute("class", "project-tags-container");
-
-            project.tags.forEach(tag=>{
-
-                var temp = document.createElement("span");
-                temp.setAttribute("class", "project-tag");
-                temp.innerHTML = tag;
-                tags.append(temp);
-            })
-
-            hover.append(tags);
-            div.append(hover);
-
-            if(i>=this.currentProjectsShown)
-            {
-                div.classList.add("hidden");
-            }
-
-            $("#featured-projects").append(div.outerHTML);  
-
-            i++;
-        })
-
-    }
-
-    ShowMore()
-    {
-        for (let i = this.currentProjectsShown; i < (this.currentProjectsShown + this.moreSize) && (i < this.projects.length); i++) {
+        for (let i = this.currentProjectsShown; i < (this.currentProjectsShown + PROJECTS_NUMBER_ADD) && (i < this.projects.length); i++) {
 
             let projectName = "#project-" + i;
             let project = $(projectName);
@@ -104,67 +77,19 @@ class App{
 
         }
 
-        if(this.currentProjectsShown + this.moreSize >= this.projects.length)
+        if(this.currentProjectsShown + PROJECTS_NUMBER_ADD >= this.projects.length)
         {
             $(".btn-more-projects").hide();
         }
 
-        this.currentProjectsShown += this.moreSize;
+        this.currentProjectsShown += PROJECTS_NUMBER_ADD;
         
     }
 
     SelectProject(index)
     {
-        var project = this.projects[index];
+        this.projects[index].ShowProjectInfo();
         this.currentIndex = Number(index);
-
-        $("#modal-project-name").text(project.name);
-
-
-        //adds tags
-        $("#modal-project-tags").empty();
-        project.tags.forEach(tag=>{
-
-            var temp = document.createElement("span");
-            temp.setAttribute("class", "project-tag");
-            temp.innerHTML = tag;
-            $("#modal-project-tags").append(temp);
-        })
-
-        
-
-        if(typeof project.video !="undefined")
-        {
-            $("#single-project-video").show();
-            $("#single-project-video").attr("src", project.video)
-        }
-        else{
-            $("#single-project-video").hide();
-            $("modal-main-image").show();
-        }
-
-        $("#modal-project-description").text(project.info);
-
-        $("#single-project-resp-list").empty()
-        project.responsabilities.forEach(resp=>{
-
-            var temp = document.createElement("li");
-            temp.innerHTML = resp;
-            $("#single-project-resp-list").append(temp);
-        })
-
-
-        $("#modal-project-image").attr("src", project.coverimg);
-        
-
-        $("#modal-code").attr("href", project.code);
-        $("#modal-video").attr("href", project.video);
-        $("#modal-demo").attr("href", project.demo);
-
-        $("#single-project-modal").show();
-        $("#modal-project-name").focus();
-
-        console.log(project.name);
     }
 
     ChangeProject(side)

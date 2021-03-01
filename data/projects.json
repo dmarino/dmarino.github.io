@@ -6,6 +6,10 @@
                 {
                     "link":"./images/proyectos/dataBreaker.JPG",
                     "alt":"image of the project"
+                },
+                {
+                    "link":"./images/proyectos/dataBreaker2.JPG",
+                    "alt":"image of the project"
                 }
             ],
             "tags":["C#", "Unity"],
