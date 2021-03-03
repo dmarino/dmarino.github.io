@@ -56,7 +56,7 @@ export default class Project{
     {
 
         $("#modal-project-name").text(this.data.name);
-        $("#modal-project-description").text(this.data.info);
+        $("#modal-project-description").html(this.data.info);
 
         this.UpdatesCarousel();
         this.UpdatesResponsabilities();   
@@ -108,8 +108,15 @@ export default class Project{
     UpdatesButtons(){
 
         $("#modal-code").attr("href", this.data.code);
+        $("#modal-code").toggle(typeof this.data.code !="undefined");
+
         $("#modal-video").attr("href", this.data.video);
+        $("#modal-video").toggle(typeof this.data.video !="undefined");
+
         $("#modal-demo").attr("href", this.data.demo);
+        $("#modal-demo").toggle(typeof this.data.demo !="undefined");
+
+        
     }
 
     MoveSlides(n){
@@ -128,7 +135,7 @@ export default class Project{
 
     ShowSlides(index) {
 
-        this.currentImage = index;
+        this.currentImage = Number(index);
 
         $(".currentSlide > img").attr("src",this.data.images[this.currentImage].link);
         $("#slide-number").text((this.currentImage+1) + "/" + this.data.images.length);
