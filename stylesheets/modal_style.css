@@ -64,7 +64,7 @@
 #modal-center{
 
     margin-top: 2%;
-    height: 80%;
+    height: 70%;
     overflow-y: auto;
 }
 
@@ -133,4 +133,9 @@
 
     text-align: right;
     padding-right: 2%;
+}
+
+#modal-project-description > b{
+
+    background: #ADEFFF;
 }
