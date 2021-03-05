@@ -28,7 +28,7 @@
                 "<b> Cut Scenes: </b> I created the cutscenes of the game using unity’s timeline as well as the ability to skip them."
             ],
             "demo":"http://community.vfs.com/arcade/game/data-breaker/",
-            "video":"https://youtu.be/qKlkwxBVLGM"
+            "video":"https://youtu.be/h_cEvtXfHO0"
         },
         {
             "name":"Rising Sun",
@@ -135,6 +135,30 @@
             "video":"https://youtu.be/Ig8oTgFnX-g"
         },
         {
+            "name":"Untitled Endless Runner",
+            "images":[
+                {
+                    "link":"/images/proyectos/endlessRunner.JPG",
+                    "alt":"image of the main menu"
+                },
+                {
+                    "link":"/images/proyectos/endlessRunner2.JPG",
+                    "alt":"image of the jetpack function"
+                },
+                {
+                    "link":"/images/proyectos/endlessRunner3.JPG",
+                    "alt":"image of the gameOver Screen"
+                }
+            ],
+            "tags":["Unreal","Blueprints"],
+            "info":"Untitled Endless Runner is a 3D endless runner prototype inspired by jetpack joyride developed in <b> Unreal </b> using <b> Blueprints </b>. In the game you must use the elevation force provided by your jetpack to avoid obstacles, collect gems, and go as far as you can. I created this game as my last assignment for my Unreal Development with blueprints class.",
+            "responsabilities":[
+                "<b>Gameplay Programming: </b> I used the starter third person project in Unreal as a base for the game and developed the rest of the features, from the jetpack use and recharge to the random automatic generation of the map and its collectables.",
+                "<b>UI Programming: </b> As part of the brief the game had to have a main menu, a HUD, and a game over screen. I created all of them and connected them with their respective functions. "
+            ],
+            "video":"https://youtu.be/dwKxPLjk1Cw"
+        },
+        {
             "name":"Astro Space",
             "images":[
                 {
@@ -157,7 +181,7 @@
                 "<b>Interaction: </b> I designed and developed all the interactions in the game using the steam VR library and free assets from the asset store.",
                 "<b>Calibration and testing: </b> I did almost 15 tests in different subjects where I had to calibrate the Oculus headset, teach the controls (using an introductory level that I developed as well) and overall managing the data of the sessions. "
             ],
-            "video":"https://youtu.be/VgjQj-F5p30",
+            "video":"https://youtu.be/x_K4Wb2Wlkc",
             "code":"https://github.com/dmarino/WizardHero.git"
         },
         {
@@ -188,28 +212,6 @@
 
         },
         {
-            "name":"The Labyrinth",
-            "images":[
-                {
-                    "link":"./images/proyectos/theLabyrinth.JPG",
-                    "alt":"image of the first page of the project"
-                },
-                {
-                    "link":"./images/proyectos/theLabyrint2.png",
-                    "alt":"image of the labyrinth game"
-                }
-            ],
-            "tags":["JavaScript", "Meteor","React","mongoDB", "REST"],
-            "info":"The labyrinth is the third assignment for my programming with web technologies class, its goal was to create a web application keeping in mind accessibility, usability, and performance. My teammate and I decided to create a game that could be played by a blind person using a screen reader. In the labyrinth you played as an explorer that needed to fin a treasure inside a maze, because you had a torch you could only see the spot you were in and when you moved the screen reader would tell you the paths that you could take from that position. This game could be played as a single player, a 2-player coop or a 1v1. ",
-            "responsabilities":[
-                "<b>UI/UX design: </b> I designed the layout of the application and the way it would work with the screen reader (every picture has an alternative text that gets generated according to the data of the maze).",
-                "<b>Front-End Development: </b> I developed the front end of the application using React and integrating it with the backend to see the changes of the information in real time.  ",
-                "<b>Metrics and testing: </b> I oversaw the metrics of the application using chrome’s lighthouse and tested the user experience of the game using a chore extension called Chromevox  "
-            ],
-            "demo":"https://the-labyrinth.herokuapp.com/",
-            "code":"https://github.com/dmarino/theLabyrinth"
-        },
-        {
             "name":"Food Wars",
             "images":[
                 {
@@ -235,6 +237,53 @@
             ],
             "demo":"https://dmarino.github.io/FoodWars/",
             "code":"https://github.com/dmarino/FoodWars"
+        },
+        {
+            "name":"Zombie Cuteness",
+            "images":[
+                {
+                    "link":"./images/proyectos/zombieGirl.JPG",
+                    "alt":"image of the game over screen"
+                },
+                {
+                    "link":"./images/proyectos/zombieGirl2.JPG",
+                    "alt":"image of the player shooting"
+                },
+                {
+                    "link":"./images/proyectos/zombieGirl3.JPG",
+                    "alt":"image of the girls walking"
+                }
+            ],
+            "tags":["Unreal", "C++"],
+            "info":"Zombie cuteness is a 3D first-person shooter developed in <b> Unreal </b> using <b> C++ </b>. In this game you have to survive a horde of zombified little girls collecting plushies and shooting at them so they can feel at peace. This project was developed for my Unreal development in C++ class.",
+            "responsabilities":[
+                "<b>Gameplay Programming: </b> I used the starter first person project in Unreal as a base but added the collection of ammunition, the spawning of enemies and the counting of time for the plushies and the player.",
+                "<b>Blending Animation: </b> I knew there was a Mixamo package for unreal but I wanted this little girl as our enemy and she wasn’t a part of the package so I followed a tutorial and learned how to import a 3d model from the Mixamo Page into the game and create its animations in a way that they would blend from walking to running. ",
+                "<b>AI Programming: </b> I developed the feature that allowed the enemies to walk around the map looking for the player. I created the code for when the enemies would detect the player if the player were in the line of sight and there was nothing between them and I created the code for the enemies to follow the player once they saw him. "
+            ],
+            "video":"https://youtu.be/uUx1iHaUMVQ"
+        },
+        {
+            "name":"The Labyrinth",
+            "images":[
+                {
+                    "link":"./images/proyectos/theLabyrinth.JPG",
+                    "alt":"image of the first page of the project"
+                },
+                {
+                    "link":"./images/proyectos/theLabyrint2.png",
+                    "alt":"image of the labyrinth game"
+                }
+            ],
+            "tags":["JavaScript", "Meteor","React","mongoDB", "REST"],
+            "info":"The labyrinth is the third assignment for my programming with web technologies class, its goal was to create a web application keeping in mind accessibility, usability, and performance. My teammate and I decided to create a game that could be played by a blind person using a screen reader. In the labyrinth you played as an explorer that needed to fin a treasure inside a maze, because you had a torch you could only see the spot you were in and when you moved the screen reader would tell you the paths that you could take from that position. This game could be played as a single player, a 2-player coop or a 1v1. ",
+            "responsabilities":[
+                "<b>UI/UX design: </b> I designed the layout of the application and the way it would work with the screen reader (every picture has an alternative text that gets generated according to the data of the maze).",
+                "<b>Front-End Development: </b> I developed the front end of the application using React and integrating it with the backend to see the changes of the information in real time.  ",
+                "<b>Metrics and testing: </b> I oversaw the metrics of the application using chrome’s lighthouse and tested the user experience of the game using a chore extension called Chromevox  "
+            ],
+            "demo":"https://the-labyrinth.herokuapp.com/",
+            "code":"https://github.com/dmarino/theLabyrinth"
         },
         {
             "name":"Hospital Appointments",
