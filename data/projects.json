@@ -109,30 +109,30 @@
             "video":"https://youtu.be/stbZUoe5ddM"
         },
         {
-            "name":"Go Fish",
+            "name":"Not Missile Command",
             "images":[
                 {
-                    "link":"./images/proyectos/goFish1.JPG",
-                    "alt":"image of the fish swimming"
+                    "link":"./images/proyectos/notMissileCommand2.JPG",
+                    "alt":"image of the gameplay"
                 },
                 {
-                    "link":"./images/proyectos/goFish.JPG",
-                    "alt":"image of the main menu"
+                    "link":"./images/proyectos/notMissileCommand.JPG",
+                    "alt":"image of Main Menu"
                 },
                 {
-                    "link":"./images/proyectos/goFish2.JPG",
-                    "alt":"image of the battle minigame"
+                    "link":"./images/proyectos/notMissileCommand3.JPG",
+                    "alt":"image of the gameplay"
                 }
             ],
-            "tags":["Processing", "Interactive Design"],
-            "info":"Go fish is a project I developed for my design with interactive mediums class that consisted in two assignments. The first assignment was to create an animal using <b> Processing </b> that could move as their real-life counterpart and worked as an object in the code that could be spawn as many times as you wanted. The second assignment was to use that animal in a game or an <b> interactive experience </b> of some sorts. I developed a fish that could swim in a group like a shoal and three different minigames, one that made the player look for the purple fishes, one that made two players battle with fishes that spit and one that made you avoid the fishes all together. ",
+            "tags":["C++", "Retro", "Console"],
+            "info":"Not Missile Command is a Knock off for the retro game Missile Command developed in <b> C++ </b> and displayed in a <b> Console </b>. This was one of my assignments for my C++ class and the teacher gave us a third-party rendering engine called <b> EngineX </b> as a base to develop it. Like in the original game you command three silos that shoot missiles to defend a city from an enemy attack. ",
             "responsabilities":[
-                "<b>Fish Movement: </b> because I was creating a game without a game engine all the movement of the fish is math based, if they go in straight lies or in circles, how heir tails move, if they disappear in one side of the screen where will they re-appear in the other, etc.  ",
-                "<b>Customizability: </b> the fish and the shoal have multiple options of creation based on color, movement, speed, and size, between others. This allowed me to create a shoal for multiple types of situations and reuse the same code most of the time. ",
-                "<b>UI Interactivity: </b> Because processing does not have a library that handles collisions with the mouse all the interactivity with the UI was math based as well. If the player clicked a button or if they hover over a fish, I had to check with math-based collisions. ",
-                "<b>Gameplay: </b> I developed the game as a finite state machine and created all the checks that would allow me to go from one state to the other.  "
+                "<b>Rendering: </b> EngineX only has basic shapes like rectangles, lines and circles, I had to design the more complex structures like the buildings and the silos as well as the missiles and the cursor, show the changes they had made in every frame, add some animations that look similar to the original game, etc.",
+                "<b>Gameplay: </b> I developed all the gameplay from the missile launch from the nearest silo that still stands and has ammo to the collisions and what happened when a missile hit something, it was a fun experience because it was all math based and I do not get to do that a lot.",
+                "<b>Memory Management: </b> This was a good exercise to work in C++ memory management because there where multiple instances where you had to delete objects in order to avoid memory allocation and finding the best solution to do that is always a challenge. "
             ],
-            "video":"https://youtu.be/Ig8oTgFnX-g"
+            "video":"https://youtu.be/pInK-GFiKBI",
+            "code":"https://github.com/dmarino/notMissileCommand"
         },
         {
             "name":"Untitled Endless Runner",
@@ -157,6 +157,32 @@
                 "<b>UI Programming: </b> As part of the brief the game had to have a main menu, a HUD, and a game over screen. I created all of them and connected them with their respective functions. "
             ],
             "video":"https://youtu.be/dwKxPLjk1Cw"
+        },
+        {
+            "name":"Go Fish",
+            "images":[
+                {
+                    "link":"./images/proyectos/goFish1.JPG",
+                    "alt":"image of the fish swimming"
+                },
+                {
+                    "link":"./images/proyectos/goFish.JPG",
+                    "alt":"image of the main menu"
+                },
+                {
+                    "link":"./images/proyectos/goFish2.JPG",
+                    "alt":"image of the battle minigame"
+                }
+            ],
+            "tags":["Processing", "Interactive Design"],
+            "info":"Go fish is a project I developed for my design with interactive mediums class that consisted in two assignments. The first assignment was to create an animal using <b> Processing </b> that could move as their real-life counterpart and worked as an object in the code that could be spawn as many times as you wanted. The second assignment was to use that animal in a game or an <b> interactive experience </b> of some sorts. I developed a fish that could swim in a group like a shoal and three different minigames, one that made the player look for the purple fishes, one that made two players battle with fishes that spit and one that made you avoid the fishes all together. ",
+            "responsabilities":[
+                "<b>Rendering: </b> because I was creating a game without a game engine all the movement of the fish is math based, if they go in straight lines or in circles, how heir tails move, if they disappear in one side of the screen where will they re-appear in the other, etc. ",
+                "<b>Customizability: </b> the fish and the shoal have multiple options of creation based on color, movement, speed, and size, between others. This allowed me to create a shoal for multiple types of situations and reuse the same code most of the time. ",
+                "<b>UI Interactivity: </b> Because processing does not have a library that handles collisions with the mouse all the interactivity with the UI was math based as well. If the player clicked a button or if they hover over a fish, I had to check with math-based collisions. ",
+                "<b>Gameplay: </b> I developed the game as a finite state machine and created all the checks that would allow me to go from one state to the other.  "
+            ],
+            "video":"https://youtu.be/Ig8oTgFnX-g"
         },
         {
             "name":"Astro Space",
@@ -185,33 +211,6 @@
             "code":"https://github.com/dmarino/WizardHero.git"
         },
         {
-            "name":"Mordor Planet Sim.",
-            "images":[
-                {
-                    "link":"./images/proyectos/mordorPlanetSimulator.JPG",
-                    "alt":"Image of the planet animation"
-                },
-                {
-                    "link":"./images/proyectos/mordorPlanetSimulator2.JPG",
-                    "alt":"image of the Alias setting"
-                },
-                {
-                    "link":"./images/proyectos/mordorPlanetSimulator3.JPG",
-                    "alt":"image of the change of stats"
-                }
-            ],
-            "tags":["JavaScript", "Express","React","mongoDB", "REST"],
-            "info":"Mordor Planet Simulator was a <b> multiplayer </b> resource management game that allowed players from all around the world to make decisions over the resources of a fictional planet. It was developed using <b> React </b> for the front end, <b> Express (Node.js) </b> for the backend and <b> mongoDB </b> for the non-relational data base. This project was an assignment for my web development class, and I worked in it with another classmate in a span of 2 weeks.",
-            "responsabilities":[
-                "<b>UI/UX design: </b> I designed the UI of the application and iterated on it considering the user experience of many friends and my teammate. ",
-                "<b>Front end Development: </b> I took the role of front-end developer in this project, this meant that I had to create the react structure with the according CSS in order to make it pretty and connect it with the data from the backend.",
-                "<b>Deployment: </b> I helped with the deployment of the web page to Heroku. "
-            ],
-            "demo":"http://intense-springs-10900.herokuapp.com/",
-            "code":"https://github.com/hjcalderon10/mordorPlanetSimulation"
-
-        },
-        {
             "name":"Food Wars",
             "images":[
                 {
@@ -237,6 +236,33 @@
             ],
             "demo":"https://dmarino.github.io/FoodWars/",
             "code":"https://github.com/dmarino/FoodWars"
+        },
+        {
+            "name":"Mordor Planet Sim.",
+            "images":[
+                {
+                    "link":"./images/proyectos/mordorPlanetSimulator.JPG",
+                    "alt":"Image of the planet animation"
+                },
+                {
+                    "link":"./images/proyectos/mordorPlanetSimulator2.JPG",
+                    "alt":"image of the Alias setting"
+                },
+                {
+                    "link":"./images/proyectos/mordorPlanetSimulator3.JPG",
+                    "alt":"image of the change of stats"
+                }
+            ],
+            "tags":["JavaScript", "Express","React","mongoDB", "REST"],
+            "info":"Mordor Planet Simulator was a <b> multiplayer </b> resource management game that allowed players from all around the world to make decisions over the resources of a fictional planet. It was developed using <b> React </b> for the front end, <b> Express (Node.js) </b> for the backend and <b> mongoDB </b> for the non-relational data base. This project was an assignment for my web development class, and I worked in it with another classmate in a span of 2 weeks.",
+            "responsabilities":[
+                "<b>UI/UX design: </b> I designed the UI of the application and iterated on it considering the user experience of many friends and my teammate. ",
+                "<b>Front end Development: </b> I took the role of front-end developer in this project, this meant that I had to create the react structure with the according CSS in order to make it pretty and connect it with the data from the backend.",
+                "<b>Deployment: </b> I helped with the deployment of the web page to Heroku. "
+            ],
+            "demo":"http://intense-springs-10900.herokuapp.com/",
+            "code":"https://github.com/hjcalderon10/mordorPlanetSimulation"
+
         },
         {
             "name":"Zombie Cuteness",

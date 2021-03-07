@@ -167,11 +167,17 @@ button{
 #contact{
 	width: 100%;
 	background: #0088aa;
-	color: white;
 
 	margin-bottom: 2%;
 
 	padding: 1% 0% 2% 0%;
+	font-family: 'Amatic SC', cursive;
+
+}
+
+#contact > a{
+	text-decoration: none;
+	color: white;
 }
 
 #contact h1{
@@ -180,13 +186,7 @@ button{
 
 #email{
 	font-size: calc(12px + 1.3vw);
-}
-
-#email >a{
-	text-decoration: none;
-	color: #fff;
-	font-family: 'Amatic SC', cursive;
-
+	color: #ddd;
 }
 
 footer{
@@ -201,9 +201,11 @@ footer >div{
 	margin-bottom: 1%;
 }
 
-footer span{
+footer a{
 
 	margin-right: 1%;
+	text-decoration: none;
+	color: #aaa;
 }
 
 
