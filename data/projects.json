@@ -1,6 +1,30 @@
 {
     "projects": [
         {
+            "name":"Rising Sun",
+            "images":[
+                {
+                    "link":"./images/proyectos/risingSun.JPG",
+                    "alt":"image of the main menu"
+                },
+                {
+                    "link":"./images/proyectos/risingSun2.JPG",
+                    "alt":"image of the first type of enemy"
+                },
+                {
+                    "link":"./images/proyectos/risingSun3.JPG",
+                    "alt":"image of flying enemy"
+                }
+            ],
+            "tags":["C#", "Unity", "2D"],
+            "info":"Rising sun was my team project at Vancouver Film School, it was developed by a team of 3 designers and one programmer in a span of 2 months. The project is a <b> 2D platformer </b> where you can play as a samurai trying to infiltrate a big robotic corporation that has enslaved their town. Rising sun was developed in <b> Unity </b>.",
+            "responsabilities":[
+                "<b>Gameplay Programming: </b> I was responsible for the movement and attacks of the player, jumping and double jumping, dashing through objects, shooting, the sword attack and even a secret feature that allowed players to read the posters in the world. It was a cool learning exercise since we wanted the game to be played with mouse and keyboard as well as controller, so I had to come up with different techniques to do some of the same features (shooting for example) that would behave differently depending on what the player was using. ",
+                "<b>AI Programming iteration: </b> The game has 3 types of enemies, the basic enemy that moves from one side to the other, the flying enemy that shoots at you and flees when someone gets too close, and the defensive enemy whose shield protects it from attacks. Due to some personal issues with one of the team members I had to finish their behaviors and do some iterations on them for the final delivery of the project. ",
+                "<b>Sound Programming: </b> I integrated the background music change from the different parts of the level, the main menu, and the game over screen using Unity’s Audio Module."],
+            "video":"https://youtu.be/ShngxFgkNuM"
+        },
+        {
             "name":"Data Breaker",
             "images":[
                 {
@@ -29,30 +53,6 @@
             ],
             "demo":"http://community.vfs.com/arcade/game/data-breaker/",
             "video":"https://youtu.be/h_cEvtXfHO0"
-        },
-        {
-            "name":"Rising Sun",
-            "images":[
-                {
-                    "link":"./images/proyectos/risingSun.JPG",
-                    "alt":"image of the main menu"
-                },
-                {
-                    "link":"./images/proyectos/risingSun2.JPG",
-                    "alt":"image of the first type of enemy"
-                },
-                {
-                    "link":"./images/proyectos/risingSun3.JPG",
-                    "alt":"image of flying enemy"
-                }
-            ],
-            "tags":["C#", "Unity", "2D"],
-            "info":"Rising sun was my team project at Vancouver Film School, it was developed by a team of 3 designers and one programmer in a span of 2 months. The project is a <b> 2D platformer </b> where you can play as a samurai trying to infiltrate a big robotic corporation that has enslaved their town. Rising sun was developed in <b> Unity </b>.",
-            "responsabilities":[
-                "<b>Gameplay Programming: </b> I was responsible for the movement and attacks of the player, jumping and double jumping, dashing through objects, shooting, the sword attack and even a secret feature that allowed players to read the posters in the world. It was a cool learning exercise since we wanted the game to be played with mouse and keyboard as well as controller, so I had to come up with different techniques to do some of the same features (shooting for example) that would behave differently depending on what the player was using. ",
-                "<b>AI Programming iteration: </b> The game has 3 types of enemies, the basic enemy that moves from one side to the other, the flying enemy that shoots at you and flees when someone gets too close, and the defensive enemy whose shield protects it from attacks. Due to some personal issues with one of the team members I had to finish their behaviors and do some iterations on them for the final delivery of the project. ",
-                "<b>Sound Programming: </b> I integrated the background music change from the different parts of the level, the main menu, and the game over screen using Unity’s Audio Module."],
-            "video":"https://youtu.be/ShngxFgkNuM"
         },
         {
             "name":"Wizard Hero",
