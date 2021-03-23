@@ -1,6 +1,28 @@
 {
     "projects": [
         {
+            "name":"Data Breaker",
+            "images":[
+                {
+                    "link":"./images/proyectos/dataBreaker.JPG",
+                    "alt":"image of the project"
+                }
+            ],
+            "tags":["C#", "Unity", "HDRP", "Accessibility", "HLSL"],
+            "info":"Databreaker was my final project at Vancouver Film School. It was developed by a group of 3 programmers and 3 game designers in a span of 6 months (2 months of pre-production and prototyping and 4 months of production). The game is a Third person action fighting game developed in <b> C# </b> using <b> Unity </b> and following the <b> High-Definition Render Pipeline</b>. The story follows Jett a short-tempered girl that got stuck in a glitchy videogame and has to fight her way out of it.",
+            "responsabilities":[
+                "<b> UI/UX:</b> I was responsible for the user experience in the menus as well as the programming of the UI, we used Unity’s new input system to keep track of the events of the controller, so I had to understand how to stop getting input when the game was paused, how to only get input from the controller instead of the mouse and keyboard, how to communicate where the player was in the menu and what it was selecting. It took a lot of testing with users to make the menu feel right.",
+                "<b> Responsive UI programming: </b>I designed the options menu it in a way that allowed the designers to create new settings easily as Scriptable objects and they would get added to the UI automatically at the beginning of the game.",
+                "<b> Accessibility Features: </b>We decided to implement some accessibility features in our game like having different languages and adding subtitles to our cutscenes, allowing people that did not understood English and people with hearing difficulties to have a better experience. I took charge of these features but recruited help from different team members that had different native languages as translators.",
+                "<b> Debug Menu: </b> I implemented all the debug settings of the game that not only allowed quick playtesting but also allowed us to keep track of certain problematic areas of the game that needed some balancing and level design fixes.",
+                "<b> VFXs: </b> I was in charge of the programming part of the visual effects of the game, getting to know pretty well Unity’s Shader graph and Unity’s Visual effects Graph to make the dissolve effects in the enemies, the effect of rail grinding and the holographic effect in the posters, between others. I even created a new custom post processing effect in HLSL for our glitch get hit effect.",
+                "<b> Mild Gameplay programming: </b> I developed the features that allowed the player to break barrels objects in game and get health back for the health packs. I also developed the feature that allowed the spawning of rails after a group of enemies was defeated.",
+                "<b> Cut Scenes: </b> I created the cutscenes of the game using unity’s timeline as well as the ability to skip them."
+            ],
+            "demo":"http://community.vfs.com/arcade/game/data-breaker/",
+            "video":"https://youtu.be/h_cEvtXfHO0"
+        },
+        {
             "name":"Rising Sun",
             "images":[
                 {
@@ -23,36 +45,6 @@
                 "<b>AI Programming iteration: </b> The game has 3 types of enemies, the basic enemy that moves from one side to the other, the flying enemy that shoots at you and flees when someone gets too close, and the defensive enemy whose shield protects it from attacks. Due to some personal issues with one of the team members I had to finish their behaviors and do some iterations on them for the final delivery of the project. ",
                 "<b>Sound Programming: </b> I integrated the background music change from the different parts of the level, the main menu, and the game over screen using Unity’s Audio Module."],
             "video":"https://youtu.be/ShngxFgkNuM"
-        },
-        {
-            "name":"Data Breaker",
-            "images":[
-                {
-                    "link":"./images/proyectos/dataBreaker.JPG",
-                    "alt":"image of the project"
-                },
-                {
-                    "link":"./images/proyectos/dataBreaker2.JPG",
-                    "alt":"image of the second level"
-                },
-                {
-                    "link":"./images/proyectos/dataBreaker3.JPG",
-                    "alt":"image of the menu of the game"
-                }
-            ],
-            "tags":["C#", "Unity", "HDRP", "Accessibility"],
-            "info":"Databreaker was my final project at Vancouver Film School. It was developed by a group of 3 programmers and 3 game designers in a span of 6 months (2 months of pre-production and prototyping and 4 months of production). The game is a Third person action fighting game developed in <b> C# </b> using <b> Unity </b> and following the <b> High-Definition Render Pipeline</b>. The story follows Jett a short-tempered girl that got stuck in a glitchy videogame and has to fight her way out of it.",
-            "responsabilities":[
-                "<b> UI/UX:</b> I was responsible for the user experience in the menus as well as the programming of the UI, we used Unity’s new input system to keep track of the events of the controller, so I had to understand how to stop getting input when the game was paused, how to only get input from the controller instead of the mouse and keyboard, how to communicate where the player was in the menu and what it was selecting. It took a lot of testing with users to make the menu feel right.",
-                "<b> Responsive UI programming: </b>I designed the options menu it in a way that allowed the designers to create new settings easily as Scriptable objects and they would get added to the UI automatically at the beginning of the game.",
-                "<b> Accessibility Features: </b>We decided to implement some accessibility features in our game like having different languages and adding subtitles to our cutscenes, allowing people that did not understood English and people with hearing difficulties to have a better experience. I took charge of these features but recruited help from different team members that had different native languages as translators.",
-                "<b> Debug Menu: </b> I implemented all the debug settings of the game that not only allowed quick playtesting but also allowed us to keep track of certain problematic areas of the game that needed some balancing and level design fixes.",
-                "<b> VFXs: </b> I was in charge of the programming part of the visual effects of the game, getting to know pretty well Unity’s Shader graph and Unity’s Visual effects Graph to make the dissolve effects in the enemies, the effect of rail grinding and the holographic effect in the posters, between others. I even created a new custom post processing effect in HLSL for our glitch get hit effect.",
-                "<b> Mild Gameplay programming: </b> I developed the features that allowed the player to break barrels objects in game and get health back for the health packs. I also developed the feature that allowed the spawning of rails after a group of enemies was defeated.",
-                "<b> Cut Scenes: </b> I created the cutscenes of the game using unity’s timeline as well as the ability to skip them."
-            ],
-            "demo":"http://community.vfs.com/arcade/game/data-breaker/",
-            "video":"https://youtu.be/h_cEvtXfHO0"
         },
         {
             "name":"Wizard Hero",
