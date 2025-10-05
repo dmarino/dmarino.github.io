@@ -208,12 +208,13 @@ button{
 	color: white;
 }
 
-#contact h1{
-	font-size: calc(12px + 1.5vw);
+#contact h2{
+	font-size: 20px;
+	margin: 2px;
 }
 
 #email{
-	font-size: calc(12px + 1.3vw);
+	font-size: 20px;
 	color: #ddd;
 }
 
