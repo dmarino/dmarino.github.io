@@ -6,6 +6,14 @@
                 {
                     "link":"./images/proyectos/dataBreaker.JPG",
                     "alt":"image of the project"
+                },
+                {
+                    "link":"./images/proyectos/dataBreaker2.JPG",
+                    "alt":"image of the project"
+                },
+                {
+                    "link":"./images/proyectos/dataBreaker3.JPG",
+                    "alt":"image of the project"
                 }
             ],
             "tags":["C#", "Unity", "HDRP", "Accessibility", "HLSL"],
@@ -19,7 +27,7 @@
                 "<b> Mild Gameplay programming: </b> I developed the features that allowed the player to break barrels objects in game and get health back for the health packs. I also developed the feature that allowed the spawning of rails after a group of enemies was defeated.",
                 "<b> Cut Scenes: </b> I created the cutscenes of the game using unity’s timeline as well as the ability to skip them."
             ],
-            "demo":"http://community.vfs.com/arcade/game/data-breaker/",
+            "demo":"https://vfs-gdpg.itch.io/data-breaker",
             "video":"https://youtu.be/h_cEvtXfHO0"
         },
         {
@@ -148,7 +156,8 @@
                 "<b>Gameplay Programming: </b> I used the starter third person project in Unreal as a base for the game and developed the rest of the features, from the jetpack use and recharge to the random automatic generation of the map and its collectables.",
                 "<b>UI Programming: </b> As part of the brief the game had to have a main menu, a HUD, and a game over screen. I created all of them and connected them with their respective functions. "
             ],
-            "video":"https://youtu.be/dwKxPLjk1Cw"
+            "video":"https://youtu.be/dwKxPLjk1Cw",
+            "code":"https://github.com/dmarino/UntittledEndlessRunner"
         },
         {
             "name":"Go Fish",
@@ -245,7 +254,7 @@
                     "alt":"image of the change of stats"
                 }
             ],
-            "tags":["JavaScript", "Express","React","mongoDB", "REST"],
+            "tags":["JavaScript", "Express","React"],
             "info":"Mordor Planet Simulator was a <b> multiplayer </b> resource management game that allowed players from all around the world to make decisions over the resources of a fictional planet. It was developed using <b> React </b> for the front end, <b> Express (Node.js) </b> for the backend and <b> mongoDB </b> for the non-relational data base. This project was an assignment for my web development class, and I worked in it with another classmate in a span of 2 weeks.",
             "responsabilities":[
                 "<b>UI/UX design: </b> I designed the UI of the application and iterated on it considering the user experience of many friends and my teammate. ",
@@ -293,7 +302,7 @@
                     "alt":"image of the labyrinth game"
                 }
             ],
-            "tags":["JavaScript", "Meteor","React","mongoDB", "REST"],
+            "tags":["JavaScript", "Meteor","React"],
             "info":"The labyrinth is the third assignment for my programming with web technologies class, its goal was to create a web application keeping in mind accessibility, usability, and performance. My teammate and I decided to create a game that could be played by a blind person using a screen reader. In the labyrinth you played as an explorer that needed to fin a treasure inside a maze, because you had a torch you could only see the spot you were in and when you moved the screen reader would tell you the paths that you could take from that position. This game could be played as a single player, a 2-player coop or a 1v1. ",
             "responsabilities":[
                 "<b>UI/UX design: </b> I designed the layout of the application and the way it would work with the screen reader (every picture has an alternative text that gets generated according to the data of the maze).",
@@ -302,32 +311,6 @@
             ],
             "demo":"https://the-labyrinth.herokuapp.com/",
             "code":"https://github.com/dmarino/theLabyrinth"
-        },
-        {
-            "name":"Hospital Appointments",
-            "images":[
-                {
-                    "link":"/images/proyectos/desarrollo.PNG",
-                    "alt":"image of the project"
-                },
-                {
-                    "link":"/images/proyectos/desarrollo2.JPG",
-                    "alt":"image of the project"
-                },
-                {
-                    "link":"/images/proyectos/desarrollo3.JPG",
-                    "alt":"image of the project"
-                }
-            ],
-            "tags":["Maven","Angular","REST","Java","MySQL"],
-            "info":"Hospital Appointment was a project for my Software development in teams class, it was develop by a group of 5 people using <b> Java </b> and <b> Angular </b>. Each member had to code the whole stack related to an entity (Json architecture, Data base query, <b> REST API </b>, logic of the client actions, showing the data in a web page) and oversee a technical aspect of the project. Our group had the topic of a hospital that wanted its clients to make appointments to doctors with certain specialties. My entity was the Specialty of a doctor, and I oversaw the web development aspect of the project.",
-            "responsabilities":[
-                "<b>Relational database queries: </b> I took part creating the data architecture that we wanted to use in the database, it was a relational database, so we needed to use SQL queries to change or consult the information on it.",
-                "<b>REST API: </b> I had to create typical REST services for the Specialties, get all, get by Id, post, Update and remove.  ",
-                "<b>Front End development: </b> I had to create a web page for showing the data of all services regarding to the specialties so a form to create and update, a list to show all and a page to show the data of a specific one.  ",
-                "<b>General Front End: </b> As an extra I developed our main page and our menu using bootstrap and custom CSS."
-            ],
-            "code":"https://github.com/dmarino/201620-WaveTeam"
         }
     ]
 }

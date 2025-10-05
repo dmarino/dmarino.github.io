@@ -193,6 +193,7 @@ button{
 }
 
 footer{
+	margin-top: 4%;
 	color: #f7f7ef;
 	width: 100%;
 }
@@ -209,7 +210,7 @@ footer{
 footer >div{
 	background: #436020;
 	margin-bottom: 0%;
-	padding: 1% 0% 2% 0%;
+	padding: 2% 0% 2% 0%;
 }
 
 footer >div a{
