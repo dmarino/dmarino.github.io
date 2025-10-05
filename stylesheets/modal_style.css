@@ -54,11 +54,11 @@
 }
 
 #modal-top>i{
-    color: #00627A;
+    color: #436020;
 }
 
 #modal-top>i:hover{
-    color: #004152;
+    color: #a1af80;
 }
 
 #modal-center{
@@ -101,7 +101,7 @@
 
 #modal-project-tags > .project-tag{
 
-    color: #000;
+    color: #141e0c;
     margin: 2% 4% 2% 4%;
 }
 
@@ -112,7 +112,7 @@
 .modal-button{
 
     margin-top: 5%;
-    background: #0088aa;
+    background: #436020;
     color: #fff;
 
     font-size: calc(12px + 1vw) !important;
@@ -124,8 +124,8 @@
 }
 
 .modal-button:hover{
-    background: #ADEFFF;
-    color: #00B4E0;
+    background: #a1af80;
+    color: #436020;
 }
 
 
@@ -137,5 +137,5 @@
 
 #modal-project-description > b{
 
-    background: #ADEFFF;
+    background: #a1af80;
 }

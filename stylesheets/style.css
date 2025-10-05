@@ -6,8 +6,8 @@ html,body{
 	margin: 0;
 	padding: 0;
 	
-	background: #f2f2f2;
-	color: black;	
+	background: #f7f7ef;
+	color: #141e0c;	
 
 	text-align: center;
 	font-family: 'Source Code Pro', sans-serif;
@@ -72,7 +72,7 @@ h1, h2, h3 {
 	margin-top: 10vh;
 	grid-area: imagen;
 
-	background: #0088aa;
+	background: #436020;
 	border-radius: 20px;
 }
 
@@ -115,7 +115,7 @@ h1, h2, h3 {
 }
 
 #about-separator{
-	background: #0088aa;
+	background: #436020;
 	position: relative;
 	left: -2vh;
 	top: -2vh;
@@ -151,7 +151,7 @@ h1, h2, h3 {
 
 button{
 
-	background: #0088aa;
+	background: #436020;
 	color: white;
 	font-family: 'Space Grotesk', sans-serif;
 	font-size: 1rem;
@@ -167,7 +167,7 @@ button{
 
 #contact{
 	width: 100%;
-	background: #0088aa;
+	background: #436020;
 
 	margin-bottom: 2%;
 
@@ -191,7 +191,7 @@ button{
 }
 
 footer{
-	background: black;
+	background: #141e0c;
 	color: #aaa;
 	padding: 1% 0% 2% 0%;
 

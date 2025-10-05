@@ -14,8 +14,8 @@ header {
 	left:0;
 	right:0;
 	width:100%;
-	color: #fff;
-	background:rgba(255, 255, 255,1);
+	color: #f7f7ef;
+	background:rgba(67, 96, 32,1);
 	height:60px;
 	z-index:9999;
 
@@ -25,9 +25,9 @@ header {
 }
 
 header.scrolled {
-	color: #000;
+	color: #f7f7ef;
 	box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 20px 0px;
-	background:rgba(255, 255, 255, 0.8);
+	background:rgba(67, 96, 32,1);
 }
 
 header nav {
@@ -58,7 +58,7 @@ a.grt-logo img {
 }
 
 .grt-menu-logo > .fa{
-	color: #0088aa;
+	color: #f7f7ef;
 	font-size: 30px;
 
 	position: relative;
@@ -108,7 +108,7 @@ ul.grt-menu li a {
 	padding: 5px 12px 10px 10px;
 	font-size:21px;
 	display: inline-block;
-	color:#303030;
+	color:#f7f7ef;
 	line-height: 1.1em;
 	box-shadow: inset 0 0 0 0 #FFF;
 	position:relative;
@@ -141,7 +141,7 @@ ul.grt-menu li.grt-dropdown:hover a {
 ul.grt-menu li.grt-dropdown ul.grt-dropdown-list {
 	display:none;
 	position:absolute;
-	background:#0088aa;
+	background:#f7f7ef;
 	margin: 0;
 	padding: 0;
 	min-width:150px;
@@ -164,7 +164,7 @@ ul.grt-menu li.grt-dropdown ul.grt-dropdown-list li:last-child a {
 }
 
 ul.grt-menu li.grt-dropdown.active-dropdown {
-	background: #0088aa;
+	background: #f7f7ef;
 }
 
 ul.grt-menu li.grt-dropdown.active-dropdown ul.grt-dropdown-list {
@@ -189,15 +189,15 @@ ul.grt-menu li.grt-dropdown.active-dropdown a {
 	}
 
 	ul.grt-menu li.grt-dropdown:hover > a {
-		border-bottom: 4px solid #0088aa;
+		border-bottom: 4px solid #f7f7ef;
 	}
 
 	ul.grt-menu li a:hover {
-		border-bottom: 4px solid #0088aa;
+		border-bottom: 4px solid #f7f7ef;
 	}
 
 	ul.grt-menu li.active a {
-		border-bottom: 4px solid #0088aa;
+		border-bottom: 4px solid #f7f7ef;
 	}
 }
 
@@ -221,7 +221,7 @@ ul.grt-menu li.grt-dropdown.active-dropdown a {
 		position:absolute;
 		right:0;
 		top:10px;
-		background:#FFF;
+		background:#436020;
 		color:#3d3d3d;
 		margin:0;
 		padding:0;
@@ -247,7 +247,7 @@ ul.grt-menu li.grt-dropdown.active-dropdown a {
 
 	ul.open-grt-menu {
 		position: fixed;
-		background: #FFF;
+		background: #436020;
 		width: 100%;
 		left: 0;
 		right: 0;
