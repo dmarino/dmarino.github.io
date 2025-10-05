@@ -16,6 +16,7 @@ export default class Project{
     generateProjectCard(index)
     {
         var div = document.createElement("div");
+        div.setAttribute("data-aos","zoom-in-up");
         div.setAttribute("class","project");
         div.setAttribute("id", "project-"+index);
         div.style.cssText = 'background-image:url("' + this.data.images[0].link+ '");'

@@ -1,0 +1,20 @@
+{
+    "skills": [
+        {
+            "name":"Languages",
+            "tags":["C++", "C#", "JavaScript", "Java","Lua", "Verse","HTML", "CSS","Python"]
+        },
+        {
+            "name":"Engines/ Frameworks",
+            "tags":["Unreal 5 / Unreal 4", "Unity", "Love2D","UEFN","Godot","Unity XR","Unreal Meta XR", "React", "Node.js", "Vue", "Angular"]
+        },
+        {
+            "name":"Tools",
+            "tags":["Github", "Perforce", "Bitbucket", "FMOD", "WWise", "Jira"]
+        },
+        {
+            "name":"Fields",
+            "tags":["C#", "Unity", "Multiplayer"]
+        }
+    ]
+}
