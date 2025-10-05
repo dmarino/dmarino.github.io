@@ -19,11 +19,12 @@ h1, h2, h3 {
 
 button{
 
-	background: #436020;
-	color: white;
+	background: #f7f7ef;
+	color: #436020;
 	font-family: 'Space Grotesk', sans-serif;
 	font-size: 1rem;
-	border-style: none outset outset none;
+	border: solid;
+	box-shadow: 0 6px 5px 0 #436020;
 	padding: 4px 8px 4px 8px;
 }
 
@@ -76,7 +77,7 @@ button{
 }
 
 #cv{
-	color: white;
+	color:#436020;
 	text-decoration: none;
 }
 
@@ -194,10 +195,14 @@ button{
     
 }
 
-
 #btn-more-projects{
 	margin: 5%;
 }
+
+#btn-more-projects:hover{
+	cursor: pointer;
+}
+
 #contact{
 	width: 100%;
 	background: #436020;
