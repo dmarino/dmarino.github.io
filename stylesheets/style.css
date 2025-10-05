@@ -17,31 +17,84 @@ h1, h2, h3 {
 	font-family: 'Space Grotesk', sans-serif;
 }
 
+button{
+
+	background: #436020;
+	color: white;
+	font-family: 'Space Grotesk', sans-serif;
+	font-size: 1rem;
+	border-style: none outset outset none;
+	padding: 4px 8px 4px 8px;
+}
+
+
 #home-info{
 	width: 100%;
 	height: 102vh;
 
 	text-align: left;
 
-	background-image:url("../images/b1.png");
+  	display: grid;
+  	grid-template-columns: 50% 50%;
+}
+
+#home-title{
+	position: relative;
+	top: 10%;
+	left: 25%;
+}
+
+#home-title > h1{
+
+	margin-top: 10vh;
+	font-family: 'Space Grotesk', sans-serif;
+	color: #436020;	
+	font-size: calc(24px + 2vw);
+}
+
+#home-title >p{
+	margin-right: 15vh;
+}
+
+#rana{
+
+	position: relative;
+	top: 10%;
+	right: 10%;
+
+	width: 90vh;
+	height: 90vh;
+
+	background-image:url("../images/rana.png");
     background-size: cover;
     background-repeat: no-repeat;
 	background-position: center;
 }
 
-#home-title{
-	position: relative;
-	top: 70%;
-	left: 50%;
-	transform: translate(-50%, 0%);
-	padding-left: 20px;
-
+#btn-cv{
+	margin-top: 5vh;
 }
 
-#home-title > span{
+#cv{
+	color: white;
+	text-decoration: none;
+}
 
-	background: rgba(255, 255, 255, 0.6);
-	font-family: 'Space Grotesk', sans-serif;
+
+@media (max-width:991px){
+
+	#home-info{
+  		grid-template-columns: 100% !important;
+	}
+
+	#rana{
+		top: -15% !important;
+		right: 0% !important;
+		left: 20%;
+
+		width: 60vh !important;
+		height: 60vh !important;
+	}
 }
 
 #info-title{
@@ -49,13 +102,6 @@ h1, h2, h3 {
 	z-index: 10;
 }
 
-#name{
-	font-size: calc(24px + 2vw);
-}
-
-#subtext{
-	font-size: calc(18px + 1.5vw);
-}
 
 #about-me{
 	height: 100%;
@@ -118,8 +164,7 @@ h1, h2, h3 {
 	background: #436020;
 	position: relative;
 	left: -2vh;
-	top: -2vh;
-	border-radius: 25px;
+	top: -10vh;
 	width: 50%;
 	height: 10vh;
 }
@@ -149,22 +194,10 @@ h1, h2, h3 {
     
 }
 
-button{
 
-	background: #436020;
-	color: white;
-	font-family: 'Space Grotesk', sans-serif;
-	font-size: 1rem;
-	border-style: none outset outset none;
-	padding: 4px 8px 4px 8px;
+#btn-more-projects{
 	margin: 5%;
 }
-
-#cv{
-	color: white;
-	text-decoration: none;
-}
-
 #contact{
 	width: 100%;
 	background: #436020;
