@@ -40,9 +40,8 @@ button{
 }
 
 #home-title{
-	position: relative;
-	top: 10%;
-	left: 25%;
+	margin-top: 10%;
+	margin-left: 25%;
 }
 
 #home-title > h1{
@@ -57,14 +56,16 @@ button{
 	margin-right: 15vh;
 }
 
+#home-image{
+	margin-top: 10%;
+
+}
+
 #rana{
-
-	position: relative;
-	top: 10%;
-	right: 10%;
-
 	width: 90vh;
 	height: 90vh;
+
+	margin-left: -10%;
 
 	background-image:url("../images/rana.png");
     background-size: cover;
@@ -88,13 +89,17 @@ button{
   		grid-template-columns: 100% !important;
 	}
 
-	#rana{
-		top: -15% !important;
-		right: 0% !important;
-		left: 20%;
+	#home-image{
+		padding-left: 25% !important;
+		margin-top: -10% !important;
+	}
 
-		width: 60vh !important;
-		height: 60vh !important;
+	#rana{
+		margin-top: 10% !important;
+		margin-left: 0% !important;
+
+		width: 40vh !important;
+		height: 40vh !important;
 	}
 }
 
@@ -108,7 +113,6 @@ button{
 }
 
 #background{
-	margin-left: 3%;
 	text-align: left;
 
   	display: grid;
@@ -126,6 +130,7 @@ button{
 
 @media (max-width:991px){
 	#background{
+		margin-right: 3%;
   		grid-template-columns: 40% 60% !important;
 	}
 
