@@ -56,7 +56,7 @@
 .project-name{
     
     color: rgba(0,0,0,0);
-    font-family: 'Amatic SC', cursive;
+	font-family: 'Space Grotesk', sans-serif;
     font-weight: bold;
     font-size: 2rem;
 
@@ -71,7 +71,7 @@
 .project-tag{
 
     color: rgba(0,0,0,0);
-    font-family: 'Amatic SC', cursive;
+	font-family: 'Space Grotesk', sans-serif;
     font-weight: bold;
 
     margin: 1%;

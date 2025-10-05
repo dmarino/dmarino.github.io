@@ -10,11 +10,11 @@ html,body{
 	color: black;	
 
 	text-align: center;
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'Source Code Pro', sans-serif;
 }
 
 h1, h2, h3 {
-	font-family: 'Amatic SC', cursive;
+	font-family: 'Space Grotesk', sans-serif;
 }
 
 #home-info{
@@ -41,7 +41,7 @@ h1, h2, h3 {
 #home-title > span{
 
 	background: rgba(255, 255, 255, 0.6);
-	font-family: 'Amatic SC', cursive;
+	font-family: 'Space Grotesk', sans-serif;
 }
 
 #info-title{
@@ -153,9 +153,10 @@ button{
 
 	background: #0088aa;
 	color: white;
-	font-family: 'Amatic SC', cursive;
-	font-size: 2rem;
-
+	font-family: 'Space Grotesk', sans-serif;
+	font-size: 1rem;
+	border-style: none outset outset none;
+	padding: 4px 8px 4px 8px;
 	margin: 5%;
 }
 
@@ -171,7 +172,7 @@ button{
 	margin-bottom: 2%;
 
 	padding: 1% 0% 2% 0%;
-	font-family: 'Amatic SC', cursive;
+	font-family: 'Space Grotesk', sans-serif;
 
 }
 
