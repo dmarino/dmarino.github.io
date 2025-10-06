@@ -222,7 +222,7 @@ ul.grt-menu li.grt-dropdown.active-dropdown a {
 		right:0;
 		top:10px;
 		background:#436020;
-		color:#3d3d3d;
+		color:#f7f7ef;
 		margin:0;
 		padding:0;
 		cursor:pointer;
@@ -233,7 +233,7 @@ ul.grt-menu li.grt-dropdown.active-dropdown a {
 	.grt-mobile-button .line1, .grt-mobile-button .line2, .grt-mobile-button .line3 {
 		width: 35px;
 		height: 4px;
-		background-color: #333;
+		background-color: #f7f7ef;
 		margin: 6px 0;
 		transition: 0.4s;
 		display:block;

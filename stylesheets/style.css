@@ -89,27 +89,6 @@ button{
 	text-decoration: none;
 }
 
-
-@media (max-width:991px){
-
-	#home-info{
-  		grid-template-columns: 100% !important;
-	}
-
-	#home-image{
-		padding-left: 25% !important;
-		margin-top: -10% !important;
-	}
-
-	#rana{
-		margin-top: 10% !important;
-		margin-left: 0% !important;
-
-		width: 40vh !important;
-		height: 40vh !important;
-	}
-}
-
 #about-separator{
 	background: #436020;
 	position: relative;
@@ -117,6 +96,34 @@ button{
 	top: -10vh;
 	width: 50%;
 	height: 10vh;
+}
+
+
+@media (max-width:991px){
+
+	#home-info{
+  		grid-template-columns: 100% !important;
+	}
+
+	#home-title{
+		margin-left: 10% !important;
+	}
+
+	#home-image{
+		padding-left: 25% !important;
+		margin-top: -15% !important;
+	}
+
+	#rana{
+		margin-left: 10% !important;
+
+		width: 30vh !important;
+		height: 30vh !important;
+	}
+
+	#about-separator{
+		display: none;
+	}
 }
 
 #background{
