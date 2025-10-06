@@ -16,7 +16,7 @@
                     "alt":"image of the project"
                 }
             ],
-            "tags":["C#", "Unity", "HDRP", "Accessibility", "HLSL"],
+            "tags":["C#", "Unity", "HDRP", "Accessibility"],
             "info":"Databreaker was my final project at Vancouver Film School. It was developed by a group of 3 programmers and 3 game designers in a span of 6 months (2 months of pre-production and prototyping and 4 months of production). The game is a Third person action fighting game developed in <b> C# </b> using <b> Unity </b> and following the <b> High-Definition Render Pipeline</b>. The story follows Jett a short-tempered girl that got stuck in a glitchy videogame and has to fight her way out of it.",
             "responsabilities":[
                 "<b> UI/UX:</b> I was responsible for the user experience in the menus as well as the programming of the UI, we used Unity’s new input system to keep track of the events of the controller, so I had to understand how to stop getting input when the game was paused, how to only get input from the controller instead of the mouse and keyboard, how to communicate where the player was in the menu and what it was selecting. It took a lot of testing with users to make the menu feel right.",

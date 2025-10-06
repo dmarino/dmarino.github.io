@@ -54,6 +54,13 @@ button{
 
 #home-title >p{
 	margin-right: 15vh;
+	  line-height: 1.5;
+}
+
+#home-title >p >span{
+	font-family: 'Space Grotesk', sans-serif;
+	background: #436020;
+	color: #f7f7ef;
 }
 
 #home-image{
@@ -175,6 +182,7 @@ button{
 
 .title{
 	font-size: 3rem;
+	color: #436020;
 }
 
 #home-projects{

@@ -20,7 +20,7 @@
     height: 95%;
     min-height: 80vh;
 
-    background: #fff;
+    background: #f7f7ef;
 }
 
 #modal-close{
@@ -136,5 +136,10 @@
 
 #modal-project-description > b{
 
-    background: #a1af80;
+	font-family: 'Space Grotesk', sans-serif;
+    font-weight: normal;
+
+	background: #436020;
+	color: #f7f7ef;
+
 }
