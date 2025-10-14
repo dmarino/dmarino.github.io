@@ -1,50 +1,85 @@
 {
     "projects": [
         {
-            "name":"Data Breaker",
+            "name":"HYPER YUKI",
             "images":[
                 {
-                    "link":"./images/proyectos/dataBreaker.JPG",
+                    "link":"./images/proyectos/HYPER.png",
+                    "alt":"image of the project"
+                },
+                {
+                    "link":"./images/proyectos/HYPER2.PNG",
+                    "alt":"image of the project"
+                },
+                {
+                    "link":"./images/proyectos/Hyper3.jpg",
                     "alt":"image of the project"
                 }
             ],
-            "tags":["C#", "Unity", "HDRP", "Accessibility", "HLSL"],
-            "info":"Databreaker was my final project at Vancouver Film School. It was developed by a group of 3 programmers and 3 game designers in a span of 6 months (2 months of pre-production and prototyping and 4 months of production). The game is a Third person action fighting game developed in <b> C# </b> using <b> Unity </b> and following the <b> High-Definition Render Pipeline</b>. The story follows Jett a short-tempered girl that got stuck in a glitchy videogame and has to fight her way out of it.",
+            "tags":["C++", "UE5", "GAS", "AI", "MULTIPLAYER"],
+            "info":"HYPER YUKI is a Snowboarding game developed in <b> Unreal Engine 5 </b> using <b> C++ </b>. It can be played <b> as a Single Player game </b> but also has <b> Online </b> and <b> Local </b> Multiplayer options. It was announced on September 10, 2025.",
             "responsabilities":[
-                "<b> UI/UX:</b> I was responsible for the user experience in the menus as well as the programming of the UI, we used Unity’s new input system to keep track of the events of the controller, so I had to understand how to stop getting input when the game was paused, how to only get input from the controller instead of the mouse and keyboard, how to communicate where the player was in the menu and what it was selecting. It took a lot of testing with users to make the menu feel right.",
-                "<b> Responsive UI programming: </b>I designed the options menu it in a way that allowed the designers to create new settings easily as Scriptable objects and they would get added to the UI automatically at the beginning of the game.",
-                "<b> Accessibility Features: </b>We decided to implement some accessibility features in our game like having different languages and adding subtitles to our cutscenes, allowing people that did not understood English and people with hearing difficulties to have a better experience. I took charge of these features but recruited help from different team members that had different native languages as translators.",
-                "<b> Debug Menu: </b> I implemented all the debug settings of the game that not only allowed quick playtesting but also allowed us to keep track of certain problematic areas of the game that needed some balancing and level design fixes.",
-                "<b> VFXs: </b> I was in charge of the programming part of the visual effects of the game, getting to know pretty well Unity’s Shader graph and Unity’s Visual effects Graph to make the dissolve effects in the enemies, the effect of rail grinding and the holographic effect in the posters, between others. I even created a new custom post processing effect in HLSL for our glitch get hit effect.",
-                "<b> Mild Gameplay programming: </b> I developed the features that allowed the player to break barrels objects in game and get health back for the health packs. I also developed the feature that allowed the spawning of rails after a group of enemies was defeated.",
-                "<b> Cut Scenes: </b> I created the cutscenes of the game using unity’s timeline as well as the ability to skip them."
+                "<b> Gameplay: </b> I was part of the team that developed the player controller and all gameplay abilities of the player.",
+                "<b> Networking: </b> I was in charge of creating the networking connection flow, and of verifying that all gameplay abilities worked on multiplayer.",
+                "<b> NPC Riders: </b> I developed the NPCs behaviour in the race. Creating their rubberbanding system for each race difficulty and their decision making."
             ],
-            "demo":"http://community.vfs.com/arcade/game/data-breaker/",
-            "video":"https://youtu.be/h_cEvtXfHO0"
+            "demo":"https://store.steampowered.com/app/3082730/HYPERyuki_Snowboard_Syndicate/",
+            "video":"https://youtu.be/eZEq7EDvU2I?si=VT8WErVdiQsckvyJ"
         },
-        {
-            "name":"Rising Sun",
+         {
+            "name":"RKGK",
             "images":[
                 {
-                    "link":"./images/proyectos/risingSun.JPG",
-                    "alt":"image of the main menu"
+                    "link":"./images/proyectos/rkgkposter.png",
+                    "alt":"image of the project"
                 },
                 {
-                    "link":"./images/proyectos/risingSun2.JPG",
-                    "alt":"image of the first type of enemy"
+                    "link":"./images/proyectos/rkgk1.PNG",
+                    "alt":"image of the project"
                 },
                 {
-                    "link":"./images/proyectos/risingSun3.JPG",
-                    "alt":"image of flying enemy"
+                    "link":"./images/proyectos/rkgk2.PNG",
+                    "alt":"image of the project"
                 }
             ],
-            "tags":["C#", "Unity", "2D"],
-            "info":"Rising sun was my team project at Vancouver Film School, it was developed by a team of 3 designers and one programmer in a span of 2 months. The project is a <b> 2D platformer </b> where you can play as a samurai trying to infiltrate a big robotic corporation that has enslaved their town. Rising sun was developed in <b> Unity </b>.",
+            "tags":["C++", "UE4", "GAS", "UI", "AI"],
+            "info":"RKGK is a Single Player 3D Platformer where you play as Valah, a rebellious girl who wants to free her city from the reign of the evil Mr Buff using her unique graffiti skills. This game was developed using <b> Unreal Engine 4 </b> with <b> C++ </b> and was <b> published </b> In May 2024.",
             "responsabilities":[
-                "<b>Gameplay Programming: </b> I was responsible for the movement and attacks of the player, jumping and double jumping, dashing through objects, shooting, the sword attack and even a secret feature that allowed players to read the posters in the world. It was a cool learning exercise since we wanted the game to be played with mouse and keyboard as well as controller, so I had to come up with different techniques to do some of the same features (shooting for example) that would behave differently depending on what the player was using. ",
-                "<b>AI Programming iteration: </b> The game has 3 types of enemies, the basic enemy that moves from one side to the other, the flying enemy that shoots at you and flees when someone gets too close, and the defensive enemy whose shield protects it from attacks. Due to some personal issues with one of the team members I had to finish their behaviors and do some iterations on them for the final delivery of the project. ",
-                "<b>Sound Programming: </b> I integrated the background music change from the different parts of the level, the main menu, and the game over screen using Unity’s Audio Module."],
-            "video":"https://youtu.be/ShngxFgkNuM"
+                "<b> UI: </b> I was responsible for all the UI programming of the game. including UI animations and costume navigation.",
+                "<b> Gameplay: </b> I was part of the team that restructured the gameplay logic to use Unreal´s Gameplay Ability System.",
+                "<b> Enemy AI: </b> I developed the behaviour of over 25 enemies including the 7 bosses of the game.",
+                "<b> QA: </b> I was part of the programming team assigned to fix reported bugs, I solved close to 200 bugs."
+            ],
+            "demo":"https://store.steampowered.com/app/2146570/RKGK__Rakugaki/",
+            "video":"https://youtu.be/3XEf-1VXfNk?si=0uOtqAAH0LZnVXj3"
+        },
+        {
+            "name":"Data Breaker",
+            "images":[
+                {
+                    "link":"./images/proyectos/dataBreaker.png",
+                    "alt":"image of the project"
+                },
+                {
+                    "link":"./images/proyectos/dataBreaker2.JPG",
+                    "alt":"image of the project"
+                },
+                {
+                    "link":"./images/proyectos/dataBreaker3.JPG",
+                    "alt":"image of the project"
+                }
+            ],
+            "tags":["C#", "Unity", "HDRP", "Accessibility"],
+            "info":"Databreaker was my final project at Vancouver Film School. It was developed by a group of 3 programmers and 3 game designers in a span of 6 months (2 months of pre-production and prototyping and 4 months of production). The game is a Third person action fighting game developed in <b> C# </b> using <b> Unity </b> and following the <b> High-Definition Render Pipeline</b>. The story follows Jett, a short-tempered girl that got stuck in a glitchy videogame and has to fight her way out of it.",
+            "responsabilities":[
+                "<b> UI/UX: </b> I was responsible for the user experience in the menus as well as the programming of the UI.",
+                "<b> Accessibility Features: </b> I took charge of implementing some features like subtitles and different languages for menus, recruiting help from different team members that had different native languages as translators.",
+                "<b> Debug Menu: </b> I implemented all the debug settings of the game that not only allowed quick playtesting but also allowed us to keep track of certain problematic areas of the game that needed some balancing and level design fixes.",
+                "<b> VFXs: </b> I was in charge of the programming part of the visual effects of the game, getting to know pretty well Unity’s Shader graph and Unity’s Visual effects Graph.",
+                "<b> Cut Scenes: </b> I created the cutscenes of the game using unity’s timeline as well as the ability to skip them."
+            ],
+            "demo":"https://vfs-gdpg.itch.io/data-breaker",
+            "video":"https://youtu.be/h_cEvtXfHO0"
         },
         {
             "name":"Wizard Hero",
@@ -63,7 +98,7 @@
                 }
             ],
             "tags":["C#", "Unity", "Kinect"],
-            "info":"Wizard hero is a <b> Kinect </b> game I developed with a friend as an interactive experience. She gave me the concept of the game and the assets and I coded the entire project using this <a href= https://assetstore.unity.com/packages/tools/kinect-with-ms-sdk-7747 target=”_blank”> Kinect package </a> for <b> Unity</b>. Wizard hero was a mix between Guitar hero and some Kinect fitness games but with a Harry potter theme, In this game the players had to perform certain poses (swipe right, squat, jump, swipe left) when the notes where high enough to score points. When a player had enough points they could perform a harry potter spell to gain a bonus in the song. The scores of every player were saved in a json file at the end of each song. ",
+            "info":"Wizard hero is a <b> Kinect </b> game I developed with a friend as an interactive experience. She gave me the concept of the game and the assets and I coded the entire project using a Kinect package for <b> Unity</b>. Wizard hero was a mix between Guitar hero and some Kinect fitness games with a Harry potter theme. In this game the players had to perform certain poses (swipe right, squat, jump, swipe left) at the correct timing to score points. When a player had enough points they could perform a harry potter spell to gain a bonus in the song. The scores of every player were saved in a json file at the end of each song.",
             "responsabilities":[
                 "<b>Game Architecture: </b> I designed the whole architecture of the game in order to make the creation of different songs easier for my friend that didn’t know anything about Unity or Programming. This added scalability to the project because we could create as many songs as we wanted without extra effort.",
                 "<b>Kinect based Gameplay: </b> I programmed the whole player interactions for the UI and the gameplay with only Kinect gestures so the players could navigate the main menu and select their own songs without needing a mouse or a keyboard.  ",
@@ -74,6 +109,57 @@
             "code":"https://github.com/dmarino/WizardHero.git"
         },
         {
+            "name":"Rising Sun",
+            "images":[
+                {
+                    "link":"./images/proyectos/risingSun.JPG",
+                    "alt":"image of the main menu"
+                },
+                {
+                    "link":"./images/proyectos/risingSun2.JPG",
+                    "alt":"image of the first type of enemy"
+                },
+                {
+                    "link":"./images/proyectos/risingSun3.JPG",
+                    "alt":"image of flying enemy"
+                }
+            ],
+            "tags":["C#", "Unity", "2D"],
+            "info":"Rising sun was my team project at Vancouver Film School, it was developed by a team of 3 designers and one programmer in a span of 2 months. The project is a <b> 2D platformer </b> where you can play as a samurai trying to infiltrate a big robotic corporation that has enslaved their town. Rising sun was developed in <b> Unity </b> using <b> C# </b>.",
+            "responsabilities":[
+                "<b>Gameplay Programming: </b> I was responsible for the movement and attacks of the player, jumping and double jumping, dashing through objects, shooting, the sword attack and even a secret feature that allowed players to read the posters in the world.",
+                "<b>AI Programming: </b> I published and refined the behaviours of the 3 types of enemies in the game.",
+                "<b>Sound Programming: </b> I integrated the background music change from the different parts of the level, the main menu, and the game over screen using Unity’s Audio Module."
+            ],
+            "video":"https://youtu.be/ShngxFgkNuM"
+        },
+        {
+            "name":"Go Fish",
+            "images":[
+                {
+                    "link":"./images/proyectos/goFish1.JPG",
+                    "alt":"image of the fish swimming"
+                },
+                {
+                    "link":"./images/proyectos/goFish.JPG",
+                    "alt":"image of the main menu"
+                },
+                {
+                    "link":"./images/proyectos/goFish2.JPG",
+                    "alt":"image of the battle minigame"
+                }
+            ],
+            "tags":["Processing", "Interactive Design"],
+            "info":"Go fish is a project I developed for my design with interactive mediums class that consisted in two assignments. The first assignment was to create an animal using <b> Processing </b> that could move as their real-life counterpart and worked as an object that could be spawned as many times as you wanted. The second assignment was to use that animal in a game or an <b> interactive experience </b> of some sorts. I developed a fish that could swim in a group like a shoal and three different minigames, one that made the player look for the purple fishes, one that made two players battle with fishes that spit and one that made you avoid the fishes all together.",
+            "responsabilities":[
+                "<b>Rendering: </b> because I was creating a game without a game engine all the movement of the fish is math based, if they go in straight lines or in circles, how heir tails move, if they disappear in one side of the screen where will they re-appear in the other, etc. ",
+                "<b>Customizability: </b> the fish and the shoal have multiple options of creation based on color, movement, speed, and size, between others. This allowed me to create a shoal for multiple types of situations and reuse the same code most of the time. ",
+                "<b>UI Interactivity: </b> Because processing does not have a library that handles collisions with the mouse all the interactivity with the UI was math based as well. If the player clicked a button or if they hover over a fish, I had to check with math-based collisions. ",
+                "<b>Gameplay: </b> I developed the game as a finite state machine and created all the checks that would allow me to go from one state to the other.  "
+            ],
+            "video":"https://youtu.be/Ig8oTgFnX-g"
+        },
+                {
             "name":"Card Tours",
             "images":[
                 {
@@ -99,108 +185,6 @@
             ],
             "demo":"https://dmarino.github.io/card-tour/",
             "video":"https://youtu.be/stbZUoe5ddM"
-        },
-        {
-            "name":"Not Missile Command",
-            "images":[
-                {
-                    "link":"./images/proyectos/notMissileCommand2.JPG",
-                    "alt":"image of the gameplay"
-                },
-                {
-                    "link":"./images/proyectos/notMissileCommand.JPG",
-                    "alt":"image of Main Menu"
-                },
-                {
-                    "link":"./images/proyectos/notMissileCommand3.JPG",
-                    "alt":"image of the gameplay"
-                }
-            ],
-            "tags":["C++", "Retro", "Console"],
-            "info":"Not Missile Command is a Knock off for the retro game Missile Command developed in <b> C++ </b> and displayed in a <b> Console </b>. This was one of my assignments for my C++ class and the teacher gave us a third-party rendering engine called <b> EngineX </b> as a base to develop it. Like in the original game you command three silos that shoot missiles to defend a city from an enemy attack. ",
-            "responsabilities":[
-                "<b>Rendering: </b> EngineX only has basic shapes like rectangles, lines and circles, I had to design the more complex structures like the buildings and the silos as well as the missiles and the cursor, show the changes they had made in every frame, add some animations that look similar to the original game, etc.",
-                "<b>Gameplay: </b> I developed all the gameplay from the missile launch from the nearest silo that still stands and has ammo to the collisions and what happened when a missile hit something, it was a fun experience because it was all math based and I do not get to do that a lot.",
-                "<b>Memory Management: </b> This was a good exercise to work in C++ memory management because there where multiple instances where you had to delete objects in order to avoid memory allocation and finding the best solution to do that is always a challenge. "
-            ],
-            "video":"https://youtu.be/pInK-GFiKBI",
-            "code":"https://github.com/dmarino/notMissileCommand"
-        },
-        {
-            "name":"Untitled Endless Runner",
-            "images":[
-                {
-                    "link":"/images/proyectos/endlessRunner.JPG",
-                    "alt":"image of the main menu"
-                },
-                {
-                    "link":"/images/proyectos/endlessRunner2.JPG",
-                    "alt":"image of the jetpack function"
-                },
-                {
-                    "link":"/images/proyectos/endlessRunner3.JPG",
-                    "alt":"image of the gameOver Screen"
-                }
-            ],
-            "tags":["Unreal","Blueprints"],
-            "info":"Untitled Endless Runner is a 3D endless runner prototype inspired by jetpack joyride developed in <b> Unreal </b> using <b> Blueprints </b>. In the game you must use the elevation force provided by your jetpack to avoid obstacles, collect gems, and go as far as you can. I created this game as my last assignment for my Unreal Development with blueprints class.",
-            "responsabilities":[
-                "<b>Gameplay Programming: </b> I used the starter third person project in Unreal as a base for the game and developed the rest of the features, from the jetpack use and recharge to the random automatic generation of the map and its collectables.",
-                "<b>UI Programming: </b> As part of the brief the game had to have a main menu, a HUD, and a game over screen. I created all of them and connected them with their respective functions. "
-            ],
-            "video":"https://youtu.be/dwKxPLjk1Cw"
-        },
-        {
-            "name":"Go Fish",
-            "images":[
-                {
-                    "link":"./images/proyectos/goFish1.JPG",
-                    "alt":"image of the fish swimming"
-                },
-                {
-                    "link":"./images/proyectos/goFish.JPG",
-                    "alt":"image of the main menu"
-                },
-                {
-                    "link":"./images/proyectos/goFish2.JPG",
-                    "alt":"image of the battle minigame"
-                }
-            ],
-            "tags":["Processing", "Interactive Design"],
-            "info":"Go fish is a project I developed for my design with interactive mediums class that consisted in two assignments. The first assignment was to create an animal using <b> Processing </b> that could move as their real-life counterpart and worked as an object in the code that could be spawn as many times as you wanted. The second assignment was to use that animal in a game or an <b> interactive experience </b> of some sorts. I developed a fish that could swim in a group like a shoal and three different minigames, one that made the player look for the purple fishes, one that made two players battle with fishes that spit and one that made you avoid the fishes all together. ",
-            "responsabilities":[
-                "<b>Rendering: </b> because I was creating a game without a game engine all the movement of the fish is math based, if they go in straight lines or in circles, how heir tails move, if they disappear in one side of the screen where will they re-appear in the other, etc. ",
-                "<b>Customizability: </b> the fish and the shoal have multiple options of creation based on color, movement, speed, and size, between others. This allowed me to create a shoal for multiple types of situations and reuse the same code most of the time. ",
-                "<b>UI Interactivity: </b> Because processing does not have a library that handles collisions with the mouse all the interactivity with the UI was math based as well. If the player clicked a button or if they hover over a fish, I had to check with math-based collisions. ",
-                "<b>Gameplay: </b> I developed the game as a finite state machine and created all the checks that would allow me to go from one state to the other.  "
-            ],
-            "video":"https://youtu.be/Ig8oTgFnX-g"
-        },
-        {
-            "name":"Astro Space",
-            "images":[
-                {
-                    "link":"./images/proyectos/astroSpace.png",
-                    "alt":"image of the asteroids level"
-                },
-                {
-                    "link":"./images/proyectos/astroSpace2.png",
-                    "alt":"image of beginners level"
-                },
-                {
-                    "link":"./images/proyectos/astroSpace3.png",
-                    "alt":"image of the black hole level"
-                }
-            ],
-            "tags":["Oculus", "VR", "C#", "Unity", "Educational"],
-            "info":"AstroSpace is a VR learning environment developed for Oculus and VIVE using <b> Steam VR </b> and <b> Unity </b>. Its main goal was to prove if a VR environment was better to learn about topics and events hard to see or experience in real life compared to the traditional way used in schools. For this purpose, I designed and developed 3 tests combining infographics (the traditional way) and interactive spaces (the VR way) in different percentages and then seeing if the users learned more when they could interact with the astronomical phenomena.",
-            "responsabilities":[
-                "<b>Gamification: </b> I designed the environments in a way that would be fun for the player to learn, in the black hole level I gave the player different real-life objects to test the gravitational force, in the comets or asteroids level I kept score of which one was shoot as if it was a competition. These little features made the players enjoy more their experience and learn more as well.",
-                "<b>Interaction: </b> I designed and developed all the interactions in the game using the steam VR library and free assets from the asset store.",
-                "<b>Calibration and testing: </b> I did almost 15 tests in different subjects where I had to calibrate the Oculus headset, teach the controls (using an introductory level that I developed as well) and overall managing the data of the sessions. "
-            ],
-            "video":"https://youtu.be/x_K4Wb2Wlkc",
-            "code":"https://github.com/dmarino/WizardHero.git"
         },
         {
             "name":"Food Wars",
@@ -230,31 +214,55 @@
             "code":"https://github.com/dmarino/FoodWars"
         },
         {
-            "name":"Mordor Planet Sim.",
+            "name":"Untitled Endless Runner",
             "images":[
                 {
-                    "link":"./images/proyectos/mordorPlanetSimulator.JPG",
-                    "alt":"Image of the planet animation"
+                    "link":"/images/proyectos/endlessRunner.JPG",
+                    "alt":"image of the main menu"
                 },
                 {
-                    "link":"./images/proyectos/mordorPlanetSimulator2.JPG",
-                    "alt":"image of the Alias setting"
+                    "link":"/images/proyectos/endlessRunner2.JPG",
+                    "alt":"image of the jetpack function"
                 },
                 {
-                    "link":"./images/proyectos/mordorPlanetSimulator3.JPG",
-                    "alt":"image of the change of stats"
+                    "link":"/images/proyectos/endlessRunner3.JPG",
+                    "alt":"image of the gameOver Screen"
                 }
             ],
-            "tags":["JavaScript", "Express","React","mongoDB", "REST"],
-            "info":"Mordor Planet Simulator was a <b> multiplayer </b> resource management game that allowed players from all around the world to make decisions over the resources of a fictional planet. It was developed using <b> React </b> for the front end, <b> Express (Node.js) </b> for the backend and <b> mongoDB </b> for the non-relational data base. This project was an assignment for my web development class, and I worked in it with another classmate in a span of 2 weeks.",
+            "tags":["UE4","Blueprints"],
+            "info":"Untitled Endless Runner is a 3D endless runner prototype inspired by jetpack joyride developed in <b> Unreal </b> using <b> Blueprints </b>. In the game you must use the elevation force provided by your jetpack to avoid obstacles, collect gems, and go as far as you can. I created this game as my last assignment for my Unreal Development with blueprints class.",
             "responsabilities":[
-                "<b>UI/UX design: </b> I designed the UI of the application and iterated on it considering the user experience of many friends and my teammate. ",
-                "<b>Front end Development: </b> I took the role of front-end developer in this project, this meant that I had to create the react structure with the according CSS in order to make it pretty and connect it with the data from the backend.",
-                "<b>Deployment: </b> I helped with the deployment of the web page to Heroku. "
+                "<b>Gameplay Programming: </b> I used the starter third person project in Unreal as a base for the game and developed the rest of the features, from the jetpack use and recharge to the random automatic generation of the map and its collectables.",
+                "<b>UI Programming: </b> As part of the brief the game had to have a main menu, a HUD, and a game over screen. I created all of them and connected them with their respective functions. "
             ],
-            "demo":"http://intense-springs-10900.herokuapp.com/",
-            "code":"https://github.com/hjcalderon10/mordorPlanetSimulation"
-
+            "video":"https://youtu.be/dwKxPLjk1Cw",
+            "code":"https://github.com/dmarino/UntittledEndlessRunner"
+        },
+        {
+            "name":"Not Missile Command",
+            "images":[
+                {
+                    "link":"./images/proyectos/notMissileCommand2.JPG",
+                    "alt":"image of the gameplay"
+                },
+                {
+                    "link":"./images/proyectos/notMissileCommand.JPG",
+                    "alt":"image of Main Menu"
+                },
+                {
+                    "link":"./images/proyectos/notMissileCommand3.JPG",
+                    "alt":"image of the gameplay"
+                }
+            ],
+            "tags":["C++", "Retro", "Console"],
+            "info":"Not Missile Command is a Knock off for the retro game Missile Command developed in <b> C++ </b> and displayed in a <b> Console </b>. This was one of my assignments for my C++ class and the teacher gave us a third-party rendering engine called <b> EngineX </b> as a base to develop it. Like in the original game you command three silos that shoot missiles to defend a city from an enemy attack. ",
+            "responsabilities":[
+                "<b>Rendering: </b> EngineX only has basic shapes like rectangles, lines and circles, I had to design the more complex structures like the buildings and the silos as well as the missiles and the cursor, show the changes they had made in every frame, add some animations that look similar to the original game, etc.",
+                "<b>Gameplay: </b> I developed all the gameplay from the missile launch from the nearest silo that still stands and has ammo to the collisions and what happened when a missile hit something, it was a fun experience because it was all math based and I do not get to do that a lot.",
+                "<b>Memory Management: </b> This was a good exercise to work in C++ memory management because there where multiple instances where you had to delete objects in order to avoid memory allocation and finding the best solution to do that is always a challenge. "
+            ],
+            "video":"https://youtu.be/pInK-GFiKBI",
+            "code":"https://github.com/dmarino/notMissileCommand"
         },
         {
             "name":"Zombie Cuteness",
@@ -272,7 +280,7 @@
                     "alt":"image of the girls walking"
                 }
             ],
-            "tags":["Unreal", "C++"],
+            "tags":["UE4", "C++"],
             "info":"Zombie cuteness is a 3D first-person shooter developed in <b> Unreal </b> using <b> C++ </b>. In this game you have to survive a horde of zombified little girls collecting plushies and shooting at them so they can feel at peace. This project was developed for my Unreal development in C++ class.",
             "responsabilities":[
                 "<b>Gameplay Programming: </b> I used the starter first person project in Unreal as a base but added the collection of ammunition, the spawning of enemies and the counting of time for the plushies and the player.",
@@ -282,52 +290,56 @@
             "video":"https://youtu.be/uUx1iHaUMVQ"
         },
         {
-            "name":"The Labyrinth",
+            "name":"Astro Space",
             "images":[
                 {
-                    "link":"./images/proyectos/theLabyrinth.JPG",
-                    "alt":"image of the first page of the project"
+                    "link":"./images/proyectos/astroSpace.png",
+                    "alt":"image of the asteroids level"
                 },
                 {
-                    "link":"./images/proyectos/theLabyrint2.png",
-                    "alt":"image of the labyrinth game"
+                    "link":"./images/proyectos/astroSpace2.png",
+                    "alt":"image of beginners level"
+                },
+                {
+                    "link":"./images/proyectos/astroSpace3.png",
+                    "alt":"image of the black hole level"
                 }
             ],
-            "tags":["JavaScript", "Meteor","React","mongoDB", "REST"],
-            "info":"The labyrinth is the third assignment for my programming with web technologies class, its goal was to create a web application keeping in mind accessibility, usability, and performance. My teammate and I decided to create a game that could be played by a blind person using a screen reader. In the labyrinth you played as an explorer that needed to fin a treasure inside a maze, because you had a torch you could only see the spot you were in and when you moved the screen reader would tell you the paths that you could take from that position. This game could be played as a single player, a 2-player coop or a 1v1. ",
+            "tags":["Oculus", "VR", "C#", "Unity", "Educational"],
+            "info":"AstroSpace is a VR learning environment developed for Oculus and VIVE using <b> Steam VR </b> and <b> Unity </b>. Its main goal was to prove if a VR environment was better to learn about topics and events hard to see or experience in real life compared to the traditional way used in schools. For this purpose, I designed and developed 3 tests combining infographics (the traditional way) and interactive spaces (the VR way) in different percentages and then seeing if the users learned more when they could interact with the astronomical phenomena.",
             "responsabilities":[
-                "<b>UI/UX design: </b> I designed the layout of the application and the way it would work with the screen reader (every picture has an alternative text that gets generated according to the data of the maze).",
-                "<b>Front-End Development: </b> I developed the front end of the application using React and integrating it with the backend to see the changes of the information in real time.  ",
-                "<b>Metrics and testing: </b> I oversaw the metrics of the application using chrome’s lighthouse and tested the user experience of the game using a chore extension called Chromevox  "
+                "<b>Gamification: </b> I designed the environments in a way that would be fun for the player to learn, in the black hole level I gave the player different real-life objects to test the gravitational force, in the comets or asteroids level I kept score of which one was shoot as if it was a competition. These little features made the players enjoy more their experience and learn more as well.",
+                "<b>Interaction: </b> I designed and developed all the interactions in the game using the steam VR library and free assets from the asset store.",
+                "<b>Calibration and testing: </b> I did almost 15 tests in different subjects where I had to calibrate the Oculus headset, teach the controls (using an introductory level that I developed as well) and overall managing the data of the sessions. "
             ],
-            "demo":"https://the-labyrinth.herokuapp.com/",
-            "code":"https://github.com/dmarino/theLabyrinth"
+            "video":"https://youtu.be/x_K4Wb2Wlkc",
+            "code":"https://github.com/dmarino/WizardHero.git"
         },
         {
-            "name":"Hospital Appointments",
+            "name":"Mordor Planet Sim.",
             "images":[
                 {
-                    "link":"/images/proyectos/desarrollo.PNG",
-                    "alt":"image of the project"
+                    "link":"./images/proyectos/mordorPlanetSimulator.JPG",
+                    "alt":"Image of the planet animation"
                 },
                 {
-                    "link":"/images/proyectos/desarrollo2.JPG",
-                    "alt":"image of the project"
+                    "link":"./images/proyectos/mordorPlanetSimulator2.JPG",
+                    "alt":"image of the Alias setting"
                 },
                 {
-                    "link":"/images/proyectos/desarrollo3.JPG",
-                    "alt":"image of the project"
+                    "link":"./images/proyectos/mordorPlanetSimulator3.JPG",
+                    "alt":"image of the change of stats"
                 }
             ],
-            "tags":["Maven","Angular","REST","Java","MySQL"],
-            "info":"Hospital Appointment was a project for my Software development in teams class, it was develop by a group of 5 people using <b> Java </b> and <b> Angular </b>. Each member had to code the whole stack related to an entity (Json architecture, Data base query, <b> REST API </b>, logic of the client actions, showing the data in a web page) and oversee a technical aspect of the project. Our group had the topic of a hospital that wanted its clients to make appointments to doctors with certain specialties. My entity was the Specialty of a doctor, and I oversaw the web development aspect of the project.",
+            "tags":["JavaScript", "Express","React"],
+            "info":"Mordor Planet Simulator was a <b> multiplayer </b> resource management game that allowed players from all around the world to make decisions over the resources of a fictional planet. It was developed using <b> React </b> for the front end, <b> Express (Node.js) </b> for the backend and <b> mongoDB </b> for the non-relational data base. This project was an assignment for my web development class, and I worked in it with another classmate in a span of 2 weeks.",
             "responsabilities":[
-                "<b>Relational database queries: </b> I took part creating the data architecture that we wanted to use in the database, it was a relational database, so we needed to use SQL queries to change or consult the information on it.",
-                "<b>REST API: </b> I had to create typical REST services for the Specialties, get all, get by Id, post, Update and remove.  ",
-                "<b>Front End development: </b> I had to create a web page for showing the data of all services regarding to the specialties so a form to create and update, a list to show all and a page to show the data of a specific one.  ",
-                "<b>General Front End: </b> As an extra I developed our main page and our menu using bootstrap and custom CSS."
+                "<b>UI/UX design: </b> I designed the UI of the application and iterated on it considering the user experience of many friends and my teammate. ",
+                "<b>Front end Development: </b> I took the role of front-end developer in this project, this meant that I had to create the react structure with the according CSS in order to make it pretty and connect it with the data from the backend.",
+                "<b>Deployment: </b> I helped with the deployment of the web page to Heroku. "
             ],
-            "code":"https://github.com/dmarino/201620-WaveTeam"
+            "code":"https://github.com/hjcalderon10/mordorPlanetSimulation"
+
         }
     ]
 }

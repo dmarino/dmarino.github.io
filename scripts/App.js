@@ -2,6 +2,7 @@
 
 'use strict';
 
+import Skill from './Skills.js'
 import Project from './Project.js'
 import {PROJECTS_NUMBER_START, PROJECTS_NUMBER_ADD} from './Constants.js'
 
@@ -15,6 +16,14 @@ class App{
         this.currentProjectsShown=PROJECTS_NUMBER_START;
 
         let self = this;
+
+        $.getJSON('../data/Skills.json', function(data) {       
+            var i=0;
+            data.skills.forEach(element=> {
+                new Skill(element,i);
+                i++;
+            })
+        });
         
         //loads projects from json
         $.getJSON('../data/projects.json', function(data) {        

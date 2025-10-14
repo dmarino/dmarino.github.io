@@ -6,16 +6,28 @@ html,body{
 	margin: 0;
 	padding: 0;
 	
-	background: #f2f2f2;
-	color: black;	
+	background: #f7f7ef;
+	color: #141e0c;	
 
 	text-align: center;
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'Source Code Pro', sans-serif;
 }
 
 h1, h2, h3 {
-	font-family: 'Amatic SC', cursive;
+	font-family: 'Space Grotesk', sans-serif;
 }
+
+button{
+
+	background: #f7f7ef;
+	color: #436020;
+	font-family: 'Space Grotesk', sans-serif;
+	font-size: 1rem;
+	border: solid;
+	box-shadow: 0 6px 5px 0 #436020;
+	padding: 4px 8px 4px 8px;
+}
+
 
 #home-info{
 	width: 100%;
@@ -23,118 +35,161 @@ h1, h2, h3 {
 
 	text-align: left;
 
-	background-image:url("../images/b1.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-	background-position: center;
+  	display: grid;
+  	grid-template-columns: 50% 50%;
 }
 
 #home-title{
-	position: relative;
-	top: 70%;
-	left: 50%;
-	transform: translate(-50%, 0%);
-	padding-left: 20px;
-
+	margin-top: 10%;
+	margin-left: 25%;
 }
 
-#home-title > span{
+#home-title > h1{
 
-	background: rgba(255, 255, 255, 0.6);
-	font-family: 'Amatic SC', cursive;
-}
-
-#info-title{
-	position: relative;
-	z-index: 10;
-}
-
-#name{
+	margin-top: 10vh;
+	font-family: 'Space Grotesk', sans-serif;
+	color: #436020;	
 	font-size: calc(24px + 2vw);
 }
 
-#subtext{
-	font-size: calc(18px + 1.5vw);
+#home-title >p{
+	margin-right: 15vh;
+	  line-height: 1.5;
 }
 
-#about-me{
-	height: 100%;
-	width: 80%;
-	display: grid;
-	grid-template-areas: 'about imagen';
-	
-	padding-top: 5%;
-
-	margin-bottom: 10%;
+#home-title >p >span{
+	font-family: 'Space Grotesk', sans-serif;
+	background: #436020;
+	color: #f7f7ef;
 }
 
-#about-img{
-	margin-top: 10vh;
-	grid-area: imagen;
+#home-image{
+	margin-top: 10%;
 
-	background: #0088aa;
-	border-radius: 20px;
 }
 
-#icon-image{
-	
-	display: inline-block;
-	width: 35vh;
-	height: 35vh;
+#rana{
+	width: 90vh;
+	height: 90vh;
 
-	border-radius: 50%;
-	border: solid;
-	border-color: #ddd;
-	background-image:url("../images/profilePic.jpeg");
+	margin-left: -10%;
+
+	background-image:url("../images/rana.png");
     background-size: cover;
     background-repeat: no-repeat;
 	background-position: center;
-	
-
-	position: relative;
-	top: 60%;
-	left: 70%;
 }
 
-@media (max-width:991px){
+#btn-cv{
+	margin-top: 5vh;
+}
 
-	#about-me{
-		width: 100%;
-		display: grid;
-		grid-template-areas:'imagen' 'about';
-	}
-
-	#about-img{
-		background-color: transparent !important;
-	}
-	
-	#icon-image{
-		top: 0% !important;
-		left: 0% !important;	
-	}
+#cv{
+	color:#436020;
+	text-decoration: none;
 }
 
 #about-separator{
-	background: #0088aa;
+	background: #436020;
 	position: relative;
 	left: -2vh;
-	top: -2vh;
-	border-radius: 25px;
+	top: -10vh;
 	width: 50%;
 	height: 10vh;
 }
 
-#about-info{
-	text-align: center;
-	max-width: 800px;
-	margin-left: 10vw;
-	margin-right: 10vw;
-	grid-area: about;
+
+@media (max-width:991px){
+
+	#home-info{
+  		grid-template-columns: 100% !important;
+	}
+
+	#home-title{
+		margin-left: 10% !important;
+	}
+
+	#home-image{
+		padding-left: 25% !important;
+		margin-top: -15% !important;
+	}
+
+	#rana{
+		margin-left: 10% !important;
+
+		width: 30vh !important;
+		height: 30vh !important;
+	}
+
+	#about-separator{
+		display: none;
+	}
 }
 
+#background{
+	text-align: left;
+
+  	display: grid;
+  	grid-template-columns: 40% 40% 20%;
+}
+
+#background-title{
+	text-align: right;
+	color: #436020;
+}
+
+#background-text{
+	margin-left: 5%;
+}
+
+@media (max-width:991px){
+	#background{
+		margin-right: 3%;
+  		grid-template-columns: 40% 60% !important;
+	}
+
+}
+
+#skills{
+	width: 100%;
+	color: #f7f7ef;
+}
+
+#skills-title{
+	width: 20vh;
+	margin-left: 20%;
+	margin-bottom: 0%;
+	padding: 1vh;
+	background: #436020;
+}
+
+#skills-content{
+	background: #436020;
+	text-align: left;
+
+	padding-left: 10%;
+	padding-top: 2%;
+	padding-bottom: 2%;
+
+	display: grid;
+  	grid-template-columns: 25% 25% 25% 25%;
+}
+
+.skill-span{
+	display: block;
+}
+
+@media (max-width:991px){
+
+	#skills-content{
+  		grid-template-columns: 100% !important;
+	}
+
+}
 
 .title{
 	font-size: 3rem;
+	color: #436020;
 }
 
 #home-projects{
@@ -149,63 +204,39 @@ h1, h2, h3 {
     
 }
 
-button{
-
-	background: #0088aa;
-	color: white;
-	font-family: 'Amatic SC', cursive;
-	font-size: 2rem;
-
+#btn-more-projects{
 	margin: 5%;
 }
 
-#cv{
-	color: white;
-	text-decoration: none;
-}
-
-#contact{
-	width: 100%;
-	background: #0088aa;
-
-	margin-bottom: 2%;
-
-	padding: 1% 0% 2% 0%;
-	font-family: 'Amatic SC', cursive;
-
-}
-
-#contact > a{
-	text-decoration: none;
-	color: white;
-}
-
-#contact h1{
-	font-size: calc(12px + 1.5vw);
-}
-
-#email{
-	font-size: calc(12px + 1.3vw);
-	color: #ddd;
+#btn-more-projects:hover{
+	cursor: pointer;
 }
 
 footer{
-	background: black;
-	color: #aaa;
-	padding: 1% 0% 2% 0%;
-
+	margin-top: 4%;
+	color: #f7f7ef;
 	width: 100%;
 }
 
-footer >div{
-	margin-bottom: 1%;
+#contact-title
+{
+	background: #436020;
+	width: 20vh;
+	margin-left: 20%;
+	margin-bottom: 0%;
+	padding: 1vh;
 }
 
-footer a{
+footer >div{
+	background: #436020;
+	margin-bottom: 0%;
+	padding: 2% 0% 2% 0%;
+}
 
-	margin-right: 1%;
+footer >div a{
+	color: #f7f7ef;
+	margin-right: 2%;
 	text-decoration: none;
-	color: #aaa;
 }
 
 
