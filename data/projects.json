@@ -17,12 +17,11 @@
                 }
             ],
             "tags":["C++", "UE5", "GAS", "AI", "MULTIPLAYER"],
-            "info":"RKGK is a Single Player 3D Platformer where you play as Valah, a rebellious girl who wants to free her city from the reign of the evil Mr Buff using her unique graffiti skills. This game was developed using <b> Unreal Engine 4 </b> with <b> C++ </b> and was <b> published </b> In May 2024.",
+            "info":"HYPER YUKI is a Snowboarding game developed in <b> Unreal Engine 5 </b> using <b> C++ </b>. It can be played <b> as a Single Player game </b> but also has <b> Online </b> and <b> Local </b> Multiplayer options. It was announced on September 10, 2025.",
             "responsabilities":[
-                "<b> UI: </b> I was responsible for all the UI programming of the game. including UI animations and costume navigation.",
-                "<b> Gameplay: </b> I was part of the team that restructured the gameplay logic to use Unreal´s Gameplay Ability System.",
-                "<b> Enemy AI: </b> I developed the behaviour of over 25 enemies including the 7 bosses of the game.",
-                "<b> QA: </b> I was part of the programming team assigned to fix reported bugs, I solved close to 200 bugs."
+                "<b> Gameplay: </b> I was part of the team that developed the player controller and all gameplay abilities of the player.",
+                "<b> Networking: </b> I was in charge of creating the networking connection flow, and of verifying that all gameplay abilities worked on multiplayer.",
+                "<b> NPC Riders: </b> I developed the NPCs behaviour in the race. Creating their rubberbanding system for each race difficulty and their decision making."
             ],
             "demo":"https://store.steampowered.com/app/3082730/HYPERyuki_Snowboard_Syndicate/",
             "video":"https://youtu.be/eZEq7EDvU2I?si=VT8WErVdiQsckvyJ"
@@ -71,14 +70,12 @@
                 }
             ],
             "tags":["C#", "Unity", "HDRP", "Accessibility"],
-            "info":"Databreaker was my final project at Vancouver Film School. It was developed by a group of 3 programmers and 3 game designers in a span of 6 months (2 months of pre-production and prototyping and 4 months of production). The game is a Third person action fighting game developed in <b> C# </b> using <b> Unity </b> and following the <b> High-Definition Render Pipeline</b>. The story follows Jett a short-tempered girl that got stuck in a glitchy videogame and has to fight her way out of it.",
+            "info":"Databreaker was my final project at Vancouver Film School. It was developed by a group of 3 programmers and 3 game designers in a span of 6 months (2 months of pre-production and prototyping and 4 months of production). The game is a Third person action fighting game developed in <b> C# </b> using <b> Unity </b> and following the <b> High-Definition Render Pipeline</b>. The story follows Jett, a short-tempered girl that got stuck in a glitchy videogame and has to fight her way out of it.",
             "responsabilities":[
-                "<b> UI/UX:</b> I was responsible for the user experience in the menus as well as the programming of the UI, we used Unity’s new input system to keep track of the events of the controller, so I had to understand how to stop getting input when the game was paused, how to only get input from the controller instead of the mouse and keyboard, how to communicate where the player was in the menu and what it was selecting. It took a lot of testing with users to make the menu feel right.",
-                "<b> Responsive UI programming: </b>I designed the options menu it in a way that allowed the designers to create new settings easily as Scriptable objects and they would get added to the UI automatically at the beginning of the game.",
-                "<b> Accessibility Features: </b>We decided to implement some accessibility features in our game like having different languages and adding subtitles to our cutscenes, allowing people that did not understood English and people with hearing difficulties to have a better experience. I took charge of these features but recruited help from different team members that had different native languages as translators.",
+                "<b> UI/UX: </b> I was responsible for the user experience in the menus as well as the programming of the UI.",
+                "<b> Accessibility Features: </b> I took charge of implementing some features like subtitles and different languages for menus, recruiting help from different team members that had different native languages as translators.",
                 "<b> Debug Menu: </b> I implemented all the debug settings of the game that not only allowed quick playtesting but also allowed us to keep track of certain problematic areas of the game that needed some balancing and level design fixes.",
-                "<b> VFXs: </b> I was in charge of the programming part of the visual effects of the game, getting to know pretty well Unity’s Shader graph and Unity’s Visual effects Graph to make the dissolve effects in the enemies, the effect of rail grinding and the holographic effect in the posters, between others. I even created a new custom post processing effect in HLSL for our glitch get hit effect.",
-                "<b> Mild Gameplay programming: </b> I developed the features that allowed the player to break barrels objects in game and get health back for the health packs. I also developed the feature that allowed the spawning of rails after a group of enemies was defeated.",
+                "<b> VFXs: </b> I was in charge of the programming part of the visual effects of the game, getting to know pretty well Unity’s Shader graph and Unity’s Visual effects Graph.",
                 "<b> Cut Scenes: </b> I created the cutscenes of the game using unity’s timeline as well as the ability to skip them."
             ],
             "demo":"https://vfs-gdpg.itch.io/data-breaker",
@@ -101,7 +98,7 @@
                 }
             ],
             "tags":["C#", "Unity", "Kinect"],
-            "info":"Wizard hero is a <b> Kinect </b> game I developed with a friend as an interactive experience. She gave me the concept of the game and the assets and I coded the entire project using this <a href= https://assetstore.unity.com/packages/tools/kinect-with-ms-sdk-7747 target=”_blank”> Kinect package </a> for <b> Unity</b>. Wizard hero was a mix between Guitar hero and some Kinect fitness games but with a Harry potter theme, In this game the players had to perform certain poses (swipe right, squat, jump, swipe left) when the notes where high enough to score points. When a player had enough points they could perform a harry potter spell to gain a bonus in the song. The scores of every player were saved in a json file at the end of each song. ",
+            "info":"Wizard hero is a <b> Kinect </b> game I developed with a friend as an interactive experience. She gave me the concept of the game and the assets and I coded the entire project using a Kinect package for <b> Unity</b>. Wizard hero was a mix between Guitar hero and some Kinect fitness games with a Harry potter theme. In this game the players had to perform certain poses (swipe right, squat, jump, swipe left) at the correct timing to score points. When a player had enough points they could perform a harry potter spell to gain a bonus in the song. The scores of every player were saved in a json file at the end of each song.",
             "responsabilities":[
                 "<b>Game Architecture: </b> I designed the whole architecture of the game in order to make the creation of different songs easier for my friend that didn’t know anything about Unity or Programming. This added scalability to the project because we could create as many songs as we wanted without extra effort.",
                 "<b>Kinect based Gameplay: </b> I programmed the whole player interactions for the UI and the gameplay with only Kinect gestures so the players could navigate the main menu and select their own songs without needing a mouse or a keyboard.  ",
@@ -128,11 +125,12 @@
                 }
             ],
             "tags":["C#", "Unity", "2D"],
-            "info":"Rising sun was my team project at Vancouver Film School, it was developed by a team of 3 designers and one programmer in a span of 2 months. The project is a <b> 2D platformer </b> where you can play as a samurai trying to infiltrate a big robotic corporation that has enslaved their town. Rising sun was developed in <b> Unity </b>.",
+            "info":"Rising sun was my team project at Vancouver Film School, it was developed by a team of 3 designers and one programmer in a span of 2 months. The project is a <b> 2D platformer </b> where you can play as a samurai trying to infiltrate a big robotic corporation that has enslaved their town. Rising sun was developed in <b> Unity </b> using <b> C# </b>.",
             "responsabilities":[
-                "<b>Gameplay Programming: </b> I was responsible for the movement and attacks of the player, jumping and double jumping, dashing through objects, shooting, the sword attack and even a secret feature that allowed players to read the posters in the world. It was a cool learning exercise since we wanted the game to be played with mouse and keyboard as well as controller, so I had to come up with different techniques to do some of the same features (shooting for example) that would behave differently depending on what the player was using. ",
-                "<b>AI Programming iteration: </b> The game has 3 types of enemies, the basic enemy that moves from one side to the other, the flying enemy that shoots at you and flees when someone gets too close, and the defensive enemy whose shield protects it from attacks. Due to some personal issues with one of the team members I had to finish their behaviors and do some iterations on them for the final delivery of the project. ",
-                "<b>Sound Programming: </b> I integrated the background music change from the different parts of the level, the main menu, and the game over screen using Unity’s Audio Module."],
+                "<b>Gameplay Programming: </b> I was responsible for the movement and attacks of the player, jumping and double jumping, dashing through objects, shooting, the sword attack and even a secret feature that allowed players to read the posters in the world.",
+                "<b>AI Programming: </b> I published and refined the behaviours of the 3 types of enemies in the game.",
+                "<b>Sound Programming: </b> I integrated the background music change from the different parts of the level, the main menu, and the game over screen using Unity’s Audio Module."
+            ],
             "video":"https://youtu.be/ShngxFgkNuM"
         },
         {
@@ -152,7 +150,7 @@
                 }
             ],
             "tags":["Processing", "Interactive Design"],
-            "info":"Go fish is a project I developed for my design with interactive mediums class that consisted in two assignments. The first assignment was to create an animal using <b> Processing </b> that could move as their real-life counterpart and worked as an object in the code that could be spawn as many times as you wanted. The second assignment was to use that animal in a game or an <b> interactive experience </b> of some sorts. I developed a fish that could swim in a group like a shoal and three different minigames, one that made the player look for the purple fishes, one that made two players battle with fishes that spit and one that made you avoid the fishes all together. ",
+            "info":"Go fish is a project I developed for my design with interactive mediums class that consisted in two assignments. The first assignment was to create an animal using <b> Processing </b> that could move as their real-life counterpart and worked as an object that could be spawned as many times as you wanted. The second assignment was to use that animal in a game or an <b> interactive experience </b> of some sorts. I developed a fish that could swim in a group like a shoal and three different minigames, one that made the player look for the purple fishes, one that made two players battle with fishes that spit and one that made you avoid the fishes all together.",
             "responsabilities":[
                 "<b>Rendering: </b> because I was creating a game without a game engine all the movement of the fish is math based, if they go in straight lines or in circles, how heir tails move, if they disappear in one side of the screen where will they re-appear in the other, etc. ",
                 "<b>Customizability: </b> the fish and the shoal have multiple options of creation based on color, movement, speed, and size, between others. This allowed me to create a shoal for multiple types of situations and reuse the same code most of the time. ",
@@ -231,7 +229,7 @@
                     "alt":"image of the gameOver Screen"
                 }
             ],
-            "tags":["Unreal","Blueprints"],
+            "tags":["UE4","Blueprints"],
             "info":"Untitled Endless Runner is a 3D endless runner prototype inspired by jetpack joyride developed in <b> Unreal </b> using <b> Blueprints </b>. In the game you must use the elevation force provided by your jetpack to avoid obstacles, collect gems, and go as far as you can. I created this game as my last assignment for my Unreal Development with blueprints class.",
             "responsabilities":[
                 "<b>Gameplay Programming: </b> I used the starter third person project in Unreal as a base for the game and developed the rest of the features, from the jetpack use and recharge to the random automatic generation of the map and its collectables.",
@@ -282,7 +280,7 @@
                     "alt":"image of the girls walking"
                 }
             ],
-            "tags":["Unreal", "C++"],
+            "tags":["UE4", "C++"],
             "info":"Zombie cuteness is a 3D first-person shooter developed in <b> Unreal </b> using <b> C++ </b>. In this game you have to survive a horde of zombified little girls collecting plushies and shooting at them so they can feel at peace. This project was developed for my Unreal development in C++ class.",
             "responsabilities":[
                 "<b>Gameplay Programming: </b> I used the starter first person project in Unreal as a base but added the collection of ammunition, the spawning of enemies and the counting of time for the plushies and the player.",
@@ -340,7 +338,6 @@
                 "<b>Front end Development: </b> I took the role of front-end developer in this project, this meant that I had to create the react structure with the according CSS in order to make it pretty and connect it with the data from the backend.",
                 "<b>Deployment: </b> I helped with the deployment of the web page to Heroku. "
             ],
-            "demo":"http://intense-springs-10900.herokuapp.com/",
             "code":"https://github.com/hjcalderon10/mordorPlanetSimulation"
 
         }

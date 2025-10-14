@@ -98,6 +98,10 @@
     text-align: justify;
 }
 
+#single-project-resp-list >li{
+    margin-bottom: 1rem;
+}
+
 #modal-project-tags > .project-tag{
 
     color: #141e0c;
