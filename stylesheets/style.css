@@ -68,7 +68,7 @@ button{
 
 #home-image{
 	margin-top: 10%;
-
+    pointer-events: none;
 }
 
 #rana{
@@ -81,6 +81,7 @@ button{
     background-size: cover;
     background-repeat: no-repeat;
 	background-position: center;
+	pointer-events: none;
 }
 
 #btn-cv{
