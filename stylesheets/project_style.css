@@ -1,7 +1,7 @@
 
 .project{
 
-	display: inline-block;
+	display: inline-flex;
     min-width: 200px;
     min-height: 200px;
     margin: 1%;

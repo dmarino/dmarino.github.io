@@ -119,6 +119,13 @@ class App{
 
     scrollTo(selector) {
         var destination = $(selector);
+        
+	    if ($(window).width() < 768) {
+            $('.grt-mobile-button').toggleClass("grt-mobile-button-open");
+            $("ul.grt-menu").toggleClass("open-grt-menu ");
+            $("html, body").toggleClass("body-overflow");
+        }
+
         $('html, body').animate({scrollTop: destination.offset().top}, 'slow');
     }
 }
