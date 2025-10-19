@@ -53,8 +53,11 @@ button{
 }
 
 #home-title >p{
+
 	margin-right: 15vh;
-	  line-height: 1.5;
+	line-height: 1.5;
+
+	text-align: justify;
 }
 
 #home-title >p >span{
@@ -139,7 +142,9 @@ button{
 }
 
 #background-text{
+	
 	margin-left: 5%;
+	text-align: justify;
 }
 
 @media (max-width:991px){
