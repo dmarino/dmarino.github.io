@@ -142,15 +142,25 @@ button{
 }
 
 #background-text{
-	
+
 	margin-left: 5%;
 	text-align: justify;
 }
 
 @media (max-width:991px){
+
+	#background-title{
+		text-align: Left !important;
+	}
+
 	#background{
-		margin-right: 3%;
-  		grid-template-columns: 40% 60% !important;
+		margin-right: 10% !important;
+  		grid-template-columns: 100% !important;
+		margin-left: 10% !important;
+	}
+
+	#background-text{
+		margin-left: 0% !important;
 	}
 
 }
