@@ -104,6 +104,12 @@ button{
 
 @media (max-width:991px){
 
+	#home-title >p{
+
+		margin-right: 10% !important;
+	}
+
+
 	#home-info{
   		grid-template-columns: 100% !important;
 	}
@@ -154,6 +160,7 @@ button{
 	}
 
 	#background{
+		margin-top: 5% !important;
 		margin-right: 10% !important;
   		grid-template-columns: 100% !important;
 		margin-left: 10% !important;
